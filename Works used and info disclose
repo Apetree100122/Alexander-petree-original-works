@@ -1,0 +1,810 @@
+12	Availability set	East US
+{
+    "name": "012",
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Compute/availabilitySets/012",
+    "type": "Microsoft.Compute/availabilitySets",
+    "location": "eastus",
+    "tags": {
+        "6018682": "1",
+        "83968350": "2",
+        "48E2E74D21E4D74F ": "2",
+        "1681196997174": "1",
+        "+19514785542": "Support phone number ",
+        "Apetree1001@email.phoenix.edu": "support email",
+        "collaboration": "discoverylearninggroup/AlexanderPetreeITsolutions.org"
+    },
+    "properties": {
+        "platformUpdateDomainCount": 6,
+        "platformFaultDomainCount": 2,
+        "virtualMachines": [
+            {
+                "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLE/providers/Microsoft.Compute/virtualMachines/42F"
+            }
+        ]
+    }
+}
+
+42F_DataDisk_2	Disk	East US
+
+{
+    "name": "42F",
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Compute/virtualMachines/42F",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "eastus",
+    "tags": {
+        "6018682": "1",
+        "83968350": "2",
+        "48E2E74D21E4D74F ": "2",
+        "1681196997174": "1",
+        "+19514785542": "Support phone number ",
+        "Apetree1001@email.phoenix.edu": "support email",
+        "collaboration": "discoverylearninggroup/AlexanderPetreeITsolutions.org"
+    },
+    "plan": {
+        "name": "netscaler5000platinum",
+        "publisher": "citrix",
+        "product": "netscalervpx-131"
+    },
+    "identity": {
+        "type": "SystemAssigned",
+        "principalId": "acff01ba-bf53-45ec-9d08-c433d4c1a325",
+        "tenantId": "47ea4cec-fe0f-48f5-9a09-a2f957278304"
+    },
+    "properties": {
+        "vmId": "3861824f-f626-4016-acce-5853fa6339ba",
+        "availabilitySet": {
+            "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Compute/availabilitySets/012"
+        },
+        "hardwareProfile": {
+            "vmSize": "Standard_E2s_v3"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "citrix",
+                "offer": "netscalervpx-131",
+                "sku": "netscaler5000platinum",
+                "version": "latest",
+                "exactVersion": "131.45.61"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "diffDiskSettings": {
+                    "option": "Local",
+                    "placement": "CacheDisk"
+                },
+                "name": "42F_OsDisk_1_803b1a63611e4242b63c7245dffc3ce3",
+                "createOption": "FromImage",
+                "caching": "ReadOnly",
+                "managedDisk": {
+                    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Compute/disks/42F_OsDisk_1_803b1a63611e4242b63c7245dffc3ce3"
+                },
+                "deleteOption": "Delete"
+            },
+            "dataDisks": [
+                {
+                    "lun": 2,
+                    "name": "42F_DataDisk_2",
+                    "createOption": "Attach",
+                    "caching": "ReadWrite",
+                    "writeAcceleratorEnabled": false,
+                    "managedDisk": {
+                        "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Compute/disks/42F_DataDisk_2"
+                    },
+                    "deleteOption": "Detach",
+                    "toBeDetached": false
+                }
+            ]
+        },
+        "osProfile": {
+            "computerName": "42F",
+            "adminUsername": "azureuser",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": true,
+                "ssh": {
+                    "publicKeys": [
+                        {
+                            "path": "/home/azureuser/.ssh/authorized_keys",
+                            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDB2s6eWRiZS/shUJEaoPvsv1y8VPsWcByg4LnElwMChge2uaOeiErNp9Ra5xEXFFXgdjxegXISfv3oWBJzF7zXYw4LoSGMd4uJCRVPqBiZIiAtHEf8TwKziHUo96h+GDSxf/aDdH/T80tANzJKmhPY/gSb/ieRID5VkdX03pvknt/SSKYT5qtXZ5PeR9t6kquoyYEPJ8cbkqEU2i5kQpgTUoUbISLFMcYwyuV5S5/rmII93BJE3RFDpZN3H0kqvnRNilxaRtE2W/GFLAi/2wboZgJYl7TpKZae2aD4898cG2xfF2SSzEbqpXk76cQOpAWLkICVy2U5LPaAa9jz+dQBMgik40pz3WXpaeCGY417JxJLP7lPFTRZu45BlkQ/znQk55fyMJFxw9Ab6piwP8yBsiTz8MS/Ojy599bzlOBB7DN69x3kt0YtMcWx7GRJafvY6hy7M9ovZk3gaG3MDPKB+wIActOmH789AtzLs5teazA/hzScuX0ImO70ajVFrAk= generated-by-azure"
+                        }
+                    ]
+                },
+                "provisionVMAgent": true,
+                "patchSettings": {
+                    "patchMode": "ImageDefault",
+                    "assessmentMode": "ImageDefault"
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/networkInterfaces/42f920",
+                    "properties": {
+                        "deleteOption": "Detach"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "provisioningState": "Succeeded"
+    },
+    "resources": [
+        {
+            "name": "MDE.Linux",
+            "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Compute/virtualMachines/42F/extensions/MDE.Linux",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "eastus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "forceUpdateTag": "e1446ae1-08eb-4958-9bde-a2f5387199bd",
+                "provisioningState": "Failed",
+                "publisher": "Microsoft.Azure.AzureDefenderForServers",
+                "type": "MDE.Linux",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "azureResourceId": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLE/providers/Microsoft.Compute/virtualMachines/42F",
+                    "forceReOnboarding": false,
+                    "vNextEnabled": false,
+                    "autoUpdate": true
+                }
+            }
+        },
+        {
+            "name": "newrelic-infra",
+            "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Compute/virtualMachines/42F/extensions/newrelic-infra",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "eastus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Failed",
+                "publisher": "NewRelic.Infrastructure.Extensions",
+                "type": "newrelic-infra",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "NR_LICENSE_KEY": "Happiness_Fulfillment"
+                }
+            }
+        },
+        {
+            "name": "OmsAgentForLinux",
+            "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Compute/virtualMachines/42F/extensions/OmsAgentForLinux",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "eastus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Failed",
+                "enableAutomaticUpgrade": false,
+                "publisher": "Microsoft.EnterpriseCloud.Monitoring",
+                "type": "OmsAgentForLinux",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "workspaceId": "43f16415-5f02-45c1-ad05-704b59572906"
+                }
+            }
+        }
+    ]
+}
+
+
+42F-lb	Load balancer	East US 2
+
+MDE.Linux (42F/MDE.Linux)	microsoft.compute/virtualmachines/extensions	East US
+
+newrelic-infra (42F/newrelic-infra)	microsoft.compute/virtualmachines/extensions	East US
+
+OmsAgentForLinux (42F/OmsAgentForLinux)	microsoft.compute/virtualmachines/extensions	East US
+
+42f920	Network Interface	East US
+
+42F-nsg	Network security group	East US
+
+basicNsg5KLe-vnet-nic01	Network security group	East US 2
+
+42F-ip	Public IP address	East US 2
+{
+    "name": "42F-ip",
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/publicIPAddresses/42F-ip",
+    "etag": "W/\"b6b2a860-091b-4bd1-a5a6-729d1851098e\"",
+    "location": "eastus2",
+    "tags": {
+        "6018682": "Seller",
+        "+19514785542": "Support phone number ",
+        "038811634763": "seller",
+        "48E2E74D21E4D74F": "contributer",
+        "Apetree1001@email.phoenix": "Support email",
+        "AlexanderpetreeITsolutions": "Discoverylearninggroup"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "3a729583-955d-48a2-acf0-d86bafd3c77a",
+        "ipAddress": "20.96.121.132",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Static",
+        "idleTimeoutInMinutes": 4,
+        "ipTags": [],
+        "ipConfiguration": {
+            "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/loadBalancers/42F-lb/frontendIPConfigurations/LoadBalancerFrontEnd"
+        }
+    },
+    "type": "Microsoft.Network/publicIPAddresses",
+    "sku": {
+        "name": "Standard"
+    }
+}
+42Fip278	Public IP address	East US
+
+Em5	SaaS	Global
+
+220a	SSH key	East US
+
+Apache	SSH key	East US 2
+
+56204	Storage account	East US
+
+5klediag	Storage account	East US 2
+
+5klediag152	Storage account	East US
+
+42F	Virtual machine	East US
+
+42F	Virtual machine scale set	East US 2
+
+42F-vnet	Virtual network	East US
+{
+    "name": "42F-vnet",
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/virtualNetworks/42F-vnet",
+    "etag": "W/\"a03829a9-d210-474d-b93c-5bfd9a320a4e\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "eastus",
+    "tags": {
+        "6018682": "1",
+        "83968350": "2",
+        "48E2E74D21E4D74F ": "2",
+        "1681196997174": "1",
+        "+19514785542": "Support phone number ",
+        "Apetree1001@email.phoenix.edu": "support email",
+        "collaboration": "discoverylearninggroup/AlexanderPetreeITsolutions.org"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "dcf04ec2-dcdb-445a-8b44-6e9b8bd93f25",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.1.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/virtualNetworks/42F-vnet/subnets/default",
+                "etag": "W/\"a03829a9-d210-474d-b93c-5bfd9a320a4e\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.1.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/networkInterfaces/42f920/ipConfigurations/ipconfig1"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
+5KLe-vnet	Virtual network	East US 2
+
+{
+    "name": "5KLe-vnet",
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/virtualNetworks/5KLe-vnet",
+    "etag": "W/\"90f6ec19-f370-4e39-a81b-7a186b0f11c3\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "eastus2",
+    "tags": {
+        "6018682": "Seller",
+        "+19514785542": "Support phone number ",
+        "038811634763": "seller",
+        "48E2E74D21E4D74F": "contributer",
+        "Apetree1001@email.phoenix": "Support email",
+        "AlexanderpetreeITsolutions": "Discoverylearninggroup"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "4f71a3ad-cffb-4633-8ab4-a25195fea940",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/virtualNetworks/5KLe-vnet/subnets/default",
+                "etag": "W/\"90f6ec19-f370-4e39-a81b-7a186b0f11c3\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.0.0/16"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
+
+
+
+{
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Web/serverfarms/ASP-bonsairgLIGHTTOTHEDARK24d69b3bd-b0b9",
+    "name": "ASP-bonsairgLIGHTTOTHEDARK24d69b3bd-b0b9",
+    "type": "Microsoft.Web/serverfarms",
+    "kind": "linux",
+    "location": "East US 2",
+    "tags": {
+        "83968350": "1000",
+        "Alexander Petree": "Owner ",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "properties": {
+        "serverFarmId": 11804,
+        "name": "ASP-bonsairgLIGHTTOTHEDARK24d69b3bd-b0b9",
+        "workerSize": 3,
+        "workerSizeId": 3,
+        "workerTierName": null,
+        "numberOfWorkers": 0,
+        "currentWorkerSize": 3,
+        "currentWorkerSizeId": 3,
+        "currentNumberOfWorkers": 0,
+        "status": 0,
+        "webSpace": "bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247-EastUS2webspace-Linux",
+        "subscription": "33af1e61-072c-48f1-bd41-b60da094e056",
+        "adminSiteName": null,
+        "hostingEnvironment": null,
+        "hostingEnvironmentProfile": null,
+        "maximumNumberOfWorkers": 30,
+        "planName": "VirtualDedicatedPlan",
+        "adminRuntimeSiteName": null,
+        "computeMode": 1,
+        "siteMode": null,
+        "geoRegion": "East US 2",
+        "perSiteScaling": false,
+        "elasticScaleEnabled": false,
+        "maximumElasticWorkerCount": 0,
+        "numberOfSites": 1,
+        "hostingEnvironmentId": null,
+        "isSpot": false,
+        "spotExpirationTime": null,
+        "freeOfferExpirationTime": null,
+        "tags": {
+            "83968350": "1000",
+            "Alexander Petree": "Owner ",
+            "48E2E74D21E4D74F": "1000",
+            "038811634763": "2",
+            "1681196997174": "2",
+            "1681829024810": "102"
+        },
+        "kind": "linux",
+        "resourceGroup": "bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247",
+        "reserved": true,
+        "isXenon": false,
+        "hyperV": false,
+        "mdmId": "waws-prod-bn1-205_11804",
+        "targetWorkerCount": 0,
+        "targetWorkerSizeId": 0,
+        "provisioningState": "Succeeded",
+        "webSiteId": null,
+        "existingServerFarmIds": null,
+        "kubeEnvironmentProfile": null,
+        "zoneRedundant": false
+    },
+    "sku": {
+        "name": "P1v2",
+        "tier": "PremiumV2",
+        "size": "P1v2",
+        "family": "Pv2",
+        "capacity": 0
+    }
+}
+
+
+{
+    "location": "eastus2",
+    "tags": {
+        "6018682": "Seller",
+        "83968350": "2",
+        "038811634763": "2",
+        "48E2E74D21E4D74F ": "2",
+        "Apetree1001@email.phoenix": "Support email",
+        "Vm": "Redhat8.2",
+        "9514785542": "Support phone",
+        "1681829024810": "Seller",
+        "+19514785542": "Support phone number "
+    },
+    "properties": {},
+    "systemData": {
+        "createdBy": "Apetree1001@email.phoenix.edu",
+        "createdByType": "User",
+        "createdAt": "2023-05-03T03:07:04.936801Z",
+        "lastModifiedBy": "Apetree1001@email.phoenix.edu",
+        "lastModifiedByType": "User",
+        "lastModifiedAt": "2023-05-03T03:07:06.639923Z"
+    },
+    "id": "/subscriptions/494ff289-93ec-416f-93da-67287a10ea6f/resourceGroups/220/providers/Microsoft.Resources/templateSpecs/Redhat82template",
+    "type": "Microsoft.Resources/templateSpecs",
+    "name": "Redhat82template"
+}
+
+9514785542 **to update 9514002505**
+
+
+{
+    "name": "Discover22Vnet",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Network/virtualNetworks/Discover22Vnet",
+    "etag": "W/\"e55c0c42-93b7-4fd5-8a39-e94b65c72864\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "eastus2",
+    "tags": {
+        "83968350": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "4ddd157f-429e-4ccf-bb58-e8e703070145",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "Discover22Subnet",
+                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Network/virtualNetworks/Discover22Vnet/subnets/Discover22Subnet",
+                "etag": "W/\"e55c0c42-93b7-4fd5-8a39-e94b65c72864\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Network/networkInterfaces/Discover22DbEndpoint.nic.a9922fd3-46b5-43e8-bfb4-e3a76b016aa8/ipConfigurations/privateEndpointIpConfig.752fb660-f47f-4d8f-9750-a5ce93d4144f"
+                        },
+                        {
+                            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Network/networkInterfaces/Discover22DbEndpoint.nic.a9922fd3-46b5-43e8-bfb4-e3a76b016aa8/ipConfigurations/privateEndpointIpConfig.7f0421b4-3e9f-4089-9e3a-50c11765adff"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "Discover22AppSubnet",
+                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Network/virtualNetworks/Discover22Vnet/subnets/Discover22AppSubnet",
+                "etag": "W/\"e55c0c42-93b7-4fd5-8a39-e94b65c72864\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.2.0/24"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
+
+
+{
+    "name": "022",
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/discoverylearning/providers/Microsoft.DataFactory/factories/022",
+    "type": "Microsoft.DataFactory/factories",
+    "properties": {
+        "provisioningState": "Disabled",
+        "createTime": "2023-05-03T08:16:04.0538317Z",
+        "version": "2018-06-01",
+        "factoryStatistics": {
+            "totalResourceCount": 0,
+            "maxAllowedResourceCount": 0,
+            "factorySizeInGbUnits": 0,
+            "maxAllowedFactorySizeInGbUnits": 0
+        },
+        "publicNetworkAccess": "Enabled"
+    },
+    "eTag": "\"0000c018-0000-0200-0000-646359040000\"",
+    "location": "eastus2",
+    "identity": {
+        "type": "SystemAssigned",
+        "principalId": "30abf9d9-dd4d-4357-9fd3-1362e9d8f956",
+        "tenantId": "47ea4cec-fe0f-48f5-9a09-a2f957278304"
+    },
+    "tags": {
+        "48E2E74D21E4D74F": "azure contributor",
+        "1681196997174": "seller",
+        "Apetree1001@email.phoenix.edu": "support email",
+        "+19514785542": "Support phone number "
+    }
+}
+
+{
+    "plan": {
+        "name": "Security(defaultworkspace-625584be-3361-44ac-8fb1-f03b9a4215f0-eus)",
+        "publisher": "Microsoft",
+        "promotionCode": "",
+        "product": "OMSGallery/Security"
+    },
+    "properties": {
+        "workspaceResourceId": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-625584be-3361-44ac-8fb1-f03b9a4215f0-EUS",
+        "provisioningState": "Succeeded",
+        "creationTime": "Wed, 03 May 2023 10:27:35 GMT",
+        "lastModifiedTime": "Wed, 03 May 2023 10:27:35 GMT",
+        "containedResources": [
+            "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-625584be-3361-44ac-8fb1-f03b9a4215f0-EUS/views/Security(DefaultWorkspace-625584be-3361-44ac-8fb1-f03b9a4215f0-EUS)"
+        ]
+    },
+    "location": "eastus",
+    "tags": {},
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/DefaultResourceGroup-EUS/providers/Microsoft.OperationsManagement/solutions/Security(DefaultWorkspace-625584be-3361-44ac-8fb1-f03b9a4215f0-EUS)",
+    "name": "Security(DefaultWorkspace-625584be-3361-44ac-8fb1-f03b9a4215f0-EUS)",
+    "type": "Microsoft.OperationsManagement/solutions"
+}
+
+
+{
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/Managed-id/providers/Microsoft.MachineLearningServices/workspaces/discoverlearninggroup",
+    "name": "discoverlearninggroup",
+    "type": "Microsoft.MachineLearningServices/workspaces",
+    "location": "eastus2",
+    "tags": {
+        "SubscriptionState": "Suspended"
+    },
+    "etag": null,
+    "properties": {
+        "friendlyName": "discoverlearninggroup",
+        "description": "",
+        "storageAccount": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/Managed-id/providers/Microsoft.Storage/storageAccounts/discoverlearni3064146224",
+        "keyVault": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/Managed-id/providers/Microsoft.Keyvault/vaults/discoverlearni0344835472",
+        "applicationInsights": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/Managed-id/providers/Microsoft.insights/components/discoverlearni9862836840",
+        "hbiWorkspace": false,
+        "tenantId": "47ea4cec-fe0f-48f5-9a09-a2f957278304",
+        "imageBuildCompute": null,
+        "provisioningState": "Succeeded",
+        "v1LegacyMode": false,
+        "softDeleteEnabled": false,
+        "creationTime": "2023-04-21T12:35:57.5011628Z",
+        "notebookInfo": {
+            "resourceId": "de2c685542f4419bbca3103a3ae0738e",
+            "fqdn": "ml-discoverlearnin-eastus2-f65dcd59-1734-491b-a495-f9f3d6de5f9c.eastus2.notebooks.azure.net",
+            "isPrivateLinkEnabled": false,
+            "notebookPreparationError": null
+        },
+        "storageHnsEnabled": false,
+        "workspaceId": "f65dcd59-1734-491b-a495-f9f3d6de5f9c",
+        "linkedModelInventoryArmId": null,
+        "privateLinkCount": 0,
+        "publicNetworkAccess": "Enabled",
+        "discoveryUrl": "https://eastus2.api.azureml.ms/discovery",
+        "mlFlowTrackingUri": "azureml://eastus2.api.azureml.ms/mlflow/v1.0/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/Managed-id/providers/Microsoft.MachineLearningServices/workspaces/discoverlearninggroup",
+        "sdkTelemetryAppInsightsKey": "066b0d89-53d2-4b58-8bc8-ac382527e4fb"
+    },
+    "identity": {
+        "type": "SystemAssigned",
+        "principalId": "721d1dc6-0d45-4eb2-89ca-8e1cc2b487eb",
+        "tenantId": "47ea4cec-fe0f-48f5-9a09-a2f957278304"
+    },
+    "kind": "Default",
+    "sku": {
+        "name": "Basic",
+        "tier": "Basic"
+    },
+    "systemData": {
+        "createdAt": "2023-04-21T12:35:57.5011628Z",
+        "createdBy": "Apetree1001@email.phoenix.edu",
+        "createdByType": "User",
+        "lastModifiedAt": "2023-04-21T12:35:57.5011628Z",
+        "lastModifiedBy": "Apetree1001@email.phoenix.edu",
+        "lastModifiedByType": "User"
+    }
+}
+
+{
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/Managed-id/providers/Microsoft.KeyVault/vaults/discoverlearni0344835472",
+    "name": "discoverlearni0344835472",
+    "type": "Microsoft.KeyVault/vaults",
+    "location": "eastus2",
+    "tags": {},
+    "properties": {
+        "sku": {
+            "family": "A",
+            "name": "standard"
+        },
+        "tenantId": "47ea4cec-fe0f-48f5-9a09-a2f957278304",
+        "accessPolicies": [
+            {
+                "tenantId": "47ea4cec-fe0f-48f5-9a09-a2f957278304",
+                "objectId": "721d1dc6-0d45-4eb2-89ca-8e1cc2b487eb",
+                "permissions": {
+                    "keys": [
+                        "all"
+                    ],
+                    "secrets": [
+                        "all"
+                    ],
+                    "certificates": [
+                        "all"
+                    ],
+                    "storage": []
+                }
+            }
+        ],
+        "enabledForDeployment": false,
+        "enableSoftDelete": true,
+        "vaultUri": "https://discoverlearni0344835472.vault.azure.net/",
+        "provisioningState": "Succeeded"
+    }
+}
+
+{
+    "name": "NetworkWatcher_eastus",
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus",
+    "etag": "W/\"ed9180b4-9c47-4bf9-a7ed-ea09e54bba6a\"",
+    "type": "Microsoft.Network/networkWatchers",
+    "location": "eastus",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "runningOperationIds": []
+    }
+}
+
+{
+    "name": "42f920",
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/networkInterfaces/42f920",
+    "etag": "W/\"c054cc16-d618-4a08-9d30-abec75d0b4e2\"",
+    "tags": {
+        "6018682": "1",
+        "83968350": "2",
+        "48E2E74D21E4D74F ": "2",
+        "1681196997174": "1",
+        "+19514785542": "Support phone number ",
+        "Apetree1001@email.phoenix.edu": "support email",
+        "collaboration": "discoverylearninggroup/AlexanderPetreeITsolutions.org"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "1cb068a3-2fe0-45dd-9903-d50b3b434d5b",
+        "ipConfigurations": [
+            {
+                "name": "ipconfig1",
+                "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/networkInterfaces/42f920/ipConfigurations/ipconfig1",
+                "etag": "W/\"c054cc16-d618-4a08-9d30-abec75d0b4e2\"",
+                "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.1.0.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                        "name": "42Fip278",
+                        "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/publicIPAddresses/42Fip278",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "resourceGuid": "09605cf5-47a7-4431-8a7c-51aa3954b0e0",
+                            "publicIPAddressVersion": "IPv4",
+                            "publicIPAllocationMethod": "Dynamic",
+                            "idleTimeoutInMinutes": 4,
+                            "ipTags": [],
+                            "ipConfiguration": {
+                                "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/networkInterfaces/42f920/ipConfigurations/ipconfig1"
+                            },
+                            "deleteOption": "Detach"
+                        },
+                        "type": "Microsoft.Network/publicIPAddresses",
+                        "sku": {
+                            "name": "Basic",
+                            "tier": "Regional"
+                        }
+                    },
+                    "subnet": {
+                        "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/virtualNetworks/42F-vnet/subnets/default"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4"
+                }
+            }
+        ],
+        "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": []
+        },
+        "macAddress": "00-0D-3A-18-C7-46",
+        "enableAcceleratedNetworking": true,
+        "vnetEncryptionSupported": false,
+        "enableIPForwarding": false,
+        "networkSecurityGroup": {
+            "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Network/networkSecurityGroups/42F-nsg"
+        },
+        "primary": true,
+        "virtualMachine": {
+            "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLE/providers/Microsoft.Compute/virtualMachines/42F"
+        },
+        "hostedWorkloads": [],
+        "tapConfigurations": [],
+        "nicType": "Standard"
+    },
+    "type": "Microsoft.Network/networkInterfaces",
+    "location": "eastus",
+    "kind": "Regular"
+}
+
+{
+    "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+    },
+    "kind": "Storage",
+    "id": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/resourceGroups/5KLe/providers/Microsoft.Storage/storageAccounts/5klediag152",
+    "name": "5klediag152",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "eastus",
+    "tags": {
+        "6018682": "1",
+        "83968350": "2",
+        "48E2E74D21E4D74F ": "2",
+        "1681196997174": "1",
+        "+19514785542": "Support phone number ",
+        "Apetree1001@email.phoenix.edu": "support email",
+        "collaboration": "discoverylearninggroup/AlexanderPetreeITsolutions.org"
+    },
+    "properties": {
+        "keyCreationTime": {
+            "key1": "2023-05-03T09:13:42.9794760Z",
+            "key2": "2023-05-03T09:13:42.9794760Z"
+        },
+        "privateEndpointConnections": [],
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": true,
+        "networkAcls": {
+            "resourceAccessRules": [
+                {
+                    "tenantId": "47ea4cec-fe0f-48f5-9a09-a2f957278304",
+                    "resourceId": "/subscriptions/625584be-3361-44ac-8fb1-f03b9a4215f0/providers/Microsoft.Security/datascanners/StorageDataScanner"
+                }
+            ],
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2023-05-03T09:13:42.9951087Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2023-05-03T09:13:42.9951087Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "provisioningState": "Succeeded",
+        "creationTime": "2023-05-03T09:13:42.8232141Z",
+        "primaryEndpoints": {
+            "blob": "https://5klediag152.blob.core.windows.net/",
+            "queue": "https://5klediag152.queue.core.windows.net/",
+            "table": "https://5klediag152.table.core.windows.net/",
+            "file": "https://5klediag152.file.core.windows.net/"
+        },
+        "primaryLocation": "eastus",
+        "statusOfPrimary": "available"
+    }
+}
