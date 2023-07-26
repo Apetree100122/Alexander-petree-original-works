@@ -1,0 +1,19 @@
+{
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/discoverylearning/providers/Microsoft.Network/dnszones/discoverlearninggroup.com",
+    "name": "discoverlearninggroup.com",
+    "type": "Microsoft.Network/dnszones",
+    "etag": "9c43060a-cd9b-4402-a692-dd47af3daf1b",
+    "location": "global",
+    "tags": {},
+    "properties": {
+        "maxNumberOfRecordSets": 10000,
+        "maxNumberOfRecordsPerRecordSet": null,
+        "nameServers": [
+            "ns1-08.azure-dns.com.",
+            "ns2-08.azure-dns.net.",
+            "ns3-08.azure-dns.org.",
+            "ns4-08.azure-dns.info."
+        ],
+        "numberOfRecordSets": 4
+    }
+}
