@@ -1,0 +1,34 @@
+{
+    "name": "Stained_DataDisk_2",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Compute/disks/Stained_DataDisk_2",
+    "type": "Microsoft.Compute/disks",
+    "location": "westus",
+    "tags": {
+        "Alexander Petree ": "0",
+        "Apetree1001@email.phoenix.edu": "2"
+    },
+    "managedBy": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Compute/virtualMachines/Stained",
+    "sku": {
+        "name": "Premium_LRS",
+        "tier": "Premium"
+    },
+    "properties": {
+        "creationData": {
+            "createOption": "Empty"
+        },
+        "diskSizeGB": 1024,
+        "diskIOPSReadWrite": 5000,
+        "diskMBpsReadWrite": 200,
+        "encryption": {
+            "type": "EncryptionAtRestWithPlatformKey"
+        },
+        "networkAccessPolicy": "AllowAll",
+        "publicNetworkAccess": "Enabled",
+        "timeCreated": "2023-04-13T05:48:19.6793507+00:00",
+        "provisioningState": "Succeeded",
+        "diskState": "Reserved",
+        "diskSizeBytes": 1099511627776,
+        "uniqueId": "1635e184-060a-4313-93da-75ab8c44ac1b",
+        "tier": "P30"
+    }
+}
