@@ -1,0 +1,39 @@
+{
+    "properties": {
+        "customerId": "3bd881c4-42fd-4ccf-905f-b367aa888e5b",
+        "provisioningState": "Succeeded",
+        "sku": {
+            "name": "pergb2018",
+            "lastSkuUpdate": "2023-04-07T11:50:48.909401Z"
+        },
+        "retentionInDays": 30,
+        "features": {
+            "legacy": 0,
+            "searchVersion": 1,
+            "enableLogAccessUsingOnlyResourcePermissions": true
+        },
+        "workspaceCapping": {
+            "dailyQuotaGb": -1,
+            "quotaNextResetTime": "2023-05-17T08:00:00Z",
+            "dataIngestionStatus": "SubscriptionSuspended"
+        },
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled",
+        "createdDate": "2023-04-07T11:50:48.909401Z",
+        "modifiedDate": "2023-05-16T10:19:47.3477627Z"
+    },
+    "location": "westus",
+    "tags": {
+        "83968350": "1000",
+        "AlexPetree": "3",
+        "alexander@alexander.omnimicrosoft.com": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/savings/providers/Microsoft.OperationalInsights/workspaces/Alexpetreesavings",
+    "name": "Alexpetreesavings",
+    "type": "Microsoft.OperationalInsights/workspaces",
+    "etag": "\"1e01cb33-0000-0700-0000-6450d70a0000\""
+}
