@@ -1,3 +1,8 @@
+[![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/7669/badge)](https://bestpractices.coreinfrastructure.org/projects/7669)
+
+
+
+
 # Azure-microsoft Works of 
 Alexander Craig petree 
 <apetree1001@email.phoenix.edu>
