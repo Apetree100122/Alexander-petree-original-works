@@ -6,3 +6,6 @@ vouchers for all learning on
 credit on works 
 and discuss monetary monthly or bi-weekly 
 payments 
+
+ these are the original works of Alexander 
+ Craig petree 
