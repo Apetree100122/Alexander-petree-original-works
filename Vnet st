@@ -1,0 +1,53 @@
+{
+    "name": "Stained-vnet",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Network/virtualNetworks/Stained-vnet",
+    "etag": "W/\"6e149662-7e41-4ca2-a676-9cf8a8d8a67c\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "westus",
+    "tags": {
+        "Alexander Petree ": "0",
+        "Apetree1001@email.phoenix.edu": "2",
+        "alexander@alexander.omnimicrosoft.com": "1000"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "8f9c9dd4-f887-4611-abdf-d1d6eca9263e",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.1.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Network/virtualNetworks/Stained-vnet/subnets/default",
+                "etag": "W/\"6e149662-7e41-4ca2-a676-9cf8a8d8a67c\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.1.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Network/networkInterfaces/STAINED765/ipConfigurations/IPCONFIG1"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "AzureBastionSubnet",
+                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Network/virtualNetworks/Stained-vnet/subnets/AzureBastionSubnet",
+                "etag": "W/\"6e149662-7e41-4ca2-a676-9cf8a8d8a67c\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.1.1.0/26",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Network/bastionHosts/STAINED-VNET-BASTION/bastionHostIpConfigurations/IPCONF"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
