@@ -1,0 +1,278 @@
+{
+    "kind": "AutomationTask",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "createdTime": "2023-04-21T01:29:01.5409412Z",
+        "changedTime": "2023-05-02T09:25:29.7300788Z",
+        "state": "Suspended",
+        "version": "08585173744978667218",
+        "accessEndpoint": "https://prod-19.westus3.logic.azure.com:443/workflows/df4c78bf0e264ae79c53952eaa7e64e3",
+        "definition": {
+            "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+            "contentVersion": "1.0.0.0",
+            "parameters": {
+                "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                },
+                "EmailId": {
+                    "defaultValue": "Apetree1001@email.phoenix.edu",
+                    "type": "String",
+                    "metadata": {
+                        "required": true,
+                        "displayName": "Email sent to",
+                        "placeholder": "Enter the email address to send email."
+                    }
+                },
+                "ResourceId": {
+                    "defaultValue": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/myVm-1_group_04201808/providers/Microsoft.Storage/storageAccounts/discoverylearning",
+                    "type": "String",
+                    "metadata": {
+                        "isLinkedResource": true,
+                        "sourceParameter": "id"
+                    }
+                },
+                "SubscriptionId": {
+                    "defaultValue": "33af1e61-072c-48f1-bd41-b60da094e056",
+                    "type": "String",
+                    "metadata": {
+                        "isLinkedResource": true,
+                        "sourceParameter": "subscriptionId"
+                    }
+                }
+            },
+            "triggers": {
+                "Recurrence": {
+                    "recurrence": {
+                        "frequency": "Month",
+                        "interval": 1
+                    },
+                    "evaluatedRecurrence": {
+                        "frequency": "Month",
+                        "interval": 1
+                    },
+                    "type": "Recurrence"
+                }
+            },
+            "actions": {
+                "Compose": {
+                    "runAfter": {
+                        "Filter_array": [
+                            "Succeeded"
+                        ]
+                    },
+                    "type": "Compose",
+                    "inputs": "@body('Filter_array')"
+                },
+                "Filter_array": {
+                    "runAfter": {
+                        "Invoke_resource_operation_in_provider": [
+                            "Succeeded"
+                        ]
+                    },
+                    "type": "Query",
+                    "inputs": {
+                        "from": "@body('Invoke_resource_operation_in_provider')?['properties']?['rows']",
+                        "where": "@equals(item()[3], toLower(parameters('ResourceId')))"
+                    }
+                },
+                "Invoke_resource_operation_in_provider": {
+                    "runAfter": {},
+                    "type": "ApiConnection",
+                    "inputs": {
+                        "body": {
+                            "dataSet": {
+                                "aggregation": {
+                                    "totalCost": {
+                                        "function": "Sum",
+                                        "name": "PreTaxCost"
+                                    },
+                                    "totalCostUSD": {
+                                        "function": "Sum",
+                                        "name": "PreTaxCostUSD"
+                                    }
+                                },
+                                "granularity": "None",
+                                "grouping": [
+                                    {
+                                        "name": "ResourceGroupName",
+                                        "type": "Dimension"
+                                    },
+                                    {
+                                        "name": "ResourceId",
+                                        "type": "Dimension"
+                                    },
+                                    {
+                                        "name": "ChargeType",
+                                        "type": "Dimension"
+                                    },
+                                    {
+                                        "name": "PublisherType",
+                                        "type": "Dimension"
+                                    }
+                                ]
+                            },
+                            "timePeriod": {
+                                "from": "@{addToTime(utcNow(), -1, 'Month')}",
+                                "to": "@{utcNow()}"
+                            },
+                            "timeframe": "Custom",
+                            "type": "ActualCost"
+                        },
+                        "host": {
+                            "connection": {
+                                "name": "@parameters('$connections')['arm']['connectionId']"
+                            }
+                        },
+                        "method": "post",
+                        "path": "/subscriptions/@{encodeURIComponent(parameters('SubscriptionId'))}/providers/@{encodeURIComponent('Microsoft.CostManagement')}/@{encodeURIComponent('query')}",
+                        "queries": {
+                            "x-ms-api-version": "2019-11-01"
+                        }
+                    }
+                },
+                "Send_an_email_(V2)": {
+                    "runAfter": {
+                        "Compose": [
+                            "Succeeded"
+                        ]
+                    },
+                    "type": "ApiConnection",
+                    "inputs": {
+                        "body": {
+                            "Body": "<p>The monthly cost for resource<strong> </strong><strong>@{first(body('Filter_array'))[3]}</strong><strong> </strong>is<strong>&nbsp;<br>\n</strong><strong>@{first(body('Filter_array'))[0]}</strong><strong> </strong><strong>@{first(body('Filter_array'))[6]}</strong><strong></strong>.</p>",
+                            "Subject": "Monthly cost for resource",
+                            "To": "@parameters('EmailId')"
+                        },
+                        "host": {
+                            "connection": {
+                                "name": "@parameters('$connections')['office365']['connectionId']"
+                            }
+                        },
+                        "method": "post",
+                        "path": "/v2/Mail"
+                    }
+                }
+            },
+            "outputs": {}
+        },
+        "parameters": {
+            "$connections": {
+                "value": {
+                    "arm": {
+                        "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/providers/Microsoft.Web/locations/westus3/managedApis/arm",
+                        "connectionName": "arm",
+                        "connectionId": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/myVm-1_group_04201808/providers/Microsoft.Web/connections/arm"
+                    },
+                    "office365": {
+                        "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/providers/Microsoft.Web/locations/westus3/managedApis/office365",
+                        "connectionName": "office365",
+                        "connectionId": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/myVm-1_group_04201808/providers/Microsoft.Web/connections/office365"
+                    }
+                }
+            }
+        },
+        "endpointsConfiguration": {
+            "workflow": {
+                "outgoingIpAddresses": [
+                    {
+                        "address": "20.150.181.32"
+                    },
+                    {
+                        "address": "20.150.181.33"
+                    },
+                    {
+                        "address": "20.150.181.34"
+                    },
+                    {
+                        "address": "20.150.181.35"
+                    },
+                    {
+                        "address": "20.150.181.36"
+                    },
+                    {
+                        "address": "20.150.181.37"
+                    },
+                    {
+                        "address": "20.150.181.38"
+                    },
+                    {
+                        "address": "20.150.173.192"
+                    },
+                    {
+                        "address": "20.106.85.228"
+                    },
+                    {
+                        "address": "20.150.159.163"
+                    },
+                    {
+                        "address": "20.106.116.207"
+                    },
+                    {
+                        "address": "20.106.116.186"
+                    }
+                ],
+                "accessEndpointIpAddresses": [
+                    {
+                        "address": "20.150.172.240"
+                    },
+                    {
+                        "address": "20.150.172.242"
+                    },
+                    {
+                        "address": "20.150.172.243"
+                    },
+                    {
+                        "address": "20.150.172.241"
+                    },
+                    {
+                        "address": "20.106.116.172"
+                    },
+                    {
+                        "address": "20.106.116.225"
+                    }
+                ]
+            },
+            "connector": {
+                "outgoingIpAddresses": [
+                    {
+                        "address": "20.150.129.176/28"
+                    },
+                    {
+                        "address": "20.150.129.192/27"
+                    },
+                    {
+                        "address": "20.150.170.240/28"
+                    },
+                    {
+                        "address": "20.150.173.64/26"
+                    },
+                    {
+                        "address": "20.150.129.192"
+                    },
+                    {
+                        "address": "20.38.173.7"
+                    },
+                    {
+                        "address": "20.106.71.20"
+                    },
+                    {
+                        "address": "20.106.70.224"
+                    }
+                ]
+            }
+        }
+    },
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/myVm-1_group_04201808/providers/Microsoft.Logic/workflows/Billing",
+    "name": "Billing",
+    "type": "Microsoft.Logic/workflows",
+    "managedBy": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/myVm-1_group_04201808/providers/Microsoft.Storage/storageAccounts/discoverylearning",
+    "location": "westus3",
+    "tags": {
+        "83968350": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    }
+}
