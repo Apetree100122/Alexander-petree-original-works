@@ -1,0 +1,23 @@
+{
+    "name": "Stained-vnet-ip",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Network/publicIPAddresses/Stained-vnet-ip",
+    "etag": "W/\"667f30b3-aeb7-4a54-bc1d-8443b60b50f7\"",
+    "location": "westus",
+    "tags": {},
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "6eaefed0-fe97-4879-ad88-782d6125312d",
+        "ipAddress": "20.237.212.127",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Static",
+        "idleTimeoutInMinutes": 4,
+        "ipTags": [],
+        "ipConfiguration": {
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Network/bastionHosts/Stained-vnet-bastion/bastionHostIpConfigurations/IpConf"
+        }
+    },
+    "type": "Microsoft.Network/publicIPAddresses",
+    "sku": {
+        "name": "Standard"
+    }
+}
