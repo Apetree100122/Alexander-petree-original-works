@@ -1,0 +1,28 @@
+{
+    "name": "vnet01",
+    "id": "/subscriptions/c8a479bd-4acc-4da2-9bee-8f689fe5f73d/resourceGroups/RecognizIT/providers/Microsoft.Network/virtualNetworks/vnet01",
+    "etag": "W/\"15804643-1bd4-4a6e-b06a-36fcf4b26309\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "westus",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "d5e08879-15f7-4d0d-bbc1-9686cb7b16c2",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/26"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "subnet-1",
+                "id": "/subscriptions/c8a479bd-4acc-4da2-9bee-8f689fe5f73d/resourceGroups/RecognizIT/providers/Microsoft.Network/virtualNetworks/vnet01/subnets/subnet-1",
+                "etag": "W/\"15804643-1bd4-4a6e-b06a-36fcf4b26309\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.0.0/26"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
