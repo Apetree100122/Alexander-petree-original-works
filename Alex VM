@@ -1,0 +1,233 @@
+{
+    "name": "Alex",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "westus3",
+    "tags": {
+        "Alexander Petree ": "contributor",
+        "Apetree1001@email.phoenix.edu": "Email Address",
+        "Discovery learning": "Foundation"
+    },
+    "identity": {
+        "type": "SystemAssigned",
+        "principalId": "f63e14d5-fc3e-4b17-86fe-4777855ffd62",
+        "tenantId": "47ea4cec-fe0f-48f5-9a09-a2f957278304"
+    },
+    "properties": {
+        "vmId": "32f18e83-c288-4c80-85bb-189783d726df",
+        "hardwareProfile": {
+            "vmSize": "Standard_E2s_v3"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "canonical",
+                "offer": "0001-com-ubuntu-server-jammy",
+                "sku": "22_04-lts-gen2",
+                "version": "latest",
+                "exactVersion": "22.04.202303290"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "Alex_OsDisk_1_562a05b86e514119aac66482ae7c07ed",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/disks/Alex_OsDisk_1_562a05b86e514119aac66482ae7c07ed"
+                },
+                "deleteOption": "Delete"
+            },
+            "dataDisks": [
+                {
+                    "lun": 6,
+                    "name": "Alex_DataDisk_0",
+                    "createOption": "Attach",
+                    "caching": "None",
+                    "writeAcceleratorEnabled": false,
+                    "managedDisk": {
+                        "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/disks/Alex_DataDisk_0"
+                    },
+                    "deleteOption": "Detach",
+                    "toBeDetached": false
+                }
+            ]
+        },
+        "osProfile": {
+            "computerName": "Alex",
+            "adminUsername": "azureuser",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": true,
+                "ssh": {
+                    "publicKeys": [
+                        {
+                            "path": "/home/azureuser/.ssh/authorized_keys",
+                            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCl/8T95kx14NOUnXb+CQzzHCCaLrlkJrpXmIvdYS1x7ZjI4AO548Stl3sCqEVKjii7iOwOUsZ4Re8URChAAz24jD0sHCMHzScT9mZEUflQu6+YOJaf9sF/1LerozbTxyRv5b1G7pCz2tqL7NB2QlY9t7j5DRl0FgwnHTL1IZvFDwx1gJt8DRvdT+9i6Gk+g0rhepUxAsrASWRbK4moKmKHIpDLsV/8sqphwgieLcWeI1eyZOQsw+RrAQ9ba9wnXjIy1FS8cwMG7d/QWvxGo/6iENuoeHSXzsTC6a+NdApW4dq2rWSUixNalCkVFWh735cKYm3h9Q92T3dFuj1vU50NVKE0/+BLhTHuqoS9AFh636zHpxU/zPTSbqRJcY4VVxelk4ZOKtsk6DEfN3pLIhAZJYvF/V/Jiz/HIE/B7EWjADCT4qliCu9SQ+FWL1UXN9qVWy5NnugzFI+rtJZlD980/B9caqcBFpOKvipOt9Ikx6cdDZztueN5x0LPei4bapk= generated-by-azure"
+                        }
+                    ]
+                },
+                "provisionVMAgent": true,
+                "patchSettings": {
+                    "patchMode": "ImageDefault",
+                    "assessmentMode": "ImageDefault"
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "securityProfile": {
+            "uefiSettings": {
+                "secureBootEnabled": true,
+                "vTpmEnabled": true
+            },
+            "securityType": "TrustedLaunch"
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/networkInterfaces/alex707",
+                    "properties": {
+                        "deleteOption": "Delete"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "provisioningState": "Succeeded",
+        "priority": "Spot",
+        "evictionPolicy": "Deallocate",
+        "billingProfile": {
+            "maxPrice": 0.01333
+        }
+    },
+    "resources": [
+        {
+            "name": "AADSSHLoginForLinux",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex/extensions/AADSSHLoginForLinux",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus3",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.ActiveDirectory",
+                "type": "AADSSHLoginForLinux",
+                "typeHandlerVersion": "1.0"
+            }
+        },
+        {
+            "name": "AzureMonitorLinuxAgent",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex/extensions/AzureMonitorLinuxAgent",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus3",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.Monitor",
+                "type": "AzureMonitorLinuxAgent",
+                "typeHandlerVersion": "1.0"
+            }
+        },
+        {
+            "name": "AzurePolicyforLinux",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex/extensions/AzurePolicyforLinux",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus3",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "enableAutomaticUpgrade": true,
+                "publisher": "Microsoft.GuestConfiguration",
+                "type": "ConfigurationforLinux",
+                "typeHandlerVersion": "1.0",
+                "settings": {}
+            }
+        },
+        {
+            "name": "GuestAttestation",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex/extensions/GuestAttestation",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus3",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.Security.LinuxAttestation",
+                "type": "GuestAttestation",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "AttestationConfig": {
+                        "MaaSettings": {
+                            "maaEndpoint": "",
+                            "maaTenantName": "GuestAttestation"
+                        },
+                        "AscSettings": {
+                            "ascReportingEndpoint": "",
+                            "ascReportingFrequency": ""
+                        },
+                        "useCustomToken": "false",
+                        "disableAlerts": "false"
+                    }
+                }
+            }
+        },
+        {
+            "name": "LinuxAgent.AzureSecurityCenter",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex/extensions/LinuxAgent.AzureSecurityCenter",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus3",
+            "properties": {
+                "autoUpgradeMinorVersion": false,
+                "provisioningState": "Succeeded",
+                "publisher": "Qualys",
+                "type": "LinuxAgent.AzureSecurityCenter",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "LicenseCode": "eyJjaWQiOiIxMzI4MzI2Ny1lYTQ0LTc3MjgtODMyYy0wZDU2MDNiZjcwYjUiLCJhaWQiOiJkNzVjOTQwNi1mZTNhLTRmNDYtYTk3YS1iODdmNWJjZDhlMWMiLCJwd3NVcmwiOiJodHRwczovL3FhZ3B1YmxpYy5xZzMuYXBwcy5xdWFseXMuY29tL0Nsb3VkQWdlbnQvIiwicHdzUG9ydCI6IjQ0MyJ9",
+                    "GrayLabel": {
+                        "CustomerID": "3e95da38-f420-42af-a8dc-f30be07e84e1",
+                        "ResourceID": "cf1b384a-bd81-5fd6-7c9a-7c826105123d"
+                    }
+                }
+            }
+        },
+        {
+            "name": "MDE.Linux",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex/extensions/MDE.Linux",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus3",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "forceUpdateTag": "c46ba8db-b668-418c-9162-ad5aec861be4",
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.AzureDefenderForServers",
+                "type": "MDE.Linux",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "azureResourceId": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/GATEWAY/providers/Microsoft.Compute/virtualMachines/Alex",
+                    "forceReOnboarding": false,
+                    "vNextEnabled": false,
+                    "autoUpdate": true
+                }
+            }
+        },
+        {
+            "name": "OmsAgentForLinux",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex/extensions/OmsAgentForLinux",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus3",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Failed",
+                "enableAutomaticUpgrade": false,
+                "publisher": "Microsoft.EnterpriseCloud.Monitoring",
+                "type": "OmsAgentForLinux",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "workspaceId": "20907f47-a952-4dd6-a78c-778eca8c3acb"
+                }
+            }
+        }
+    ]
+}
