@@ -1,0 +1,38 @@
+{
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/DiscoveryLearning/providers/microsoft.insights/components/DiscoverLearning",
+    "name": "DiscoverLearning",
+    "type": "microsoft.insights/components",
+    "location": "southeastasia",
+    "tags": {
+        "83968350": "1000",
+        "Alexander Petree ": "Owner",
+        "Apetree1001@email.phoenix.edu": "Email Address",
+        "alexander@alexander.omnimicrosoft.com": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "kind": "web",
+    "etag": "\"7f036a83-0000-0200-0000-646297550000\"",
+    "properties": {
+        "ApplicationId": "DiscoverLearning",
+        "AppId": "b519ebf6-9992-4810-9b59-ee0d62f03ac2",
+        "Application_Type": "web",
+        "Flow_Type": "Redfield",
+        "Request_Source": "IbizaWebAppExtensionCreate",
+        "InstrumentationKey": "5c5b61be-0e73-49a6-a091-e5967a3977eb",
+        "ConnectionString": "InstrumentationKey=5c5b61be-0e73-49a6-a091-e5967a3977eb;IngestionEndpoint=https://southeastasia-1.in.applicationinsights.azure.com/;LiveEndpoint=https://southeastasia.livediagnostics.monitor.azure.com/",
+        "Name": "DiscoverLearning",
+        "CreationDate": "2023-04-13T04:06:43.9224334+00:00",
+        "TenantId": "33af1e61-072c-48f1-bd41-b60da094e056",
+        "provisioningState": "Succeeded",
+        "SamplingPercentage": null,
+        "RetentionInDays": 90,
+        "WorkspaceResourceId": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/DefaultResourceGroup-SEA/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-33af1e61-072c-48f1-bd41-b60da094e056-SEA",
+        "IngestionMode": "LogAnalytics",
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled",
+        "Ver": "v2"
+    }
+}
