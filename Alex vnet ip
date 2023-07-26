@@ -1,0 +1,29 @@
+{
+    "name": "Alex-vnet-ip",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/publicIPAddresses/Alex-vnet-ip",
+    "etag": "W/\"3019dda5-b4ab-4547-92f0-d35599934993\"",
+    "location": "westus3",
+    "tags": {
+        "83968350": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "6b3c0d17-5037-404b-91e9-4ea7e40c7131",
+        "ipAddress": "20.118.172.97",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Static",
+        "idleTimeoutInMinutes": 4,
+        "ipTags": [],
+        "ipConfiguration": {
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/bastionHosts/Alex-vnet-bastion/bastionHostIpConfigurations/IpConf"
+        }
+    },
+    "type": "Microsoft.Network/publicIPAddresses",
+    "sku": {
+        "name": "Standard"
+    }
+}
