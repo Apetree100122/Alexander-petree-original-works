@@ -1,0 +1,50 @@
+{
+    "name": "Alex_OsDisk_1_562a05b86e514119aac66482ae7c07ed",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/GATEWAY/providers/Microsoft.Compute/disks/Alex_OsDisk_1_562a05b86e514119aac66482ae7c07ed",
+    "type": "Microsoft.Compute/disks",
+    "location": "westus3",
+    "tags": {
+        "83968350": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "managedBy": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex",
+    "sku": {
+        "name": "Premium_LRS",
+        "tier": "Premium"
+    },
+    "properties": {
+        "osType": "Linux",
+        "hyperVGeneration": "V2",
+        "supportsHibernation": true,
+        "supportedCapabilities": {
+            "acceleratedNetwork": true,
+            "architecture": "x64"
+        },
+        "creationData": {
+            "createOption": "FromImage",
+            "imageReference": {
+                "id": "/Subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/Providers/Microsoft.Compute/Locations/WestUS3/Publishers/canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-jammy/Skus/22_04-lts-gen2/Versions/22.04.202303290"
+            }
+        },
+        "diskSizeGB": 30,
+        "diskIOPSReadWrite": 120,
+        "diskMBpsReadWrite": 25,
+        "encryption": {
+            "type": "EncryptionAtRestWithPlatformKey"
+        },
+        "networkAccessPolicy": "AllowAll",
+        "securityProfile": {
+            "securityType": "TrustedLaunch"
+        },
+        "publicNetworkAccess": "Enabled",
+        "timeCreated": "2023-04-18T22:00:15.0163282+00:00",
+        "provisioningState": "Succeeded",
+        "diskState": "Reserved",
+        "diskSizeBytes": 32213303296,
+        "uniqueId": "562a05b8-6e51-4119-aac6-6482ae7c07ed",
+        "tier": "P4"
+    }
+}
