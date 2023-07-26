@@ -1,0 +1,47 @@
+{
+    "name": "Stained_OsDisk_1_a77c62b490b041519827c317af32e277",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/disks/Stained_OsDisk_1_a77c62b490b041519827c317af32e277",
+    "type": "Microsoft.Compute/disks",
+    "location": "westus",
+    "tags": {
+        "Alexander Petree ": "0",
+        "Apetree1001@email.phoenix.edu": "2"
+    },
+    "managedBy": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Compute/virtualMachines/Stained",
+    "sku": {
+        "name": "Premium_LRS",
+        "tier": "Premium"
+    },
+    "properties": {
+        "osType": "Windows",
+        "hyperVGeneration": "V2",
+        "supportsHibernation": true,
+        "supportedCapabilities": {
+            "acceleratedNetwork": true,
+            "architecture": "x64"
+        },
+        "creationData": {
+            "createOption": "FromImage",
+            "imageReference": {
+                "id": "/Subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/Providers/Microsoft.Compute/Locations/westus/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2022-datacenter-core-g2/Versions/20348.1668.230404"
+            }
+        },
+        "diskSizeGB": 127,
+        "diskIOPSReadWrite": 500,
+        "diskMBpsReadWrite": 100,
+        "encryption": {
+            "type": "EncryptionAtRestWithPlatformKey"
+        },
+        "networkAccessPolicy": "AllowAll",
+        "securityProfile": {
+            "securityType": "TrustedLaunch"
+        },
+        "publicNetworkAccess": "Enabled",
+        "timeCreated": "2023-04-13T05:48:38.8046062+00:00",
+        "provisioningState": "Succeeded",
+        "diskState": "Reserved",
+        "diskSizeBytes": 136367308800,
+        "uniqueId": "a77c62b4-90b0-4151-9827-c317af32e277",
+        "tier": "P10"
+    }
+}
