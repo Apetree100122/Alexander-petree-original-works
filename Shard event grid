@@ -1,0 +1,14 @@
+{
+    "properties": {
+        "provisioningState": "Succeeded",
+        "source": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/shard/providers/microsoft.storage/storageaccounts/shardperfdiag193",
+        "topicType": "microsoft.storage.storageaccounts",
+        "metricResourceId": "5cb4623c-504a-4767-afaf-fc6bd3476599"
+    },
+    "systemData": null,
+    "location": "westus",
+    "tags": null,
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/shard/providers/Microsoft.EventGrid/systemTopics/shardperfdiag193-34985cd4-29af-4955-9bbf-30725baa3f03",
+    "name": "shardperfdiag193-34985cd4-29af-4955-9bbf-30725baa3f03",
+    "type": "Microsoft.EventGrid/systemTopics"
+}
