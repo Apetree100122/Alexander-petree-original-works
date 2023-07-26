@@ -1,0 +1,38 @@
+{
+    "properties": {
+        "customerId": "c8dc486b-0378-433b-b480-33646daa9795",
+        "provisioningState": "Succeeded",
+        "sku": {
+            "name": "pergb2018",
+            "lastSkuUpdate": "2023-04-07T11:28:06.9602688Z"
+        },
+        "retentionInDays": 30,
+        "features": {
+            "legacy": 0,
+            "searchVersion": 1,
+            "enableLogAccessUsingOnlyResourcePermissions": true
+        },
+        "workspaceCapping": {
+            "dailyQuotaGb": -1,
+            "quotaNextResetTime": "2023-05-16T12:00:00Z",
+            "dataIngestionStatus": "SubscriptionSuspended"
+        },
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled",
+        "createdDate": "2023-04-07T11:28:06.9602688Z",
+        "modifiedDate": "2023-05-16T10:19:45.1250534Z"
+    },
+    "location": "eastus",
+    "tags": {
+        "83968350": "1000",
+        "alexander@alexander.omnimicrosoft.com": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Governace/providers/Microsoft.OperationalInsights/workspaces/Apetree1001",
+    "name": "Apetree1001",
+    "type": "Microsoft.OperationalInsights/workspaces",
+    "etag": "\"0100b32a-0000-0100-0000-6450d70a0000\""
+}
