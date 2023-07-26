@@ -1,0 +1,32 @@
+{
+    "identity": {
+        "type": "None"
+    },
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourcegroups/storage-plus/providers/microsoft.insights/workbooks/27621b71-9de4-435c-ad86-9030f8a8abcd",
+    "name": "27621b71-9de4-435c-ad86-9030f8a8abcd",
+    "type": "microsoft.insights/workbooks",
+    "location": "eastus",
+    "tags": {
+        "83968350": "1000",
+        "hidden-workitemworkbook": "GitHub",
+        "hidden-title": "Discovery learning",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "kind": "shared",
+    "etag": "\"cf01218b-0000-0100-0000-6450d70a0000\"",
+    "properties": {
+        "displayName": "Discovery learning",
+        "serializedData": null,
+        "version": "1.0",
+        "category": "workItems",
+        "userId": "0e3d0b02-31be-4bee-89e2-20f40df4d4fc",
+        "sourceId": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourcegroups/storage-plus/providers/microsoft.insights/components/discoverstorage",
+        "timeModified": "2023-05-02T09:25:30.1955151Z",
+        "tags": null,
+        "storageUri": null,
+        "revision": "70317b2263ce42cdbd3eaa616faf2494"
+    }
+}
