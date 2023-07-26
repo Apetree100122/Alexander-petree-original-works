@@ -1,0 +1,62 @@
+{
+    "id": "/subscriptions/c8a479bd-4acc-4da2-9bee-8f689fe5f73d/resourceGroups/AzureQuantum/providers/Microsoft.Quantum/Workspaces/Quantisphere",
+    "name": "Quantisphere",
+    "type": "microsoft.quantum/workspaces",
+    "location": "westus",
+    "tags": {
+        "License ": "GNU 3",
+        "Contributor ": "482E2E74D21ED74F",
+        "Support number ": "9514002505",
+        "Support email": "Apetree1001@email.phoenix.edu",
+        "ID SELLER": "1681829024810",
+        "AcP": "48E2E74D21E4D74F"
+    },
+    "systemData": {
+        "createdBy": "Apetree1001@email.phoenix.edu",
+        "createdByType": "User",
+        "createdAt": "2023-07-25T13:20:42.5877102Z",
+        "lastModifiedBy": "Apetree1001@email.phoenix.edu",
+        "lastModifiedByType": "User",
+        "lastModifiedAt": "2023-07-25T13:20:42.5877102Z"
+    },
+    "identity": {
+        "principalId": "62ecbb08-992c-4795-b5ee-cf082376624f",
+        "tenantId": "47ea4cec-fe0f-48f5-9a09-a2f957278304",
+        "type": "SystemAssigned"
+    },
+    "properties": {
+        "providers": [
+            {
+                "providerId": "rigetti",
+                "providerSku": "azure-quantum-credits",
+                "applicationName": "Quantisphere-rigetti",
+                "provisioningState": "Succeeded",
+                "resourceUsageId": "f50422bd-a3a9-4f3b-95b7-2b9a2c24d659"
+            },
+            {
+                "providerId": "quantinuum",
+                "providerSku": "credits1",
+                "applicationName": "Quantisphere-quantinuum",
+                "provisioningState": "Succeeded",
+                "resourceUsageId": "d57235c9-d154-48f1-bea4-ae9d8ae926e1"
+            },
+            {
+                "providerId": "microsoft-qc",
+                "providerSku": "learn-and-develop",
+                "applicationName": "Quantisphere-microsoft-qc",
+                "provisioningState": "Succeeded"
+            },
+            {
+                "providerId": "ionq",
+                "providerSku": "pay-as-you-go-cred",
+                "applicationName": "Quantisphere-ionq",
+                "provisioningState": "Succeeded",
+                "resourceUsageId": "8598bfaa-bff9-4165-9330-1edfd14871f4"
+            }
+        ],
+        "provisioningState": "Succeeded",
+        "usable": "Yes",
+        "storageAccount": "/subscriptions/c8a479bd-4acc-4da2-9bee-8f689fe5f73d/resourceGroups/AzureQuantum/providers/Microsoft.Storage/storageAccounts/quantisphere",
+        "endpointUri": "https://Quantisphere.westus.quantum.azure.com"
+    }
+}
