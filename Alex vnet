@@ -1,0 +1,55 @@
+{
+    "name": "Alex-vnet",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/virtualNetworks/Alex-vnet",
+    "etag": "W/\"e080b1ff-a171-4ff7-aba7-6008f4a50bcd\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "westus3",
+    "tags": {
+        "83968350": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "7d6c0dc8-390a-47de-b70c-8e693e252fb4",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.2.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/virtualNetworks/Alex-vnet/subnets/default",
+                "etag": "W/\"e080b1ff-a171-4ff7-aba7-6008f4a50bcd\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.2.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/networkInterfaces/alex707/ipConfigurations/ipconfig1"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "AzureBastionSubnet",
+                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/virtualNetworks/Alex-vnet/subnets/AzureBastionSubnet",
+                "etag": "W/\"e080b1ff-a171-4ff7-aba7-6008f4a50bcd\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.2.1.0/26",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/bastionHosts/Alex-vnet-bastion/bastionHostIpConfigurations/IpConf"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
