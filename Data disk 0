@@ -1,0 +1,41 @@
+{
+    "name": "Alex_DataDisk_0",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/disks/Alex_DataDisk_0",
+    "type": "Microsoft.Compute/disks",
+    "location": "westus3",
+    "tags": {
+        "83968350": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "managedBy": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex",
+    "sku": {
+        "name": "Premium_LRS",
+        "tier": "Premium"
+    },
+    "managedByExtended": [
+        "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Compute/virtualMachines/Alex"
+    ],
+    "properties": {
+        "creationData": {
+            "createOption": "Empty"
+        },
+        "diskSizeGB": 16384,
+        "diskIOPSReadWrite": 18000,
+        "diskMBpsReadWrite": 750,
+        "encryption": {
+            "type": "EncryptionAtRestWithPlatformKey"
+        },
+        "maxShares": 2,
+        "networkAccessPolicy": "AllowAll",
+        "publicNetworkAccess": "Enabled",
+        "timeCreated": "2023-04-18T21:59:57.7037561+00:00",
+        "provisioningState": "Succeeded",
+        "diskState": "Reserved",
+        "diskSizeBytes": 17592186044416,
+        "uniqueId": "12475d9f-66f7-48b8-b4c0-36a6ac85ba14",
+        "tier": "P70"
+    }
+}
