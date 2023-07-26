@@ -1,0 +1,2127 @@
+{
+  "Attachments": true,
+  "VerifiableCredentials": {
+    "docsId": "ddadd335-9783-4c48-914f-93df3b9cb45e",
+    "userCredentials": []
+  },
+  "Challenges": {
+    "Table": [
+      {
+        "ProfileID": 11219218,
+        "CreatedDate": "2023-05-04T20:59:13.260584",
+        "LastUpdatedDate": "2023-06-29T16:34:29.7636814",
+        "FirstName": "",
+        "LastName": "",
+        "Email": "apetree1001@email.phoenix.edu",
+        "CompanyName": null,
+        "CountryName": null,
+        "LearnUserName": "Alexanderpetree",
+        "LearnUserID": "ddadd335-9783-4c48-914f-93df3b9cb45e",
+        "PDCId": null
+      }
+    ]
+  },
+  "Lists": [
+    {
+      "id": "bookmarks",
+      "userId": "ddadd335-9783-4c48-914f-93df3b9cb45e",
+      "name": "Bookmarks",
+      "description": "",
+      "type": "bookmarks",
+      "lastModified": "2023-07-26T19:01:59+00:00",
+      "totalItems": 6,
+      "items": [
+        {
+          "id": "bookmarks_docs-8B4DE955669468F12142E6E85CB4175C",
+          "listId": "bookmarks",
+          "type": "docs",
+          "data": {
+            "url": "/training/modules/learn-continuous-integration-github-actions/2-describe-continuous-integration-with-actions",
+            "rawUrl": "https://learn.microsoft.com/en-us/training/modules/learn-continuous-integration-github-actions/2-describe-continuous-integration-with-actions",
+            "title": "Describe continuous integration with actions - Training",
+            "docId": "b031956e-05bd-c422-0052-4a98afde43f8",
+            "docVIId": "5b978647-b2f2-692e-965a-1d303d30ac53",
+            "pageType": "learn",
+            "pageKind": "unit",
+            "uid": "learn.wwl.learn-continuous-integration-github-actions.describe-continuous-integration-with-actions",
+            "challengeId": null,
+            "eventUid": "",
+            "durationInMillisecond": null,
+            "showId": ""
+          },
+          "lastModified": "2023-07-26T19:01:59+00:00"
+        },
+        {
+          "id": "bookmarks_docs-F476A15462A896050CC01012C5264E95",
+          "listId": "bookmarks",
+          "type": "docs",
+          "data": {
+            "url": "/training/modules/m365-compliance-insider-manage-insider-risk/forensic-evidence",
+            "rawUrl": "https://learn.microsoft.com/en-us/training/modules/m365-compliance-insider-manage-insider-risk/forensic-evidence",
+            "title": "Manage insider risk management forensic evidence - Training",
+            "docId": "4febe6ce-f9b2-0225-7d8f-713f1264a46a",
+            "docVIId": "ceff8df7-70ea-f473-946a-b2bda898dec7",
+            "pageType": "learn",
+            "pageKind": "unit",
+            "uid": "learn-m365.m365-compliance-insider-manage-insider-risk.forensic-evidence",
+            "challengeId": null,
+            "eventUid": "",
+            "durationInMillisecond": null,
+            "showId": ""
+          },
+          "lastModified": "2023-07-26T18:57:07+00:00"
+        },
+        {
+          "id": "bookmarks_docs-FED3D7F27998D686D3AC2376596E1DCF",
+          "listId": "bookmarks",
+          "type": "docs",
+          "data": {
+            "url": "/training/modules/m365-compliance-insider-manage-insider-risk/introduction",
+            "rawUrl": "https://learn.microsoft.com/en-us/training/modules/m365-compliance-insider-manage-insider-risk/introduction",
+            "title": "Introduction to managing insider risk policies - Training",
+            "docId": "85cd4073-fba2-ba2c-2e36-511e22bb3666",
+            "docVIId": "7b416da1-7335-f788-ddb3-7396528c7ac1",
+            "pageType": "learn",
+            "pageKind": "unit",
+            "uid": "learn-m365.m365-compliance-insider-manage-insider-risk.introduction",
+            "challengeId": null,
+            "eventUid": "",
+            "durationInMillisecond": null,
+            "showId": ""
+          },
+          "lastModified": "2023-07-26T18:56:23+00:00"
+        },
+        {
+          "id": "bookmarks_docs-292352477CB69169DADE22D4A156DF6C",
+          "listId": "bookmarks",
+          "type": "docs",
+          "data": {
+            "url": "/training/modules/row-level-security-power-bi/1-introduction",
+            "rawUrl": "https://learn.microsoft.com/en-us/training/modules/row-level-security-power-bi/1-introduction",
+            "title": "Introduction - Training",
+            "docId": "a58c236b-d440-bf86-671c-abe570d48b29",
+            "docVIId": "1adc2112-6622-02d8-613e-fd69d1514ae2",
+            "pageType": "learn",
+            "pageKind": "unit",
+            "uid": "learn-bizapps.row-level-security-power-bi.1-introduction",
+            "challengeId": null,
+            "eventUid": "",
+            "durationInMillisecond": null,
+            "showId": ""
+          },
+          "lastModified": "2023-07-22T06:49:12+00:00"
+        },
+        {
+          "id": "bookmarks_docs-5918C7A24667955EF0EB98AF8770A896",
+          "listId": "bookmarks",
+          "type": "docs",
+          "data": {
+            "url": "/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/",
+            "rawUrl": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/",
+            "title": "SC-200: Mitigate threats using Microsoft 365 Defender - Training",
+            "docId": "0dd0cdda-bc89-f0b1-419f-947d94fffa57",
+            "docVIId": "cb19ce27-0133-3518-1028-15177a93bde6",
+            "pageType": "learn",
+            "pageKind": "path",
+            "uid": "learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender",
+            "challengeId": null,
+            "eventUid": "",
+            "durationInMillisecond": null,
+            "showId": ""
+          },
+          "lastModified": "2023-07-22T06:39:51+00:00"
+        },
+        {
+          "id": "bookmarks_docs-3510E2FDF5145FD9CE2C59C27D0DC8AB",
+          "listId": "bookmarks",
+          "type": "docs",
+          "data": {
+            "url": "/training/paths/az-400-implement-ci-azure-pipelines-github-actions/",
+            "rawUrl": "https://learn.microsoft.com/en-us/training/paths/az-400-implement-ci-azure-pipelines-github-actions/",
+            "title": "AZ-400: Implement CI with Azure Pipelines and GitHub Actions - Training",
+            "docId": "2f3622e5-729b-c702-e573-1539383930ed",
+            "docVIId": "2f3622e5-729b-c702-e573-1539383930ed",
+            "pageType": "learn",
+            "pageKind": "path",
+            "uid": "learn.wwl.az-400-implement-ci-azure-pipelines-github-actions",
+            "challengeId": null,
+            "eventUid": "",
+            "durationInMillisecond": null,
+            "showId": ""
+          },
+          "lastModified": "2023-07-12T15:15:51+00:00"
+        }
+      ],
+      "itemCount": 6,
+      "sections": [],
+      "sectionCount": 0,
+      "isOfficial": false,
+      "shouldLocalize": false,
+      "isLocalized": false,
+      "isFallbackLocale": false,
+      "showUserDisplayName": false,
+      "challengeId": null,
+      "studyGuideId": null,
+      "moduleCount": 0,
+      "completedModuleCount": 0,
+      "remainingDuration": 0,
+      "totalDuration": 0
+    }
+  ],
+  "Assessments": {
+    "sessions": [
+      {
+        "assessmentId": "21765fea-dfe6-4bc4-8bb7-db9df5a6f6c0",
+        "version": "20221130050102.746",
+        "branch": "main",
+        "categoriesSelected": {
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded": false,
+          "9b234605-e562-4157-b8cb-6b1142364fe5": true,
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b": true,
+          "e22f69ec-9647-4822-8904-3ea2583f634f": true,
+          "a008af7b-0b10-4cc7-8509-1e2812d0999c": false,
+          "ec155b68-4585-4c4c-95c3-8684946a1c03": true,
+          "60f7c4e2-22ae-4afa-8541-5ccc6b48d296": true,
+          "b63f6f47-7a6c-4c7c-bdab-271d2e6e6d4e": true,
+          "28dc41ee-00c1-4c5b-8cc4-00c07ce95cb9": false
+        },
+        "name": "Azure Landing Zone Review - Apr 5, 2023 - 2:32:28 AM",
+        "responses": [
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.9c08b579-7b10-4e58-bda5-a1e00ff39c28.1",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.9610ddc7-40a6-4bf7-a863-9695a69291d6.2",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.3",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.2",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.5",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.1",
+          "9b234605-e562-4157-b8cb-6b1142364fe5.0ebd48cd-9d0c-4a82-ba19-86c763dc156c.0",
+          "9b234605-e562-4157-b8cb-6b1142364fe5.15be114c-c042-44db-a35c-754de381fb80.4",
+          "9b234605-e562-4157-b8cb-6b1142364fe5.bba398e6-b605-4bc8-9a2b-19f19f0fc50a.2",
+          "9b234605-e562-4157-b8cb-6b1142364fe5.bba398e6-b605-4bc8-9a2b-19f19f0fc50a.1",
+          "9b234605-e562-4157-b8cb-6b1142364fe5.bba398e6-b605-4bc8-9a2b-19f19f0fc50a.0",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.716116e0-38df-411b-a56f-7f11f3bd289c.1",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.716116e0-38df-411b-a56f-7f11f3bd289c.0",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.b84d8352-0c3c-4e56-ac11-adca29ac43ec.0",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.ddbee802-10c8-4f38-add8-5d48ff56ad5d.1",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.3f32c9a1-0f2b-40e8-a41b-e13bb9d1a46e.3",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.9b15ae94-2cde-4a61-b5f5-b1751c9651d7.0",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.db7462a2-8bc4-427e-bd96-8170870e33e9.2",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.3f0a4385-f6a4-4103-9375-8f77c0aa16fd.1",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.173bf92e-2ce8-4e36-9b16-5e14a72761c8.0",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.11",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.1",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.cbd258f8-917f-44b4-9907-5f95169d980e.0",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.8f30f115-8f48-49fa-a13c-17de212f0f58.2",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.924d3b2f-ac8d-473a-985a-121cd9402b49.2",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.924d3b2f-ac8d-473a-985a-121cd9402b49.4",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.32e0b039-2840-4924-86c9-e82baaf54073.1",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.b8335938-ffd8-4096-ad47-b730e049e958.11",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.f7863b17-7afc-4f3a-9106-6a1ee0361c9a.0",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.c86c3b7f-4101-4847-b9cb-b6248fcf4421.2",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.4033e233-cbac-4352-9dfc-f48cc87542d5.5",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.4033e233-cbac-4352-9dfc-f48cc87542d5.4",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.ec4a10f1-ca69-4a47-93c8-48513211efdb.6",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.ec4a10f1-ca69-4a47-93c8-48513211efdb.3",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.ec4a10f1-ca69-4a47-93c8-48513211efdb.2",
+          "ec155b68-4585-4c4c-95c3-8684946a1c03.eafc705b-d582-4b2e-9e0e-71f461c36c67.0",
+          "ec155b68-4585-4c4c-95c3-8684946a1c03.25d9394a-c458-420b-a781-5d69728755ba.4",
+          "ec155b68-4585-4c4c-95c3-8684946a1c03.abd2e3ba-f297-4c83-a32b-1c8e320f5ff2.0",
+          "60f7c4e2-22ae-4afa-8541-5ccc6b48d296.6ac534e4-eaf6-4888-82bc-17e0292a3280.4",
+          "60f7c4e2-22ae-4afa-8541-5ccc6b48d296.ecb93eaf-9c7c-46a0-8454-ce49c55ef685.3",
+          "b63f6f47-7a6c-4c7c-bdab-271d2e6e6d4e.20aa6d0d-a5d6-4544-90bb-437462448cbf.3",
+          "b63f6f47-7a6c-4c7c-bdab-271d2e6e6d4e.c23a0580-dcdf-4661-9423-17125802b342.4"
+        ],
+        "questionnaireToQuestionIdsMap": null,
+        "id": "2bc7b3ec-6505-4740-8527-0d607c48e9ba",
+        "docsId": "ddadd335-9783-4c48-914f-93df3b9cb45e",
+        "status": "completed",
+        "dateModified": "2023-04-23T01:53:46.2435882+00:00",
+        "dateCreated": "2023-04-05T09:33:03.8018876+00:00",
+        "userResponsesUpdatedDate": "2023-04-05T09:35:27.1297972+00:00",
+        "questionTotal": 31,
+        "questionTotalIndex": 30,
+        "questionsAnswered": 31,
+        "organization": null,
+        "locale": "en-us",
+        "questionNotes": {
+          "ec155b68-4585-4c4c-95c3-8684946a1c03.eafc705b-d582-4b2e-9e0e-71f461c36c67": "as i have student benefits ",
+          "ec155b68-4585-4c4c-95c3-8684946a1c03.abd2e3ba-f297-4c83-a32b-1c8e320f5ff2": "i have been working alone for a while rest of team is playing "
+        },
+        "firstSessionId": null,
+        "firstSessionName": null,
+        "isLocked": false,
+        "wasAssessmentVersionUpdated": false,
+        "azureScope": null
+      },
+      {
+        "assessmentId": "Strategic-Migration-Assessment",
+        "version": "20221129183701.482",
+        "branch": "main",
+        "categoriesSelected": {
+          "business": false,
+          "partner": false,
+          "discover-assessment": false,
+          "tco": false,
+          "project-plan": false,
+          "skills": false,
+          "landing-zone": false,
+          "migration-execution": false,
+          "governance": false,
+          "management": false
+        },
+        "name": "Strategic Migration Assessment and Readiness Tool - Apr 7, 2023 - 9:33:21 AM",
+        "responses": [
+          "business.1.A",
+          "business.2.B",
+          "partner.1.A",
+          "discover-assessment.1.A",
+          "discover-assessment.2.A",
+          "discover-assessment.3.A",
+          "tco.1.B",
+          "project-plan.1.A",
+          "project-plan.2.A",
+          "skills.1.B",
+          "landing-zone.1.B",
+          "migration-execution.1.C",
+          "governance.1.A",
+          "governance.2.A",
+          "governance.3.A",
+          "management.1.A",
+          "management.2.A"
+        ],
+        "questionnaireToQuestionIdsMap": null,
+        "id": "a609a351-9081-4f11-87a8-e41207701a4c",
+        "docsId": "ddadd335-9783-4c48-914f-93df3b9cb45e",
+        "status": "completed",
+        "dateModified": "2023-04-07T16:37:29.0475381+00:00",
+        "dateCreated": "2023-04-07T16:33:35.6022433+00:00",
+        "userResponsesUpdatedDate": null,
+        "questionTotal": 17,
+        "questionTotalIndex": 16,
+        "questionsAnswered": 17,
+        "organization": null,
+        "locale": "en-us",
+        "questionNotes": {
+          "business.1": "STILL WORKING ON UNDERSTAND HOW SOME EMPLOYEES JUST DO THINGS TO MAKE IT SEEM LIKE THERE IS NO MORE TRUST ",
+          "project-plan.2": "BUT STILL WORKING OUT SOME KINKS "
+        },
+        "firstSessionId": null,
+        "firstSessionName": null,
+        "isLocked": false,
+        "wasAssessmentVersionUpdated": false,
+        "azureScope": null
+      },
+      {
+        "assessmentId": "5eaa8702-ebdb-44cf-8b40-17c3f3b63330",
+        "version": "20230328231914.752",
+        "branch": "main",
+        "categoriesSelected": {
+          "a2d9e040-647d-42dd-beb6-39c9e626052f": false,
+          "33ece8e7-f914-400b-b924-84a5118e15eb": false,
+          "3b2124f3-5bbc-4fa7-ab55-13575c47b468": false,
+          "cb0f13dd-5a43-4d5b-981d-00b02475ab97": false,
+          "cbc6b996-0c22-4e6c-a0a1-8fa6e0b4bb53": false,
+          "15a171d2-bf0d-48f4-b663-d031935b06ac": false,
+          "00cab767-a805-48fa-bc85-115d69bd26c3": false,
+          "386014b4-1171-40c8-948b-81fad668cd65": false,
+          "fef9e791-3cf7-4535-b902-f934ace6b455": false,
+          "5133e30d-0e29-4955-9ef3-d0d2d3e8cfe8": false,
+          "598a5548-d6cd-4e2b-8609-b55ea7a3ec74": false,
+          "35167b05-e467-4478-be25-a4baed2b5cf6": false,
+          "5f7234d4-939c-4443-a59d-661fe408b169": false,
+          "2f904359-324b-4ee0-a29e-b51dda777804": false,
+          "c4e8fa7d-028c-4ccb-8eeb-5c272cb50a03": false,
+          "e7e502b9-7580-44a6-b298-2892281d90b0": false,
+          "7650c494-5342-4dae-8587-6ee64b19a2c2": false,
+          "28e17f79-f407-43c4-bda8-d478d628125c": false,
+          "8f5639c6-0519-4613-9349-71e586893e78": false,
+          "799dc5f6-3977-435f-950b-34f5f6e6795a": false,
+          "eea99947-affe-4660-8c32-2284baa273dd": false,
+          "e560ea0c-7d8f-4f6f-8262-99b2ba856ac7": false,
+          "69ae7d8b-dd19-43a5-8979-29a2eb5e256f": false,
+          "e6229c67-30e4-4897-b0d0-a8078d358829": false,
+          "f5975b7c-34ec-4413-a64a-0cd826b66381": false,
+          "e1775e9f-3ef7-4445-908a-fbc1c8574caa": false,
+          "c63c57c4-da58-434f-b7c2-a589541dbe70": false,
+          "ea7ee22c-047a-430e-90c5-833d3bb9a154": false,
+          "a970f398-30e6-46d4-8a79-710ad758e31e": false,
+          "668e03b9-89a9-4052-85a3-ca87282ab3c5": false,
+          "8008987d-2e97-475b-8640-4ca6bbb63237": false
+        },
+        "name": "Analytics | Well-Architected Review - Apr 16, 2023 - 4:24:22 AM",
+        "responses": [
+          "a2d9e040-647d-42dd-beb6-39c9e626052f.aba545cf-4c32-4389-b23c-9301bf5ee812.1",
+          "a2d9e040-647d-42dd-beb6-39c9e626052f.aba545cf-4c32-4389-b23c-9301bf5ee812.2",
+          "a2d9e040-647d-42dd-beb6-39c9e626052f.aba545cf-4c32-4389-b23c-9301bf5ee812.0",
+          "a2d9e040-647d-42dd-beb6-39c9e626052f.aba545cf-4c32-4389-b23c-9301bf5ee812.3",
+          "a2d9e040-647d-42dd-beb6-39c9e626052f.702ed9af-aa19-49d8-bcd5-e1ae86c462b4.2",
+          "a2d9e040-647d-42dd-beb6-39c9e626052f.702ed9af-aa19-49d8-bcd5-e1ae86c462b4.0",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.24c4af45-f6d1-49d8-a7dd-d78344f300f6.B",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.24c4af45-f6d1-49d8-a7dd-d78344f300f6.A",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.61649f1d-cc3d-4876-b2f0-1591271089ec.B",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.61649f1d-cc3d-4876-b2f0-1591271089ec.A",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.f790ebbb-7349-4b29-9aa8-d922101db33e.B",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.f790ebbb-7349-4b29-9aa8-d922101db33e.A",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.425ee68c-5713-4ef9-a3b9-97a70ac8a440.C",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.425ee68c-5713-4ef9-a3b9-97a70ac8a440.A",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.e30914dc-2946-47ec-9508-78dfe51f3588.B",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.e30914dc-2946-47ec-9508-78dfe51f3588.A",
+          "33ece8e7-f914-400b-b924-84a5118e15eb.e30914dc-2946-47ec-9508-78dfe51f3588.C",
+          "cb0f13dd-5a43-4d5b-981d-00b02475ab97.ecad703d-0b35-4d83-9287-85246c4ff9fb.D",
+          "cb0f13dd-5a43-4d5b-981d-00b02475ab97.ecad703d-0b35-4d83-9287-85246c4ff9fb.E",
+          "cb0f13dd-5a43-4d5b-981d-00b02475ab97.ecad703d-0b35-4d83-9287-85246c4ff9fb.B",
+          "cb0f13dd-5a43-4d5b-981d-00b02475ab97.f1123a5d-0110-42b8-92b1-dd27e663a7c5.B",
+          "cb0f13dd-5a43-4d5b-981d-00b02475ab97.75b07a46-36b8-4efd-bc08-d8e6365b4c39.A",
+          "00cab767-a805-48fa-bc85-115d69bd26c3.2afff1bd-8170-4f74-b20b-5f6fbb75f39d.1",
+          "00cab767-a805-48fa-bc85-115d69bd26c3.2afff1bd-8170-4f74-b20b-5f6fbb75f39d.2",
+          "00cab767-a805-48fa-bc85-115d69bd26c3.b41c52c0-a27c-444b-a7f0-929595ee19e2.1",
+          "00cab767-a805-48fa-bc85-115d69bd26c3.75c0b622-b849-4ab1-a39e-733b2cd671cf.1",
+          "00cab767-a805-48fa-bc85-115d69bd26c3.3fcf8ddb-6bfd-49b5-a0ac-adc3d83fe533.4",
+          "00cab767-a805-48fa-bc85-115d69bd26c3.3fcf8ddb-6bfd-49b5-a0ac-adc3d83fe533.0",
+          "fef9e791-3cf7-4535-b902-f934ace6b455.05505a46-6ec7-4473-99bf-479a3306cfa2.1",
+          "fef9e791-3cf7-4535-b902-f934ace6b455.05505a46-6ec7-4473-99bf-479a3306cfa2.2",
+          "fef9e791-3cf7-4535-b902-f934ace6b455.05505a46-6ec7-4473-99bf-479a3306cfa2.4",
+          "fef9e791-3cf7-4535-b902-f934ace6b455.f3a65da5-0fff-493b-9685-e50e8603418f.8",
+          "fef9e791-3cf7-4535-b902-f934ace6b455.f3a65da5-0fff-493b-9685-e50e8603418f.4",
+          "fef9e791-3cf7-4535-b902-f934ace6b455.f3a65da5-0fff-493b-9685-e50e8603418f.3",
+          "fef9e791-3cf7-4535-b902-f934ace6b455.f3a65da5-0fff-493b-9685-e50e8603418f.1",
+          "fef9e791-3cf7-4535-b902-f934ace6b455.f3a65da5-0fff-493b-9685-e50e8603418f.0",
+          "35167b05-e467-4478-be25-a4baed2b5cf6.43dc692a-e3c4-44aa-bd63-c6f6de74e0db.3",
+          "35167b05-e467-4478-be25-a4baed2b5cf6.43dc692a-e3c4-44aa-bd63-c6f6de74e0db.1",
+          "35167b05-e467-4478-be25-a4baed2b5cf6.f4253d0a-8bfc-4717-a3e6-b41cd259469b.4",
+          "35167b05-e467-4478-be25-a4baed2b5cf6.f4253d0a-8bfc-4717-a3e6-b41cd259469b.0",
+          "2f904359-324b-4ee0-a29e-b51dda777804.679bba02-5f3a-4d75-badb-0dea78bda0f8.4",
+          "2f904359-324b-4ee0-a29e-b51dda777804.679bba02-5f3a-4d75-badb-0dea78bda0f8.1",
+          "2f904359-324b-4ee0-a29e-b51dda777804.de00a6da-bc84-40a3-aef8-dd0bc9255336.1",
+          "2f904359-324b-4ee0-a29e-b51dda777804.5fcb2e58-b6fc-4a34-8bf4-110b77f07d15.1",
+          "2f904359-324b-4ee0-a29e-b51dda777804.5fcb2e58-b6fc-4a34-8bf4-110b77f07d15.0",
+          "7650c494-5342-4dae-8587-6ee64b19a2c2.01b807ce-c9bd-42f3-b755-2c2697f55880.1",
+          "7650c494-5342-4dae-8587-6ee64b19a2c2.90432afa-7bdc-4d8f-b571-1ccda2e6e718.2",
+          "7650c494-5342-4dae-8587-6ee64b19a2c2.90432afa-7bdc-4d8f-b571-1ccda2e6e718.3",
+          "7650c494-5342-4dae-8587-6ee64b19a2c2.4dde6373-8b80-4bb0-83b6-e33bd19b5b1c.2",
+          "7650c494-5342-4dae-8587-6ee64b19a2c2.4dde6373-8b80-4bb0-83b6-e33bd19b5b1c.1",
+          "7650c494-5342-4dae-8587-6ee64b19a2c2.8381326d-f741-49a8-be31-26b7117bf551.2",
+          "7650c494-5342-4dae-8587-6ee64b19a2c2.8381326d-f741-49a8-be31-26b7117bf551.3",
+          "7650c494-5342-4dae-8587-6ee64b19a2c2.8381326d-f741-49a8-be31-26b7117bf551.1",
+          "8f5639c6-0519-4613-9349-71e586893e78.ba105728-22c5-4508-bddc-1247530e7ff7.4",
+          "8f5639c6-0519-4613-9349-71e586893e78.ba105728-22c5-4508-bddc-1247530e7ff7.7",
+          "8f5639c6-0519-4613-9349-71e586893e78.ba105728-22c5-4508-bddc-1247530e7ff7.8",
+          "8f5639c6-0519-4613-9349-71e586893e78.79d3597e-027f-4aa4-a3af-097562fcce23.1",
+          "8f5639c6-0519-4613-9349-71e586893e78.0e09595d-fa3d-407d-a6bb-d3a569de25f2.3",
+          "8f5639c6-0519-4613-9349-71e586893e78.0e09595d-fa3d-407d-a6bb-d3a569de25f2.0",
+          "8f5639c6-0519-4613-9349-71e586893e78.ace6edae-031f-440b-ad88-573c147194c4.4",
+          "8f5639c6-0519-4613-9349-71e586893e78.ace6edae-031f-440b-ad88-573c147194c4.1",
+          "8f5639c6-0519-4613-9349-71e586893e78.ace6edae-031f-440b-ad88-573c147194c4.0",
+          "8f5639c6-0519-4613-9349-71e586893e78.03622c6b-c6ef-4255-8e32-94681afecb23.2",
+          "8f5639c6-0519-4613-9349-71e586893e78.03622c6b-c6ef-4255-8e32-94681afecb23.3",
+          "8f5639c6-0519-4613-9349-71e586893e78.03622c6b-c6ef-4255-8e32-94681afecb23.4",
+          "8f5639c6-0519-4613-9349-71e586893e78.2148cc0b-5461-45b1-9a1c-b3e187efab13.1"
+        ],
+        "questionnaireToQuestionIdsMap": null,
+        "id": "94110a83-992f-459d-8615-2b627b3bfa57",
+        "docsId": "ddadd335-9783-4c48-914f-93df3b9cb45e",
+        "status": "completed",
+        "dateModified": "2023-04-16T11:33:47.9225048+00:00",
+        "dateCreated": "2023-04-16T11:24:29.9928804+00:00",
+        "userResponsesUpdatedDate": "2023-04-16T11:32:20.3863244+00:00",
+        "questionTotal": 31,
+        "questionTotalIndex": 30,
+        "questionsAnswered": 31,
+        "organization": null,
+        "locale": "en-us",
+        "questionNotes": null,
+        "firstSessionId": null,
+        "firstSessionName": null,
+        "isLocked": false,
+        "wasAssessmentVersionUpdated": false,
+        "azureScope": null
+      },
+      {
+        "assessmentId": "21765fea-dfe6-4bc4-8bb7-db9df5a6f6c0",
+        "version": "20221130050102.746",
+        "branch": "main",
+        "categoriesSelected": {
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded": false,
+          "9b234605-e562-4157-b8cb-6b1142364fe5": true,
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b": true,
+          "e22f69ec-9647-4822-8904-3ea2583f634f": true,
+          "a008af7b-0b10-4cc7-8509-1e2812d0999c": true,
+          "ec155b68-4585-4c4c-95c3-8684946a1c03": true,
+          "60f7c4e2-22ae-4afa-8541-5ccc6b48d296": true,
+          "b63f6f47-7a6c-4c7c-bdab-271d2e6e6d4e": true,
+          "28dc41ee-00c1-4c5b-8cc4-00c07ce95cb9": true
+        },
+        "name": "Azure Landing Zone Review - Apr 23, 2023 - 11:16:36 AM",
+        "responses": [
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.9c08b579-7b10-4e58-bda5-a1e00ff39c28.4",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.9610ddc7-40a6-4bf7-a863-9695a69291d6.2",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.2",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.3",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.4",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.5",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.6",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.7",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.0",
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded.023e31a6-5c7d-4d4a-863a-a8204ba3f9d4.1",
+          "9b234605-e562-4157-b8cb-6b1142364fe5.0ebd48cd-9d0c-4a82-ba19-86c763dc156c.0",
+          "9b234605-e562-4157-b8cb-6b1142364fe5.15be114c-c042-44db-a35c-754de381fb80.2",
+          "9b234605-e562-4157-b8cb-6b1142364fe5.bba398e6-b605-4bc8-9a2b-19f19f0fc50a.1",
+          "9b234605-e562-4157-b8cb-6b1142364fe5.bba398e6-b605-4bc8-9a2b-19f19f0fc50a.0",
+          "9b234605-e562-4157-b8cb-6b1142364fe5.bba398e6-b605-4bc8-9a2b-19f19f0fc50a.2",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.716116e0-38df-411b-a56f-7f11f3bd289c.7",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.716116e0-38df-411b-a56f-7f11f3bd289c.6",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.716116e0-38df-411b-a56f-7f11f3bd289c.5",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.716116e0-38df-411b-a56f-7f11f3bd289c.4",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.716116e0-38df-411b-a56f-7f11f3bd289c.2",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.716116e0-38df-411b-a56f-7f11f3bd289c.3",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.716116e0-38df-411b-a56f-7f11f3bd289c.0",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.716116e0-38df-411b-a56f-7f11f3bd289c.1",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.b84d8352-0c3c-4e56-ac11-adca29ac43ec.0",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.ddbee802-10c8-4f38-add8-5d48ff56ad5d.1",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.3f32c9a1-0f2b-40e8-a41b-e13bb9d1a46e.4",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.9b15ae94-2cde-4a61-b5f5-b1751c9651d7.3",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.db7462a2-8bc4-427e-bd96-8170870e33e9.3",
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b.3f0a4385-f6a4-4103-9375-8f77c0aa16fd.2",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.173bf92e-2ce8-4e36-9b16-5e14a72761c8.10",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.173bf92e-2ce8-4e36-9b16-5e14a72761c8.9",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.173bf92e-2ce8-4e36-9b16-5e14a72761c8.7",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.173bf92e-2ce8-4e36-9b16-5e14a72761c8.5",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.173bf92e-2ce8-4e36-9b16-5e14a72761c8.1",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.173bf92e-2ce8-4e36-9b16-5e14a72761c8.0",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.173bf92e-2ce8-4e36-9b16-5e14a72761c8.4",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.13",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.15",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.10",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.9",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.7",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.3",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.1",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.5",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.5cde8ce6-b8c2-4130-a736-2bfa22eca47c.0",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.cbd258f8-917f-44b4-9907-5f95169d980e.6",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.cbd258f8-917f-44b4-9907-5f95169d980e.7",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.cbd258f8-917f-44b4-9907-5f95169d980e.4",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.cbd258f8-917f-44b4-9907-5f95169d980e.2",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.cbd258f8-917f-44b4-9907-5f95169d980e.0",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.8f30f115-8f48-49fa-a13c-17de212f0f58.3",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.8f30f115-8f48-49fa-a13c-17de212f0f58.0",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.924d3b2f-ac8d-473a-985a-121cd9402b49.4",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.924d3b2f-ac8d-473a-985a-121cd9402b49.2",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.924d3b2f-ac8d-473a-985a-121cd9402b49.1",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.924d3b2f-ac8d-473a-985a-121cd9402b49.0",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.32e0b039-2840-4924-86c9-e82baaf54073.2",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.b8335938-ffd8-4096-ad47-b730e049e958.12",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.f7863b17-7afc-4f3a-9106-6a1ee0361c9a.1",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.f7863b17-7afc-4f3a-9106-6a1ee0361c9a.2",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.f7863b17-7afc-4f3a-9106-6a1ee0361c9a.3",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.c86c3b7f-4101-4847-b9cb-b6248fcf4421.1",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.c86c3b7f-4101-4847-b9cb-b6248fcf4421.2",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.4033e233-cbac-4352-9dfc-f48cc87542d5.1",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.4033e233-cbac-4352-9dfc-f48cc87542d5.0",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.4033e233-cbac-4352-9dfc-f48cc87542d5.3",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.4033e233-cbac-4352-9dfc-f48cc87542d5.4",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.4033e233-cbac-4352-9dfc-f48cc87542d5.5",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.ec4a10f1-ca69-4a47-93c8-48513211efdb.6",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.ec4a10f1-ca69-4a47-93c8-48513211efdb.4",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.ec4a10f1-ca69-4a47-93c8-48513211efdb.3",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.ec4a10f1-ca69-4a47-93c8-48513211efdb.2",
+          "e22f69ec-9647-4822-8904-3ea2583f634f.ec4a10f1-ca69-4a47-93c8-48513211efdb.1",
+          "a008af7b-0b10-4cc7-8509-1e2812d0999c.1f61eb4e-a7de-4056-9d0b-8cd417ea154f.4",
+          "a008af7b-0b10-4cc7-8509-1e2812d0999c.a17622a8-84f0-4b36-aeaf-40613b651fc2.3",
+          "a008af7b-0b10-4cc7-8509-1e2812d0999c.73cfa52c-95f2-4117-9910-fc1dad40e7c4.2",
+          "ec155b68-4585-4c4c-95c3-8684946a1c03.eafc705b-d582-4b2e-9e0e-71f461c36c67.4",
+          "ec155b68-4585-4c4c-95c3-8684946a1c03.25d9394a-c458-420b-a781-5d69728755ba.3",
+          "ec155b68-4585-4c4c-95c3-8684946a1c03.abd2e3ba-f297-4c83-a32b-1c8e320f5ff2.4",
+          "60f7c4e2-22ae-4afa-8541-5ccc6b48d296.6ac534e4-eaf6-4888-82bc-17e0292a3280.3",
+          "60f7c4e2-22ae-4afa-8541-5ccc6b48d296.ecb93eaf-9c7c-46a0-8454-ce49c55ef685.4",
+          "b63f6f47-7a6c-4c7c-bdab-271d2e6e6d4e.20aa6d0d-a5d6-4544-90bb-437462448cbf.2",
+          "b63f6f47-7a6c-4c7c-bdab-271d2e6e6d4e.c23a0580-dcdf-4661-9423-17125802b342.3",
+          "28dc41ee-00c1-4c5b-8cc4-00c07ce95cb9.9c2f76b2-b283-40e5-a400-7988a5a1952b.3",
+          "28dc41ee-00c1-4c5b-8cc4-00c07ce95cb9.6195a834-4f1f-422e-9d28-dab1c3b0266c.1",
+          "28dc41ee-00c1-4c5b-8cc4-00c07ce95cb9.c9e565e1-3b57-40d8-a9d3-f17160904069.1",
+          "28dc41ee-00c1-4c5b-8cc4-00c07ce95cb9.ff409272-0ead-4849-86ac-66e590a6b197.2"
+        ],
+        "questionnaireToQuestionIdsMap": null,
+        "id": "48021df1-afa1-434a-8945-60b32992b9a9",
+        "docsId": "ddadd335-9783-4c48-914f-93df3b9cb45e",
+        "status": "completed",
+        "dateModified": "2023-04-23T18:24:21.6627341+00:00",
+        "dateCreated": "2023-04-23T18:16:48.6814961+00:00",
+        "userResponsesUpdatedDate": null,
+        "questionTotal": 38,
+        "questionTotalIndex": 37,
+        "questionsAnswered": 38,
+        "organization": null,
+        "locale": "en-us",
+        "questionNotes": {
+          "9b234605-e562-4157-b8cb-6b1142364fe5.0ebd48cd-9d0c-4a82-ba19-86c763dc156c": "I would pick csp and mca as well as payg because i need to sign a new agreement as i cant leave uopx as i am alumni i didnt sign up the 1st time with them with my partnership i signed up by myseld "
+        },
+        "firstSessionId": null,
+        "firstSessionName": null,
+        "isLocked": false,
+        "wasAssessmentVersionUpdated": false,
+        "azureScope": null
+      },
+      {
+        "assessmentId": "21765fea-dfe6-4bc4-8bb7-db9df5a6f6c0",
+        "version": "20221130050102.746",
+        "branch": "main",
+        "categoriesSelected": {
+          "8fb33ea0-636d-405c-a075-1bef55ac9ded": false,
+          "9b234605-e562-4157-b8cb-6b1142364fe5": false,
+          "e3e3b27e-37d4-4985-ab1a-f43bf20dcf0b": false,
+          "e22f69ec-9647-4822-8904-3ea2583f634f": false,
+          "a008af7b-0b10-4cc7-8509-1e2812d0999c": false,
+          "ec155b68-4585-4c4c-95c3-8684946a1c03": false,
+          "60f7c4e2-22ae-4afa-8541-5ccc6b48d296": false,
+          "b63f6f47-7a6c-4c7c-bdab-271d2e6e6d4e": false,
+          "28dc41ee-00c1-4c5b-8cc4-00c07ce95cb9": false
+        },
+        "name": "Azure Landing Zone Review - Apr 25, 2023 - 2:43:36 AM",
+        "responses": [],
+        "questionnaireToQuestionIdsMap": null,
+        "id": "22bd599b-e4e9-4bff-b8aa-178b32b94df9",
+        "docsId": "ddadd335-9783-4c48-914f-93df3b9cb45e",
+        "status": "in-progress",
+        "dateModified": "2023-04-25T09:43:36.791442+00:00",
+        "dateCreated": "2023-04-25T09:43:36.791442+00:00",
+        "userResponsesUpdatedDate": null,
+        "questionTotal": 3,
+        "questionTotalIndex": 0,
+        "questionsAnswered": 0,
+        "organization": null,
+        "locale": "en-us",
+        "questionNotes": null,
+        "firstSessionId": null,
+        "firstSessionName": null,
+        "isLocked": false,
+        "wasAssessmentVersionUpdated": false,
+        "azureScope": null
+      },
+      {
+        "assessmentId": "8fefc6d5-97ac-42b3-8e97-d82701e55bab",
+        "version": "20221129183152.221",
+        "branch": "main",
+        "categoriesSelected": {
+          "09f5210e-5b3d-45a4-a90c-e4956e955f9d": true,
+          "b9989cce-60f3-470a-9b48-f88a58702735": false,
+          "804d071d-09ec-41b3-b74e-52a6e39a1338": false,
+          "e530ecbe-8907-4412-81e2-f8b8c967be88": false,
+          "85fccb4c-167c-41e9-9549-766567282a30": false,
+          "64c69b3b-8f65-47f6-92ab-03aa1a3a6b4b": false
+        },
+        "name": "Cloud Adoption Strategy Evaluator - Jul 11, 2023 - 6:47:03 PM1",
+        "responses": [],
+        "questionnaireToQuestionIdsMap": {},
+        "id": "0a812c95-3d50-4241-bd65-1417278f9bc3",
+        "docsId": "ddadd335-9783-4c48-914f-93df3b9cb45e",
+        "status": "in-progress",
+        "dateModified": "2023-07-12T01:47:34.5298066+00:00",
+        "dateCreated": "2023-07-12T01:47:34.5298066+00:00",
+        "userResponsesUpdatedDate": "2023-07-12T01:47:34.5298064+00:00",
+        "questionTotal": 0,
+        "questionTotalIndex": 0,
+        "questionsAnswered": 0,
+        "organization": null,
+        "locale": "en-us",
+        "questionNotes": null,
+        "firstSessionId": null,
+        "firstSessionName": null,
+        "isLocked": false,
+        "wasAssessmentVersionUpdated": false,
+        "azureScope": null
+      },
+      {
+        "assessmentId": "50adbf76-60fb-47ce-a787-f9d5f52f6a48",
+        "version": "20221208220713.181",
+        "branch": "main",
+        "categoriesSelected": {
+          "6dd5ab55-d188-4f80-920e-f8ef24567ef3": true,
+          "85d7d12f-9837-4196-9736-7d6af9e18646": true,
+          "346c93a7-444e-42b4-8ce2-50ea6853fe1b": true,
+          "4dfcf7b1-00e1-4648-92a6-1226db9bb015": true,
+          "4a4d4768-b128-47e0-a137-937a8dd791a3": true,
+          "2ebec64a-99d4-4c09-ad11-0aa5d743488e": true,
+          "c778130c-f639-427a-a0fe-3be24d32b415": true,
+          "0aefceb7-142a-4fda-b59d-ed2df1a6628e": true,
+          "bce41a9a-19a5-4b72-bd32-c10e1144e44e": true,
+          "cae00f72-6df1-4cb5-baed-3bea802485fe": true
+        },
+        "name": "App and Data Modernization Readiness Tool - Jul 23, 2023 - 1:00:06 PM",
+        "responses": [
+          "6dd5ab55-d188-4f80-920e-f8ef24567ef3.c4ad71fd-4d8a-4c70-9c4f-2af6c931b899.9",
+          "6dd5ab55-d188-4f80-920e-f8ef24567ef3.9edbff4d-eda4-4ab8-b4f9-e3559c3437bf.0",
+          "6dd5ab55-d188-4f80-920e-f8ef24567ef3.e21faeba-038f-4174-8d82-cc8a6793f0d6.1",
+          "85d7d12f-9837-4196-9736-7d6af9e18646.193820f9-ac89-4d97-ad2b-51f0c86d9f3c.3",
+          "85d7d12f-9837-4196-9736-7d6af9e18646.193820f9-ac89-4d97-ad2b-51f0c86d9f3c.1",
+          "85d7d12f-9837-4196-9736-7d6af9e18646.193820f9-ac89-4d97-ad2b-51f0c86d9f3c.0",
+          "85d7d12f-9837-4196-9736-7d6af9e18646.5f2a250f-03dd-41bb-901a-5c53bbaed9d2.0",
+          "85d7d12f-9837-4196-9736-7d6af9e18646.5f2a250f-03dd-41bb-901a-5c53bbaed9d2.1",
+          "85d7d12f-9837-4196-9736-7d6af9e18646.5f2a250f-03dd-41bb-901a-5c53bbaed9d2.2",
+          "85d7d12f-9837-4196-9736-7d6af9e18646.5f2a250f-03dd-41bb-901a-5c53bbaed9d2.3",
+          "85d7d12f-9837-4196-9736-7d6af9e18646.5f2a250f-03dd-41bb-901a-5c53bbaed9d2.5",
+          "85d7d12f-9837-4196-9736-7d6af9e18646.5f2a250f-03dd-41bb-901a-5c53bbaed9d2.6",
+          "346c93a7-444e-42b4-8ce2-50ea6853fe1b.a9df3c61-37e7-48d0-806e-921fba448254.3",
+          "346c93a7-444e-42b4-8ce2-50ea6853fe1b.b3b70a81-cb58-4282-a80f-dae16edf6ee6.9",
+          "4dfcf7b1-00e1-4648-92a6-1226db9bb015.b5183878-393b-4b5d-824f-02d4431db3ca.4",
+          "4dfcf7b1-00e1-4648-92a6-1226db9bb015.b9236202-995f-45aa-9026-6aa7483bf954.0",
+          "4a4d4768-b128-47e0-a137-937a8dd791a3.7fb25242-00c0-4f6e-a31e-d4463c16d548.1",
+          "4a4d4768-b128-47e0-a137-937a8dd791a3.ac459ed1-c689-46c3-8a4c-dc1d614eb460.0",
+          "2ebec64a-99d4-4c09-ad11-0aa5d743488e.662de52b-7dfc-4834-bf65-9395c25a1bea.0",
+          "2ebec64a-99d4-4c09-ad11-0aa5d743488e.f83d5d6b-5ad0-4962-a0dc-8e49da01d826.2",
+          "2ebec64a-99d4-4c09-ad11-0aa5d743488e.f83d5d6b-5ad0-4962-a0dc-8e49da01d826.3",
+          "2ebec64a-99d4-4c09-ad11-0aa5d743488e.f83d5d6b-5ad0-4962-a0dc-8e49da01d826.1",
+          "2ebec64a-99d4-4c09-ad11-0aa5d743488e.f83d5d6b-5ad0-4962-a0dc-8e49da01d826.0",
+          "c778130c-f639-427a-a0fe-3be24d32b415.c830d95b-6e21-413f-a4d1-a7c15f9f627d.6",
+          "c778130c-f639-427a-a0fe-3be24d32b415.c830d95b-6e21-413f-a4d1-a7c15f9f627d.4",
+          "c778130c-f639-427a-a0fe-3be24d32b415.c830d95b-6e21-413f-a4d1-a7c15f9f627d.3",
+          "c778130c-f639-427a-a0fe-3be24d32b415.c830d95b-6e21-413f-a4d1-a7c15f9f627d.1",
+          "c778130c-f639-427a-a0fe-3be24d32b415.c830d95b-6e21-413f-a4d1-a7c15f9f627d.0",
+          "c778130c-f639-427a-a0fe-3be24d32b415.c830d95b-6e21-413f-a4d1-a7c15f9f627d.2",
+          "c778130c-f639-427a-a0fe-3be24d32b415.c830d95b-6e21-413f-a4d1-a7c15f9f627d.5",
+          "c778130c-f639-427a-a0fe-3be24d32b415.4ed0553e-7208-4e92-a450-73678a61eb17.4",
+          "c778130c-f639-427a-a0fe-3be24d32b415.4ed0553e-7208-4e92-a450-73678a61eb17.3",
+          "c778130c-f639-427a-a0fe-3be24d32b415.4ed0553e-7208-4e92-a450-73678a61eb17.2",
+          "c778130c-f639-427a-a0fe-3be24d32b415.4ed0553e-7208-4e92-a450-73678a61eb17.5",
+          "0aefceb7-142a-4fda-b59d-ed2df1a6628e.ecb5348d-6975-44ee-812b-4d7dae4345cf.2",
+          "0aefceb7-142a-4fda-b59d-ed2df1a6628e.ecb5348d-6975-44ee-812b-4d7dae4345cf.1",
+          "0aefceb7-142a-4fda-b59d-ed2df1a6628e.b16fe0d7-9dfa-460d-a8c4-8b39cad04240.7",
+          "0aefceb7-142a-4fda-b59d-ed2df1a6628e.7c62b232-14bd-4def-907b-dfeb5c7a6231.3",
+          "0aefceb7-142a-4fda-b59d-ed2df1a6628e.31081a07-6a29-45ac-b635-6b1067ccaaeb.2",
+          "bce41a9a-19a5-4b72-bd32-c10e1144e44e.1e65f328-bdf9-4378-ba8e-cae0f7ad46f2.4",
+          "bce41a9a-19a5-4b72-bd32-c10e1144e44e.bd7cbc0c-f52b-4259-9217-af3a043810d1.3",
+          "bce41a9a-19a5-4b72-bd32-c10e1144e44e.bd7cbc0c-f52b-4259-9217-af3a043810d1.4",
+          "bce41a9a-19a5-4b72-bd32-c10e1144e44e.70709963-40f4-4a66-b9a6-8d800a6b2051.0",
+          "cae00f72-6df1-4cb5-baed-3bea802485fe.aae84b12-4452-4304-aa31-1ba1ee9ee0da.0"
+        ],
+        "questionnaireToQuestionIdsMap": null,
+        "id": "a5c5502c-a174-43be-a9be-b67c04a093df",
+        "docsId": "ddadd335-9783-4c48-914f-93df3b9cb45e",
+        "status": "completed",
+        "dateModified": "2023-07-23T20:12:57.4080263+00:00",
+        "dateCreated": "2023-07-23T20:00:43.7242717+00:00",
+        "userResponsesUpdatedDate": null,
+        "questionTotal": 23,
+        "questionTotalIndex": 22,
+        "questionsAnswered": 23,
+        "organization": null,
+        "locale": "en-us",
+        "questionNotes": null,
+        "firstSessionId": null,
+        "firstSessionName": null,
+        "isLocked": false,
+        "wasAssessmentVersionUpdated": false,
+        "azureScope": null
+      }
+    ],
+    "sessionProviderData": []
+  },
+  "XP": {
+    "totalPoints": 983600,
+    "level": {
+      "levelNumber": 15,
+      "pointsLow": 702400,
+      "pointsHigh": 1020199
+    },
+    "nextLevelNumber": 16,
+    "currentLevelPointsEarned": 281200,
+    "pointsToNextLevel": 36600,
+    "achievements": [
+      {
+        "awardUid": "learn.wwl.az-400-implement-ci-azure-pipelines-github-actions.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-26T19:03:28.9665514Z",
+        "sourceUid": "learn.wwl.az-400-implement-ci-azure-pipelines-github-actions",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.design-container-build-strategy.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-26T19:03:28.9665494Z",
+        "sourceUid": "learn.wwl.design-container-build-strategy",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.learn-continuous-integration-github-actions.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-26T19:02:44.0701514Z",
+        "sourceUid": "learn.wwl.learn-continuous-integration-github-actions",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.introduction-to-github-actions.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-26T19:01:44.7972802Z",
+        "sourceUid": "learn.wwl.introduction-to-github-actions",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.m365-manage-insider-privacy-risk.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-26T19:00:43.8919042Z",
+        "sourceUid": "learn.wwl.m365-manage-insider-privacy-risk",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-m365.m365-compliance-insider-manage-customer-lockbox.badges",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-26T19:00:43.8919019Z",
+        "sourceUid": "learn-m365.m365-compliance-insider-manage-customer-lockbox",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.m365-compliance-insider-implement-privileged-access-management.badges",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-26T19:00:13.4028739Z",
+        "sourceUid": "learn-m365.m365-compliance-insider-implement-privileged-access-management",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.manage-regulatory-privacy-requirements-microsoft-priva.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-26T18:59:40.3814268Z",
+        "sourceUid": "learn.wwl.manage-regulatory-privacy-requirements-microsoft-priva",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.create-information-barriers.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-26T18:58:38.0824209Z",
+        "sourceUid": "learn.wwl.create-information-barriers",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.m365-manage-insider-risk.badges",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-26T18:57:28.6801643Z",
+        "sourceUid": "learn-m365.m365-compliance-insider-manage-insider-risk",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.m365-compliance-insider-prepare-communication-compliance.badges",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-26T00:13:38.1293821Z",
+        "sourceUid": "learn-m365.m365-compliance-insider-prepare-communication-compliance",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.github.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-25T15:23:01.8427677Z",
+        "sourceUid": "learn.github-copilot",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.github.introduction-to-github-copilot-for-business.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-25T15:23:01.8427414Z",
+        "sourceUid": "learn.github.introduction-to-github-copilot-for-business",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.introduction-to-github-copilot.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-25T15:21:16.6544238Z",
+        "sourceUid": "learn.github.introduction-to-github-copilot",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.az-400-implement-secure-continuous-deployment.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-25T14:45:14.5464884Z",
+        "sourceUid": "learn.wwl.az-400-implement-secure-continuous-deployment",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.manage-application-configuration-data.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-25T14:45:14.5464861Z",
+        "sourceUid": "learn.wwl.manage-application-configuration-data",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.integrate-identity-management-systems.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-25T14:41:46.1766138Z",
+        "sourceUid": "learn.wwl.integrate-identity-management-systems",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.implement-testing-progressive-exposure-deployment.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-25T14:40:40.9874522Z",
+        "sourceUid": "learn.wwl.implement-testing-progressive-exposure-deployment",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.implement-canary-releases-dark-launching.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-25T14:39:54.988744Z",
+        "sourceUid": "learn.wwl.implement-canary-releases-dark-launching",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-windows.develop-windows-apps.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-23T19:59:00.0968332Z",
+        "sourceUid": "learn-windows.develop-windows-apps",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-windows.introducing-visual-studio.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-23T19:59:00.0968305Z",
+        "sourceUid": "learn-windows.introducing-visual-studio",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.deploy-run-java-applications-azure-spring-apps.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-23T19:56:49.2945011Z",
+        "sourceUid": "learn.wwl.deploy-run-java-applications-azure-spring-apps",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.enable-monitoring-end-to-end-tracing.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-23T19:56:49.2944985Z",
+        "sourceUid": "learn.wwl.enable-monitoring-end-to-end-tracing",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.migrate-spring-cloud-application-to-azure.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-23T19:56:06.0429228Z",
+        "sourceUid": "learn.wwl.migrate-spring-cloud-application-to-azure",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.plan-java-application-migration-azure-spring-apps.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-23T19:54:54.4679289Z",
+        "sourceUid": "learn.wwl.plan-java-application-migration-azure-spring-apps",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.secure-mysql-database-key-vault-using-private-endpoint.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T07:14:00.6714044Z",
+        "sourceUid": "learn.wwl.secure-mysql-database-key-vault-use-private-endpoint",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.protect-endpoints-using-web-application-firewall.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:56:29.7299388Z",
+        "sourceUid": "learn.wwl.protect-endpoints-use-web-application-firewall",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.configure-azure-event-hubs-azure-spring-apps.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:55:31.1311977Z",
+        "sourceUid": "learn.wwl.configure-azure-event-hubs-azure-spring-apps",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.create-configure-azure-service-bus-azure-spring-apps.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:54:54.902329Z",
+        "sourceUid": "learn.wwl.create-configure-azure-service-bus-azure-spring-apps",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.secure-application-secrets-using-key-vault.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:54:21.9863852Z",
+        "sourceUid": "learn.wwl.secure-application-secrets-use-key-vault",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.manage-workspaces-datasets-power-bi.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:52:11.4541906Z",
+        "sourceUid": "learn-bizapps.manage-workspaces-datasets-power-bi",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-bizapps.visual-data-power-bi.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:52:11.4541884Z",
+        "sourceUid": "learn-bizapps.visual-data-power-bi",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-bizapps.create-dashboards-power-bi.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:52:11.4541861Z",
+        "sourceUid": "learn-bizapps.create-dashboards-power-bi",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.manage-datasets-power-bi.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:51:22.7776225Z",
+        "sourceUid": "learn-bizapps.manage-datasets-power-bi",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.create-manage-workspaces-power-bi.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:50:33.023094Z",
+        "sourceUid": "learn-bizapps.create-manage-workspaces-power-bi",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.row-level-security-power-bi.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:49:38.9854095Z",
+        "sourceUid": "learn-bizapps.row-level-security-power-bi",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.m365-secure-estate-through-azure.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:47:35.7978558Z",
+        "sourceUid": "learn-m365.m365-cloud-security",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-m365.sci-asc.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:47:35.7978512Z",
+        "sourceUid": "learn-m365.sci-asc",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:45:46.3071262Z",
+        "sourceUid": "learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-m365.cloud-app-security.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:45:46.3071242Z",
+        "sourceUid": "learn-m365.cloud-app-security",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.m365-threat-safeguard.badges",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:44:53.967339Z",
+        "sourceUid": "learn-m365.m365-threat-safeguard",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.m365-threat-remediate.badges",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:43:25.2245685Z",
+        "sourceUid": "learn-m365.m365-threat-remediate",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.protect-identities-with-aad-idp.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:42:38.9194474Z",
+        "sourceUid": "learn.protect-identities-with-aad-idp",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.mitigate-incidents-microsoft-365-defender.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:42:04.3182831Z",
+        "sourceUid": "learn.wwl.mitigate-incidents-microsoft-365-defender",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.introduction-to-microsoft-365-threat-protection.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-22T06:40:37.0525628Z",
+        "sourceUid": "learn.wwl.introduction-microsoft-365-threat-protection",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-windows.introduction-w10-dev.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-21T18:44:55.6084212Z",
+        "sourceUid": "learn-windows.introduction-w10-dev",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-windows.building-connected-windows-apps.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-21T18:43:44.576655Z",
+        "sourceUid": "learn-windows.building-connected-windows-apps",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.secure-your-data-applications.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-19T23:36:27.6267569Z",
+        "sourceUid": "learn.wwl.secure-your-data-applications",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.sql-database-security.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-19T23:36:27.6267546Z",
+        "sourceUid": "learn.wwl.sql-database-security",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.storage-security.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-19T23:34:45.477356Z",
+        "sourceUid": "learn.wwl.storage-security",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.application-security.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-19T23:33:42.4009586Z",
+        "sourceUid": "learn.wwl.application-security",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.azure-key-vault.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-19T23:32:28.5715805Z",
+        "sourceUid": "learn.wwl.azure-key-vault",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-windows.writing-windows-10-apps.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-19T12:42:28.0729744Z",
+        "sourceUid": "learn-windows.writing-windows-10-apps",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.mec.empower-educators-explore-potential-artificial-intelligence.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-19T12:41:03.6250155Z",
+        "sourceUid": "learn.mec.empower-educators-explore-potential-artificial-intelligence",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.implement-blue-green-deployment-feature-toggles.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T23:15:10.1528367Z",
+        "sourceUid": "learn.wwl.implement-blue-green-deployment-feature-toggles",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.introduction-to-deployment-patterns.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T23:10:48.9545857Z",
+        "sourceUid": "learn.wwl.introduction-to-deployment-patterns",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.configure-deploy-manage-teams-devices.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T23:09:24.8333294Z",
+        "sourceUid": "learn.wwl.configure-deploy-manage-teams-devices",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.plan-configure-teams-voice.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-14T23:06:39.6377436Z",
+        "sourceUid": "learn.wwl.plan-configure-teams-voice",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.plan-microsoft-teams-rooms-surface-hub.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T23:06:39.6377412Z",
+        "sourceUid": "learn.wwl.plan-microsoft-teams-rooms-surface-hub",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.introduction-teams-meetings-calling.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T23:05:22.1943275Z",
+        "sourceUid": "learn.wwl.introduction-teams-meetings-calling",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.extend-teams-phone-system-additional-services.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T23:03:39.1683701Z",
+        "sourceUid": "learn.wwl.extend-teams-phone-system-additional-services",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.configure-deploy-direct-routing.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T23:02:47.305101Z",
+        "sourceUid": "learn.wwl.configure-deploy-direct-routing",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.design-monitoring-strategy-on-azure.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T23:01:21.9693604Z",
+        "sourceUid": "learn.design-monitoring-strategy-on-azure",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.azure-well-architected-framework.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:59:21.1232713Z",
+        "sourceUid": "learn.azure-well-architected-framework",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.azure-well-architected-reliability.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:59:21.1232692Z",
+        "sourceUid": "learn.azure-well-architected-reliability",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.use-own-data-azure-openai.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:56:14.2543393Z",
+        "sourceUid": "learn.wwl.use-own-data-azure-openai",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.data-in-analysis-power-bi.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:54:47.0788088Z",
+        "sourceUid": "learn-bizapps.data-analysis-power-bi",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-bizapps.ai-visuals-power-bi.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:54:47.0787874Z",
+        "sourceUid": "learn-bizapps.ai-visuals-power-bi",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.perform-analytics-power-bi.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:54:02.3067614Z",
+        "sourceUid": "learn-bizapps.perform-analytics-power-bi",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.azure-well-architected-security.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:49:12.5781669Z",
+        "sourceUid": "learn.azure-well-architected-security",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.az-400-implement-security-validate-code-bases-compliance.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:45:16.4265303Z",
+        "sourceUid": "learn.wwl.az-400-implement-security-validate-code-basescompliance",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.owasp-and-dynamic-analyzers.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:45:16.426528Z",
+        "sourceUid": "learn.wwl.owasp-and-dynamic-analyzers",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.static-analyzers.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:44:21.2620446Z",
+        "sourceUid": "learn.wwl.static-analyzers",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.software-composition-analysis.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:43:35.1583187Z",
+        "sourceUid": "learn.wwl.software-composition-analysis",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.implement-open-source-software-azure.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-14T22:42:32.5009169Z",
+        "sourceUid": "learn.wwl.implement-open-source-software-azure",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.use-basic-formulas-make-better-powerapps.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-10T21:27:25.5666778Z",
+        "sourceUid": "learn-bizapps.use-basic-formulas-make-better-powerapps",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-bizapps.author-basic-formula-tables-records-powerapps.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T21:27:25.5666759Z",
+        "sourceUid": "learn-bizapps.author-basic-formula-tables-records-powerapps",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.author-basic-forumla-change-behaviors-powerapps.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T19:41:43.4032093Z",
+        "sourceUid": "learn-bizapps.author-basic-forumla-change-behaviors-powerapps",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.author-basic-formula-change-properties-powerapps.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T19:22:22.5461381Z",
+        "sourceUid": "learn-bizapps.author-basic-formula-change-properties-powerapps",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.az-400-implement-continuous-feedback.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-07-10T04:18:49.3273286Z",
+        "sourceUid": "learn.wwl.az-400-implement-continuous-feedback",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.design-processes-to-automate-application-analytics.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T04:18:49.3273269Z",
+        "sourceUid": "learn.wwl.design-processes-to-automate-application-analytics",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.share-knowledge-within-teams.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T04:18:20.5446514Z",
+        "sourceUid": "learn.wwl.share-knowledge-within-teams",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.develop-monitor-status-dashboards.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T04:17:28.1349195Z",
+        "sourceUid": "learn.wwl.develop-monitor-status-dashboards",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.manage-alerts-blameless-retrospectives-just-culture.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T04:16:15.2187632Z",
+        "sourceUid": "learn.wwl.manage-alerts-blameless-retrospectives-just-culture",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.implement-tools-to-track-usage-flow.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T04:15:17.6623318Z",
+        "sourceUid": "learn.wwl.implement-tools-to-track-usage-flow",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.power-bi-embedded-permissions-analytics.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T04:14:02.5319417Z",
+        "sourceUid": "learn-bizapps.power-bi-embedded-permissions-analytics",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.power-bi-embedded-integrate.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T03:10:23.1235197Z",
+        "sourceUid": "learn-bizapps.power-bi-embedded-integrate",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-bizapps.power-bi-embedded-content.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-07-10T03:09:05.5570784Z",
+        "sourceUid": "learn-bizapps.power-bi-embedded-content",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.integrate-azure-pipelines.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:19:20.2847238Z",
+        "sourceUid": "learn.wwl.integrate-azure-pipelines",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.implement-pipeline-strategy.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:17:51.964056Z",
+        "sourceUid": "learn.wwl.implement-pipeline-strategy",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.explore-continuous-integration.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:16:43.9606232Z",
+        "sourceUid": "learn.wwl.explore-continuous-integration",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.describe-pipelines-concurrency.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:15:42.0163678Z",
+        "sourceUid": "learn.wwl.describe-pipelines-concurrency",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.manage-azure-pipeline-agents-pools.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:14:33.2616551Z",
+        "sourceUid": "learn.wwl.manage-azure-pipeline-agents-pools",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.explore-azure-pipelines.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:13:04.8763979Z",
+        "sourceUid": "learn.wwl.explore-azure-pipelines",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.ai-business-school-financial-services.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:11:38.0059597Z",
+        "sourceUid": "learn.ai-business-school-financial-services",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.foster-an-ai-ready-culture-in-business.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:11:38.0059575Z",
+        "sourceUid": "learn.foster-an-ai-ready-culture-in-business",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-wwl.foster-ai-culture-customer-service.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:11:38.005955Z",
+        "sourceUid": "learn-wwl.foster-ai-culture-customer-service",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-wwl.foster-ai-culture-sales.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:10:51.7180886Z",
+        "sourceUid": "learn-wwl.foster-ai-culture-sales",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-wwl.foster-ai-culture-marketing.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:10:05.9778308Z",
+        "sourceUid": "learn-wwl.foster-ai-culture-marketing",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.ai-technology-for-business-leaders.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:09:11.8459258Z",
+        "sourceUid": "learn.ai-technology-for-business-leaders",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-wwl.microsoft-approach-to-ai.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:09:11.8459239Z",
+        "sourceUid": "learn-wwl.microsoft-approach-to-ai",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.responsible-ai-business-principles.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:08:17.5285566Z",
+        "sourceUid": "learn.responsible-ai-business-principles",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-wwl.responsible-ai-governing-practices.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:08:17.5285545Z",
+        "sourceUid": "learn-wwl.responsible-ai-governing-practices",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.design-infranstructure-solutions.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:07:12.3557798Z",
+        "sourceUid": "learn.wwl.design-infranstructure-solutions",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.design-application-architecture.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:07:12.3557771Z",
+        "sourceUid": "learn.wwl.design-application-architecture",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.design-compute-solution.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:06:11.7659823Z",
+        "sourceUid": "learn.wwl.design-compute-solution",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.design-migrations.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:04:59.9054724Z",
+        "sourceUid": "learn.wwl.design-migrations",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.design-network-solutions.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:03:46.8802631Z",
+        "sourceUid": "learn.wwl.design-network-solutions",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.cpp-write-your-first-program.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:02:19.0008557Z",
+        "sourceUid": "learn.cpp-write-your-first-program",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.oxford.explore-automated-intelligence.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T19:00:28.3541382Z",
+        "sourceUid": "learn.oxford.explore-automated-intelligence",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.oxford.autonomous-ai-implementation-engineer.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:59:26.6096482Z",
+        "sourceUid": "learn.oxford.autonomous-ai-implementation-engineer",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.oxford.build-industrial-brain.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:59:26.6096455Z",
+        "sourceUid": "learn.oxford.build-industrial-brain",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.cloud-adoption-framework.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:56:46.6981312Z",
+        "sourceUid": "learn.accelerate-cloud-adoption",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.innovate-applications-azure-cloud-technologies.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:56:46.6981293Z",
+        "sourceUid": "learn.innovate-applications-azure-cloud-technologies",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.cloud-adoption-framework-manage.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:55:32.4142529Z",
+        "sourceUid": "learn.cloud-adoption-framework-manage",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.azure.cloud-adoption-framework-govern.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:54:25.6068684Z",
+        "sourceUid": "learn.azure.cloud-adoption-framework-govern",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.cloud-adoption-framework-migrate.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:53:11.2283415Z",
+        "sourceUid": "learn.cloud-adoption-framework-migrate",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.azure.cloud-adoption-framework-ready.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:52:07.6723768Z",
+        "sourceUid": "learn.azure.cloud-adoption-framework-ready",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.azure.cloud-adoption-framework-plan.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:50:47.5366798Z",
+        "sourceUid": "learn.azure.cloud-adoption-framework-plan",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.cloud-adoption-framework-strategy.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:50:03.3818291Z",
+        "sourceUid": "learn.cloud-adoption-framework-strategy",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.cybersecurity-secure-cloud-adoption.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:49:04.6044458Z",
+        "sourceUid": "learn-m365.cybersecurity-secure-cloud-adoption",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.azure.cloud-adoption-framework-getting-started.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:49:04.6044431Z",
+        "sourceUid": "learn.azure.cloud-adoption-framework-getting-started",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.quantum-computing-fundamentals.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:47:42.1112313Z",
+        "sourceUid": "learn.quantum-computing-fundamentals",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.quantum.solve-job-shop-optimization-azure-quantum.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:47:42.1112288Z",
+        "sourceUid": "learn.quantum.solve-job-shop-optimization-azure-quantum",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.quantum.solve-quantum-inspired-optimization-problems.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:46:25.8644429Z",
+        "sourceUid": "learn.quantum.solve-quantum-inspired-optimization-problems",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.quantum.run-quantum-algorithms-hardware.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:45:31.4475591Z",
+        "sourceUid": "learn.quantum.run-quantum-algorithms-hardware",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.quantum.use-qsharp-libraries.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:44:29.4137727Z",
+        "sourceUid": "learn.quantum.use-qsharp-libraries",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.quantum.estimate-resources-quantum-algorithms.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:43:26.4335585Z",
+        "sourceUid": "learn.quantum.estimate-resources-quantum-algorithms",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.quantum.solve-graph-coloring-problems-grovers-search.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:42:21.4768022Z",
+        "sourceUid": "learn.quantum.solve-graph-coloring-problems-grovers-search",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.quantum.qsharp-create-first-quantum-development-kit.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:41:06.4698669Z",
+        "sourceUid": "learn.quantum.qsharp-create-first-quantum-development-kit",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.quantum.get-started-azure-quantum.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:40:09.4011465Z",
+        "sourceUid": "learn.quantum.get-started-azure-quantum",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.quantum.qsharp-explore-key-concepts-quantum-computing.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:39:11.5679924Z",
+        "sourceUid": "learn.quantum.qsharp-explore-key-concepts-quantum-computing",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.oxford.teach-ai-with-project-bonsai.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:37:53.4087309Z",
+        "sourceUid": "learn.oxford.teach-ai-with-project-bonsai",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.introduction-to-secure-devops.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:33:33.896921Z",
+        "sourceUid": "learn.wwl.introduction-to-secure-devops",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.security-monitoring-and-governance.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:31:56.0182195Z",
+        "sourceUid": "learn.wwl.security-monitoring-and-governance",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.write-first-query-kusto-query-language.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:29:55.8181854Z",
+        "sourceUid": "learn.write-first-query-kusto-query-language",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.develop-ai-solutions-azure-openai.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:28:01.0310136Z",
+        "sourceUid": "learn.wwl.develop-ai-solutions-azure-openai",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.generate-images-azure-openai.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:28:01.0310114Z",
+        "sourceUid": "learn.wwl.generate-images-azure-openai",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.generate-code-azure-openai.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:27:06.7430763Z",
+        "sourceUid": "learn.wwl.generate-code-azure-openai",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.build-language-solution-azure-openai.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:25:43.5100868Z",
+        "sourceUid": "learn.wwl.build-language-solution-azure-openai",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-dynamics.integrate-finance-operations-apps-power-platform.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:24:14.0617318Z",
+        "sourceUid": "learn-dynamics.integrate-finance-operations-apps-power-platform",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-dynamics.extensions-finance-operations-power-platform.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:24:14.0617297Z",
+        "sourceUid": "learn-dynamics.extensions-finance-operations-power-platform",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-dynamics.tools-finance-operations-power-platform.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:22:51.8329402Z",
+        "sourceUid": "learn-dynamics.tools-finance-operations-power-platform",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-dynamics.key-concepts-integrate-finance-operations-power-platform.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:21:39.990503Z",
+        "sourceUid": "learn-dynamics.key-concepts-integrate-finance-operations-power-platform",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-dynamics.get-started-integrate-finance-operations-power-platform.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:20:18.1112447Z",
+        "sourceUid": "learn-dynamics.get-started-integrate-finance-operations-power-platform",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-dynamics.harmonize-business-concepts-finance-operations-power-platform.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:18:18.8006887Z",
+        "sourceUid": "learn-dynamics.harmonize-business-concepts-finance-operations-power-platform",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.get-started-openai.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:16:00.9829487Z",
+        "sourceUid": "learn.wwl.get-started-openai",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.apply-prompt-engineering-azure-openai.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:14:21.6943144Z",
+        "sourceUid": "learn.wwl.apply-prompt-engineering-azure-openai",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.m365-azure-migrate-virtual-machine.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:13:21.1088107Z",
+        "sourceUid": "learn-m365.m365-azure-migrate-virtual-machine",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn-m365.m365-azure-migrate-replicate-virtual-servers.badges",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:13:21.1088078Z",
+        "sourceUid": "learn-m365.m365-azure-migrate-replicate-virtual-servers",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.m365-azure-migrate-discover-assess.badges",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:12:41.9310446Z",
+        "sourceUid": "learn-m365.m365-azure-migrate-discover-assess",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.m365-azure-migrate-set-up.badges",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:11:54.6061019Z",
+        "sourceUid": "learn-m365.m365-azure-migrate-set-up",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-m365.m365-azure-migrate-introduction.badges",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:11:10.4405501Z",
+        "sourceUid": "learn-m365.m365-azure-migrate-introduction",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.configure-teams-phone-system.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:10:01.9973016Z",
+        "sourceUid": "learn.wwl.configure-teams-phone-system",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.designing-implementing-microsoft-azure-networking-solutions-az-700.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:08:49.2331269Z",
+        "sourceUid": "learn.wwl.designing-implementing-microsoft-azure-networking-solutions-az-700",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.design-implement-network-monitoring.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:08:49.2331247Z",
+        "sourceUid": "learn.wwl.design-implement-network-monitoring",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.design-implement-private-access-to-azure-services.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:07:50.4048477Z",
+        "sourceUid": "learn.wwl.design-implement-private-access-to-azure-services",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.design-implement-network-security-monitoring.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:06:44.8382387Z",
+        "sourceUid": "learn.wwl.design-implement-network-security-monitoring",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.load-balancing-https-traffic-azure.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:05:11.6083738Z",
+        "sourceUid": "learn.wwl.load-balancing-https-traffic-azure",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.load-balancing-non-https-traffic-azure.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:03:44.8825295Z",
+        "sourceUid": "learn.wwl.load-balancing-non-https-traffic-azure",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.design-implement-azure-expressroute.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T18:02:10.7165711Z",
+        "sourceUid": "learn.wwl.design-implement-azure-expressroute",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.mec.ai-foundations-imagine-cup-junior.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:59:20.0445515Z",
+        "sourceUid": "learn.mec.ai-foundations-imagine-cup-junior",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.mec.program-ai-with-ai-foundations-imagine-cup-junior.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:59:20.0445494Z",
+        "sourceUid": "learn.mec.program-ai-with-ai-foundations-imagine-cup-junior",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.mec.understand-api-public-database-ai-foundations-imagine-cup-jr.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:57:36.747153Z",
+        "sourceUid": "learn.mec.understand-api-public-database-ai-foundations-imagine-cup-jr",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.mec.application-ai-with-ai-foundations-imagine-cup-junior.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:56:19.5059569Z",
+        "sourceUid": "learn.mec.application-ai-with-ai-foundations-imagine-cup-junior",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn-wwl.microsoft-responsible-ai-practices.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:55:09.5680648Z",
+        "sourceUid": "learn-wwl.microsoft-responsible-ai-practices",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.mec.understand-artificial-intelligence-imagine-cup-junior.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:53:02.6065513Z",
+        "sourceUid": "learn.mec.understand-artificial-intelligence-imagine-cup-junior",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.design-implement-hybrid-networking.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:49:45.9355045Z",
+        "sourceUid": "learn.wwl.design-implement-hybrid-networking",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.migrate-servers-workloads-premises-hybrid-environments.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:45:43.0609801Z",
+        "sourceUid": "learn.wwl.migrate-servers-workloads-premises-hybrid-environments",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.migrate-file-server-workloads-using-storage-migration-service.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:45:43.0609778Z",
+        "sourceUid": "learn.wwl.migrate-file-server-workloads-using-storage-migration-service",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.active-directory-domain-services-migration.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:43:32.6324127Z",
+        "sourceUid": "learn.wwl.active-directory-domain-services-migration",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.design-data-storage-solutions.trophy",
+        "awardType": "Trophy",
+        "reason": "trophy.path.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:39:33.638218Z",
+        "sourceUid": "learn.wwl.design-data-storage-solutions",
+        "sourceType": "LearningPath"
+      },
+      {
+        "awardUid": "learn.wwl.design-data-integration.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:39:33.638216Z",
+        "sourceUid": "learn.wwl.design-data-integration",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.azure.cloud-adoption-framework-security.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:32:33.2403207Z",
+        "sourceUid": "learn.azure.cloud-adoption-framework-security",
+        "sourceType": "Module"
+      },
+      {
+        "awardUid": "learn.wwl.design-data-storage-solution-for-relational-data.badge",
+        "awardType": "Badge",
+        "reason": "badge.module.basic.completed",
+        "awardedDateUTC": "2023-06-29T17:28:58.0449229Z",
+        "sourceUid": "learn.wwl.design-data-storage-solution-for-relational-data",
+        …
