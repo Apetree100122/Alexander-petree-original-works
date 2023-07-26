@@ -1,0 +1,19 @@
+{
+    "location": "germanywestcentral",
+    "tags": {
+        "Apetree1001@alexanderpetreeitsolutions.org": "2",
+        "Discoverylearninggroup": "2"
+    },
+    "properties": {},
+    "systemData": {
+        "createdBy": "Apetree1001@email.phoenix.edu",
+        "createdByType": "User",
+        "createdAt": "2023-05-04T01:20:37.5134481Z",
+        "lastModifiedBy": "Apetree1001@email.phoenix.edu",
+        "lastModifiedByType": "User",
+        "lastModifiedAt": "2023-05-04T01:20:40.5604024Z"
+    },
+    "id": "/subscriptions/27878664-c5f1-4f80-a243-3362e6b13541/resourceGroups/23759/providers/Microsoft.Resources/templateSpecs/42",
+    "type": "Microsoft.Resources/templateSpecs",
+    "name": "42"
+}
