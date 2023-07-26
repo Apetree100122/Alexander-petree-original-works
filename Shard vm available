@@ -1,0 +1,40 @@
+{
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourcegroups/Shard/providers/microsoft.insights/metricAlerts/VM Availability - Stained",
+    "name": "VM Availability - Stained",
+    "type": "Microsoft.Insights/metricAlerts",
+    "location": "Global",
+    "properties": {
+        "severity": 4,
+        "enabled": true,
+        "scopes": [
+            "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Compute/virtualMachines/Stained"
+        ],
+        "evaluationFrequency": "PT5M",
+        "windowSize": "PT5M",
+        "criteria": {
+            "allOf": [
+                {
+                    "alertSensitivity": "Medium",
+                    "failingPeriods": {
+                        "numberOfEvaluationPeriods": 4,
+                        "minFailingPeriodsToAlert": 4
+                    },
+                    "name": "Metric1",
+                    "metricNamespace": "Microsoft.Compute/virtualMachines",
+                    "metricName": "VmAvailabilityMetric",
+                    "operator": "LessThan",
+                    "timeAggregation": "Average",
+                    "criterionType": "DynamicThresholdCriterion"
+                }
+            ],
+            "odata.type": "Microsoft.Azure.Monitor.MultipleResourceMultipleMetricCriteria"
+        },
+        "targetResourceType": "Microsoft.Compute/virtualMachines",
+        "actions": [
+            {
+                "actionGroupId": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/microsoft.insights/actionGroups/RecommendedAlertRules-AG-1",
+                "webHookProperties": {}
+            }
+        ]
+    }
+}
