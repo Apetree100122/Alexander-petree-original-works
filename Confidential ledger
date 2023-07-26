@@ -1,0 +1,22 @@
+{
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/myVm-1_group/providers/Microsoft.ConfidentialLedger/Ledgers/Alex",
+    "name": "Alex",
+    "type": "Microsoft.ConfidentialLedger/Ledgers",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "ledgerName": "Alex",
+        "ledgerUri": "https://alex.confidential-ledger.azure.com",
+        "identityServiceUri": "https://identity.confidential-ledger.core.azure.com/ledgerIdentity/alex",
+        "ledgerType": "Private",
+        "aadBasedSecurityPrincipals": [
+            {
+                "principalId": "0e3d0b02-31be-4bee-89e2-20f40df4d4fc",
+                "tenantId": "00000000-0000-0000-0000-000000000000",
+                "ledgerRoleName": "Administrator"
+            }
+        ],
+        "certBasedSecurityPrincipals": [],
+        "ledgerInternalNamespace": "c9043871-a43c-492a-bf0f-276b0bd55d68"
+    }
+}
