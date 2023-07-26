@@ -1,0 +1,321 @@
+{
+    "name": "Stained",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "westus",
+    "tags": {
+        "Alexander Petree ": "0",
+        "Apetree1001@email.phoenix.edu": "2",
+        "alexander@alexander.omnimicrosoft.com": "1000"
+    },
+    "identity": {
+        "type": "SystemAssigned",
+        "principalId": "841b7866-12c6-4667-9a84-ac4d1ec15acd",
+        "tenantId": "47ea4cec-fe0f-48f5-9a09-a2f957278304"
+    },
+    "properties": {
+        "vmId": "fbc00e1d-f163-4cd8-99fe-516d57cba50d",
+        "hardwareProfile": {
+            "vmSize": "Standard_D2as_v4"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2022-datacenter-core-g2",
+                "version": "latest",
+                "exactVersion": "20348.1668.230404"
+            },
+            "osDisk": {
+                "osType": "Windows",
+                "name": "Stained_OsDisk_1_a77c62b490b041519827c317af32e277",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Compute/disks/Stained_OsDisk_1_a77c62b490b041519827c317af32e277"
+                },
+                "deleteOption": "Delete"
+            },
+            "dataDisks": [
+                {
+                    "lun": 0,
+                    "name": "Stained_DataDisk_2",
+                    "createOption": "Attach",
+                    "caching": "ReadOnly",
+                    "writeAcceleratorEnabled": false,
+                    "managedDisk": {
+                        "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Compute/disks/Stained_DataDisk_2"
+                    },
+                    "deleteOption": "Delete",
+                    "toBeDetached": false
+                }
+            ]
+        },
+        "osProfile": {
+            "computerName": "Stained",
+            "adminUsername": "Apetree1001",
+            "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true,
+                "patchSettings": {
+                    "patchMode": "AutomaticByOS",
+                    "assessmentMode": "ImageDefault",
+                    "enableHotpatching": false
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "securityProfile": {
+            "uefiSettings": {
+                "secureBootEnabled": true,
+                "vTpmEnabled": true
+            },
+            "securityType": "TrustedLaunch"
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Network/networkInterfaces/stained765",
+                    "properties": {
+                        "deleteOption": "Delete"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true,
+                "storageUri": "https://sharddiag486.blob.core.windows.net/"
+            }
+        },
+        "licenseType": "Windows_Server",
+        "provisioningState": "Succeeded",
+        "priority": "Spot",
+        "evictionPolicy": "Deallocate",
+        "billingProfile": {
+            "maxPrice": -1
+        }
+    },
+    "resources": [
+        {
+            "name": "AdminCenter",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/AdminCenter",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.AdminCenter",
+                "type": "AdminCenter",
+                "typeHandlerVersion": "0.0",
+                "settings": {
+                    "port": 6516,
+                    "salt": "41628BD6969E4EFA9470E2CD30CB5A56F6642A"
+                }
+            }
+        },
+        {
+            "name": "AzureMonitorWindowsAgent",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/AzureMonitorWindowsAgent",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.Monitor",
+                "type": "AzureMonitorWindowsAgent",
+                "typeHandlerVersion": "1.0"
+            }
+        },
+        {
+            "name": "AzurePerformanceDiagnostics",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/AzurePerformanceDiagnostics",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.Performance.Diagnostics",
+                "type": "AzurePerformanceDiagnostics",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "performanceScenario": "vmslow",
+                    "traceDurationInSeconds": 300,
+                    "srNumber": "",
+                    "requestTimeUtc": "Tue, 02 May 2023 03:56:38 GMT",
+                    "networkTrace": "",
+                    "perfCounterTrace": "p",
+                    "xperfTrace": "",
+                    "storPortTrace": "",
+                    "configurations": {
+                        "InstallOnly": "false",
+                        "Symptoms": "",
+                        "UserAgreedToShareData": "true"
+                    },
+                    "resourceId": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained",
+                    "storageAccountName": "shardperfdiag193"
+                }
+            }
+        },
+        {
+            "name": "AzurePolicyforWindows",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/AzurePolicyforWindows",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "enableAutomaticUpgrade": true,
+                "publisher": "Microsoft.GuestConfiguration",
+                "type": "ConfigurationforWindows",
+                "typeHandlerVersion": "1.26",
+                "settings": {}
+            }
+        },
+        {
+            "name": "DependencyAgentWindows",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/DependencyAgentWindows",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
+                "type": "DependencyAgentWindows",
+                "typeHandlerVersion": "9.10"
+            }
+        },
+        {
+            "name": "GuestAttestation",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/GuestAttestation",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "tags": {
+                "Alexander Petree ": "0",
+                "Apetree1001@email.phoenix.edu": "2"
+            },
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.Security.WindowsAttestation",
+                "type": "GuestAttestation",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "AttestationConfig": {
+                        "MaaSettings": {
+                            "maaEndpoint": "",
+                            "maaTenantName": "GuestAttestation"
+                        },
+                        "AscSettings": {
+                            "ascReportingEndpoint": "",
+                            "ascReportingFrequency": ""
+                        },
+                        "useCustomToken": "false",
+                        "disableAlerts": "false"
+                    }
+                }
+            }
+        },
+        {
+            "name": "IaaSAntimalware",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/IaaSAntimalware",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.Security",
+                "type": "IaaSAntimalware",
+                "typeHandlerVersion": "1.3",
+                "settings": {
+                    "AntimalwareEnabled": true,
+                    "RealTimeProtectionEnabled": true,
+                    "ScheduledScanSettings": {
+                        "isEnabled": true,
+                        "scanType": "Quick",
+                        "day": "7",
+                        "time": "120"
+                    },
+                    "Exclusions": {
+                        "Extensions": "",
+                        "Paths": "",
+                        "Processes": ""
+                    }
+                }
+            }
+        },
+        {
+            "name": "MDE.Windows",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/MDE.Windows",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "forceUpdateTag": "645bff75-2181-4b03-83bc-3a49f87c8005",
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.AzureDefenderForServers",
+                "type": "MDE.Windows",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "azureResourceId": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained",
+                    "forceReOnboarding": false,
+                    "vNextEnabled": true,
+                    "autoUpdate": true
+                }
+            }
+        },
+        {
+            "name": "MicrosoftMonitoringAgent",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/MicrosoftMonitoringAgent",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "enableAutomaticUpgrade": false,
+                "publisher": "Microsoft.EnterpriseCloud.Monitoring",
+                "type": "MicrosoftMonitoringAgent",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "workspaceId": "2b39339a-4f7b-4743-9ad3-a59aa624532f"
+                }
+            }
+        },
+        {
+            "name": "WindowsAgent.AzureSecurityCenter",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/WindowsAgent.AzureSecurityCenter",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": false,
+                "provisioningState": "Succeeded",
+                "publisher": "Qualys",
+                "type": "WindowsAgent.AzureSecurityCenter",
+                "typeHandlerVersion": "1.0",
+                "settings": {
+                    "LicenseCode": "eyJjaWQiOiIxMzI4MzI2Ny1lYTQ0LTc3MjgtODMyYy0wZDU2MDNiZjcwYjUiLCJhaWQiOiJkNzVjOTQwNi1mZTNhLTRmNDYtYTk3YS1iODdmNWJjZDhlMWMiLCJwd3NVcmwiOiJodHRwczovL3FhZ3B1YmxpYy5xZzMuYXBwcy5xdWFseXMuY29tL0Nsb3VkQWdlbnQvIiwicHdzUG9ydCI6IjQ0MyJ9",
+                    "GrayLabel": {
+                        "CustomerID": "3e95da38-f420-42af-a8dc-f30be07e84e1",
+                        "ResourceID": "521f4808-2a3f-c7ab-ab88-c5d9605ecb95"
+                    }
+                }
+            }
+        },
+        {
+            "name": "WindowsOpenSSH",
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/SHARD/providers/Microsoft.Compute/virtualMachines/Stained/extensions/WindowsOpenSSH",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "location": "westus",
+            "properties": {
+                "autoUpgradeMinorVersion": true,
+                "provisioningState": "Succeeded",
+                "publisher": "Microsoft.Azure.OpenSSH",
+                "type": "WindowsOpenSSH",
+                "typeHandlerVersion": "3.0",
+                "settings": {}
+            }
+        }
+    ]
+}
