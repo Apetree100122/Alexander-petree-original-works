@@ -1,0 +1,23 @@
+{
+    "location": "westus3",
+    "name": "defaultVault263",
+    "etag": "W/\"datetime'2023-05-26T10%3A19%3A41.6272211Z'\"",
+    "tags": {
+        "83968350": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "privateEndpointStateForBackup": "None",
+        "privateEndpointStateForSiteRecovery": "None"
+    },
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.RecoveryServices/vaults/defaultVault263",
+    "type": "Microsoft.RecoveryServices/vaults",
+    "sku": {
+        "name": "RS0",
+        "tier": "Standard"
+    }
+}
