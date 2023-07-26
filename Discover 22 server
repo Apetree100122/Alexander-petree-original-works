@@ -1,0 +1,118 @@
+{
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.DocumentDB/databaseAccounts/discover22-server",
+    "name": "discover22-server",
+    "location": "East US 2",
+    "type": "Microsoft.DocumentDB/databaseAccounts",
+    "kind": "MongoDB",
+    "tags": {
+        "83968350": "1000",
+        "Alexander Petree": "Owner ",
+        "hidden-cosmos-mmspecial": "",
+        "defaultExperience": "Azure Cosmos DB for MongoDB API",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "systemData": {
+        "createdAt": "2023-04-20T02:27:29.7697445Z"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "documentEndpoint": "https://discover22-server.documents.azure.com:443/",
+        "sqlEndpoint": "https://discover22-server.documents.azure.com:443/",
+        "mongoEndpoint": "https://discover22-server.mongo.cosmos.azure.com:443/",
+        "enableAutomaticFailover": false,
+        "enableMultipleWriteLocations": false,
+        "enablePartitionKeyMonitor": false,
+        "isVirtualNetworkFilterEnabled": false,
+        "virtualNetworkRules": [],
+        "privateEndpointConnections": [
+            {
+                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.DocumentDB/databaseAccounts/discover22-server/privateEndpointConnections/Discover22DbEndpoint",
+                "properties": {
+                    "privateEndpoint": {
+                        "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Network/privateEndpoints/Discover22DbEndpoint"
+                    },
+                    "privateLinkServiceConnectionState": {
+                        "status": "Approved",
+                        "actionsRequired": "None"
+                    }
+                }
+            }
+        ],
+        "EnabledApiTypes": "MongoDB",
+        "disableKeyBasedMetadataWriteAccess": false,
+        "enableFreeTier": false,
+        "enableAnalyticalStorage": false,
+        "analyticalStorageConfiguration": null,
+        "instanceId": "d6cce4f5-2652-4379-b9cc-1a0457a6e84c",
+        "databaseAccountOfferType": "Standard",
+        "ipRangeFilter": "",
+        "consistencyPolicy": {
+            "defaultConsistencyLevel": "Session",
+            "maxIntervalInSeconds": 5,
+            "maxStalenessPrefix": 100
+        },
+        "apiProperties": {
+            "serverVersion": "4.0"
+        },
+        "configurationOverrides": {
+            "EnableBsonSchema": "True"
+        },
+        "writeLocations": [
+            {
+                "id": "discover22-server-eastus2",
+                "locationName": "East US 2",
+                "documentEndpoint": "https://discover22-server-eastus2.documents.azure.com:443/",
+                "provisioningState": "Succeeded",
+                "failoverPriority": 0,
+                "isZoneRedundant": false
+            }
+        ],
+        "readLocations": [
+            {
+                "id": "discover22-server-eastus2",
+                "locationName": "East US 2",
+                "documentEndpoint": "https://discover22-server-eastus2.documents.azure.com:443/",
+                "provisioningState": "Succeeded",
+                "failoverPriority": 0,
+                "isZoneRedundant": false
+            }
+        ],
+        "locations": [
+            {
+                "id": "discover22-server-eastus2",
+                "locationName": "East US 2",
+                "documentEndpoint": "https://discover22-server-eastus2.documents.azure.com:443/",
+                "provisioningState": "Succeeded",
+                "failoverPriority": 0,
+                "isZoneRedundant": false
+            }
+        ],
+        "failoverPolicies": [
+            {
+                "id": "discover22-server-eastus2",
+                "locationName": "East US 2",
+                "failoverPriority": 0
+            }
+        ],
+        "cors": [],
+        "capabilities": [
+            {
+                "name": "EnableMongo"
+            },
+            {
+                "name": "DisableRateLimitingResponses"
+            }
+        ],
+        "backupPolicy": {
+            "type": "Periodic",
+            "periodicModeProperties": {
+                "backupIntervalInMinutes": 240,
+                "backupRetentionIntervalInHours": 8,
+                "backupStorageRedundancy": "Local"
+            }
+        }
+    }
+}
