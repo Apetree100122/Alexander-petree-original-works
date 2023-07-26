@@ -1,0 +1,77 @@
+{
+    "name": "alex707",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/networkInterfaces/alex707",
+    "etag": "W/\"5c118960-1ea5-44e7-84ab-c603d1ec7ea7\"",
+    "tags": {
+        "83968350": "1000",
+        "alexander@alexander.omnimicrosoft.com": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "cafeab0e-193c-4e62-9eee-95ad2b7103a6",
+        "ipConfigurations": [
+            {
+                "name": "ipconfig1",
+                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/networkInterfaces/alex707/ipConfigurations/ipconfig1",
+                "etag": "W/\"5c118960-1ea5-44e7-84ab-c603d1ec7ea7\"",
+                "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.2.0.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                        "name": "Alex-ip",
+                        "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/publicIPAddresses/Alex-ip",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "resourceGuid": "70e1b4ff-e56a-40a5-9078-bd9e7393e164",
+                            "publicIPAddressVersion": "IPv4",
+                            "publicIPAllocationMethod": "Dynamic",
+                            "idleTimeoutInMinutes": 4,
+                            "ipTags": [],
+                            "ipConfiguration": {
+                                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/networkInterfaces/alex707/ipConfigurations/ipconfig1"
+                            },
+                            "deleteOption": "Delete"
+                        },
+                        "type": "Microsoft.Network/publicIPAddresses",
+                        "sku": {
+                            "name": "Basic",
+                            "tier": "Regional"
+                        }
+                    },
+                    "subnet": {
+                        "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/virtualNetworks/Alex-vnet/subnets/default"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4"
+                }
+            }
+        ],
+        "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": []
+        },
+        "macAddress": "60-45-BD-C8-4C-15",
+        "enableAcceleratedNetworking": true,
+        "vnetEncryptionSupported": false,
+        "enableIPForwarding": false,
+        "networkSecurityGroup": {
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/networkSecurityGroups/Alex-nsg"
+        },
+        "primary": true,
+        "virtualMachine": {
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/GATEWAY/providers/Microsoft.Compute/virtualMachines/Alex"
+        },
+        "hostedWorkloads": [],
+        "tapConfigurations": [],
+        "nicType": "Standard"
+    },
+    "type": "Microsoft.Network/networkInterfaces",
+    "location": "westus3",
+    "kind": "Regular"
+}
