@@ -1,0 +1,16 @@
+{
+    "location": "eastus",
+    "tags": {},
+    "properties": {},
+    "systemData": {
+        "createdBy": "Apetree1001@email.phoenix.edu",
+        "createdByType": "User",
+        "createdAt": "2023-04-14T11:50:53.0106283Z",
+        "lastModifiedBy": "Apetree1001@email.phoenix.edu",
+        "lastModifiedByType": "User",
+        "lastModifiedAt": "2023-04-14T11:50:55.0880633Z"
+    },
+    "id": "/subscriptions/e73895c7-e238-484e-8e0e-50775ae9db95/resourceGroups/Solution2/providers/Microsoft.Resources/templateSpecs/firewall",
+    "type": "Microsoft.Resources/templateSpecs",
+    "name": "firewall"
+}
