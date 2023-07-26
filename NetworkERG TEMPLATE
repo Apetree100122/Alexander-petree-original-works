@@ -1,0 +1,22 @@
+{
+    "location": "westus",
+    "tags": {
+        "AlexPetree": "2",
+        "Migrate Project": "2",
+        "ms-resource-usage": "2",
+        "TEAM ": "Discovery-Learning group",
+        "alexander@alexander.omnimicrosoft.com": "1000"
+    },
+    "properties": {},
+    "systemData": {
+        "createdBy": "Apetree1001@email.phoenix.edu",
+        "createdByType": "User",
+        "createdAt": "2023-04-14T11:30:19.4342626Z",
+        "lastModifiedBy": "Apetree1001@email.phoenix.edu",
+        "lastModifiedByType": "User",
+        "lastModifiedAt": "2023-05-01T20:13:05.3864672Z"
+    },
+    "id": "/subscriptions/e73895c7-e238-484e-8e0e-50775ae9db95/resourceGroups/NetworkWatcherRG/providers/Microsoft.Resources/templateSpecs/automatiotemplate",
+    "type": "Microsoft.Resources/templateSpecs",
+    "name": "automatiotemplate"
+}
