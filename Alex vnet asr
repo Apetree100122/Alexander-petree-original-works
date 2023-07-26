@@ -1,0 +1,45 @@
+{
+    "name": "alex-vnet-asr",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway-asr/providers/Microsoft.Network/virtualNetworks/alex-vnet-asr",
+    "etag": "W/\"90a9278d-9dc6-46d7-96e7-461a8aa4a678\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "eastus",
+    "tags": {
+        "83968350": "1000",
+        "48E2E74D21E4D74F": "1000",
+        "038811634763": "2",
+        "1681196997174": "2",
+        "1681829024810": "102"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "09de88ce-8aff-405d-92d5-15c126a4ea19",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.2.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway-asr/providers/Microsoft.Network/virtualNetworks/alex-vnet-asr/subnets/default",
+                "etag": "W/\"90a9278d-9dc6-46d7-96e7-461a8aa4a678\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.2.0.0/24"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "AzureBastionSubnet",
+                "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway-asr/providers/Microsoft.Network/virtualNetworks/alex-vnet-asr/subnets/AzureBastionSubnet",
+                "etag": "W/\"90a9278d-9dc6-46d7-96e7-461a8aa4a678\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.2.1.0/26"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
