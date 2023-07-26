@@ -1,0 +1,31 @@
+{
+    "name": "Stained-ip",
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Network/publicIPAddresses/Stained-ip",
+    "etag": "W/\"4bbb811d-78e9-452d-8ca5-131d2eaa5bc2\"",
+    "location": "westus",
+    "tags": {
+        "Alexander Petree ": "0",
+        "Apetree1001@email.phoenix.edu": "2",
+        "alexander@alexander.omnimicrosoft.com": "1000"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "680aa660-69d5-4ce1-a27a-06f6b30527d2",
+        "ipAddress": "20.59.108.30",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Static",
+        "idleTimeoutInMinutes": 4,
+        "dnsSettings": {
+            "domainNameLabel": "discoverlearning",
+            "fqdn": "discoverlearning.westus.cloudapp.azure.com"
+        },
+        "ipTags": [],
+        "ipConfiguration": {
+            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Shard/providers/Microsoft.Network/networkInterfaces/stained765/ipConfigurations/ipconfig1"
+        }
+    },
+    "type": "Microsoft.Network/publicIPAddresses",
+    "sku": {
+        "name": "Standard"
+    }
+}
