@@ -1,0 +1,126 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "c8a479bd-4acc-4da2-9bee-8f689fe5f73d"
+        },
+        "name": {
+            "value": "Quantumrun"
+        },
+        "location": {
+            "value": "East US"
+        },
+        "hostingPlanName": {
+            "value": "ASP-AzureQuantum-bdae"
+        },
+        "serverFarmResourceGroup": {
+            "value": "AzureQuantum"
+        },
+        "databaseName": {
+            "value": "quantumrun-database"
+        },
+        "ftpsState": {
+            "value": "FtpsOnly"
+        },
+        "sku": {
+            "value": "PremiumV2"
+        },
+        "skuCode": {
+            "value": "P1v2"
+        },
+        "workerSize": {
+            "value": ""
+        },
+        "workerSizeId": {
+            "value": ""
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "linuxFxVersion": {
+            "value": "PYTHON|3.9"
+        },
+        "storageSizeMB": {
+            "value": 131072
+        },
+        "haEnabled": {
+            "value": "Disabled"
+        },
+        "availabilityZone": {
+            "value": ""
+        },
+        "backupRetentionDays": {
+            "value": 7
+        },
+        "geoRedundantBackup": {
+            "value": "Disabled"
+        },
+        "postgreServerSkuName": {
+            "value": "Standard_D2s_v3"
+        },
+        "serverEdition": {
+            "value": "GeneralPurpose"
+        },
+        "serverName": {
+            "value": "quantumrun-server"
+        },
+        "serverUsername": {
+            "value": "xymptvjomz"
+        },
+        "serverPassword": {
+            "value": null
+        },
+        "publicNetworkAccess": {
+            "value": "Disabled"
+        },
+        "collation": {
+            "value": "en_US.utf8"
+        },
+        "charset": {
+            "value": "utf8"
+        },
+        "isVnetEnabled": {
+            "value": true
+        },
+        "isPrivateEndpointForAppEnabled": {
+            "value": false
+        },
+        "vnetName": {
+            "value": "QuantumrunVnet"
+        },
+        "privateEndpointSubnet": {
+            "value": "QuantumrunSubnet"
+        },
+        "subnetForApp": {
+            "value": "QuantumrunAppSubnet"
+        },
+        "subnetForDb": {
+            "value": "QuantumrunDbSubnet"
+        },
+        "privateEndpointNameForApp": {
+            "value": "QuantumrunAppEndpoint"
+        },
+        "privateEndpointNameForDb": {
+            "value": ""
+        },
+        "privateEndpointNameForCache": {
+            "value": "quantumrun-cache-privateEndpoint"
+        },
+        "privateDnsZoneNameForApp": {
+            "value": "privatelink.azurewebsites.net"
+        },
+        "privateDnsZoneNameForDb": {
+            "value": "privatelink.postgres.database.azure.com"
+        },
+        "privateDnsZoneNameForCache": {
+            "value": "privatelink.redis.cache.windows.net"
+        },
+        "isCacheEnabled": {
+            "value": true
+        },
+        "cacheName": {
+            "value": "quantumrun-cache"
+        }
+    }
+}
