@@ -19,3 +19,7 @@ payments
 
  these are the original works of Alexander 
  Craig petree 
+
+These are supported funding model platforms
+github: [Apetree100122]
+custom: # [https://cash.app/$alexpetree01]
