@@ -10,12 +10,9 @@ Entry created on 2023-07-26 20:40:18 UTC, last updated on 2023-07-26 22:22:49 UT
 Alexander Craig petree 
 <apetree1001@email.phoenix.edu>
 
-request to include 
-vouchers for all learning on 
-<https://learn.microsoft.com/en-us/users/alexanderpetree/transcript/vjezxi2o6r023e1>
-credit on works 
-and discuss monetary monthly or bi-weekly 
-payments 
+copyright ©️ 04/2023 Alexander Craig petree 
+<apetree1001@email.phoenix.edu>
+
 
  these are the original works of Alexander 
  Craig petree 
