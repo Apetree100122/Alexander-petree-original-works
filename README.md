@@ -6,6 +6,12 @@ This data is available under the Creative Commons Attribution version 3.0 or lat
 Project badge entry owned by: Alexander Petree.
 Entry created on 2023-07-26 20:40:18 UTC, last updated on 2023-07-26 22:22:49 UTC. Last achieved passing badge on 2023-07-26 21:59:37 UTC.
 
+
+Licensed under apache 2.0 (in file labeled as such) 
+and bsd3 
+revised in file labeled license 
+
+
 # Azure-microsoft Works of 
 Alexander Craig petree 
 <apetree1001@email.phoenix.edu>
