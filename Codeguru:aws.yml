@@ -1,0 +1,35 @@
+- name: 
+Upload review result
+  uses: 
+	github/codeql-action/upload-sarif@v1
+  with:
+  sarif_file: codeguru-security-results.sarif.json
+	# Your results file will be named codeguru-security-results.sarif.json- name: CodeGuru Security
+ uses: aws-actions/codeguru-security@v1.2.2
+ name: Checkout repository
+  uses: 
+	actions/checkout@v3
+  with:
+    fetch-depth: 100 # This is a required field for CodeGuru
+- name: 
+CodeGuru Security
+  uses: 
+	aws-actions/codeguru-security@v1
+  with:
+    source_path: './*
+    aws_region: 
+    global 
+    fail_on_severity: off
+- name:
+Print findings
+  run: |
+
+    ls 95
+    cat codeguru-security-results.sarif.json
+	name: Upload review result
+  uses: github/codeql-action/upload-sarif@v1
+  
+	with: 
+
+ sarif_file: codeguru-security-results.sarif.json # Your results file will be named codeguru-security-results.sarif.json
+		
