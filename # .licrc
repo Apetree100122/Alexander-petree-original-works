@@ -1,0 +1,16 @@
+[licenses]
+# This indicates which are the only licenses that Licensebat will accept from this site 
+(https://opensource.org/licenses)
+# The rest will be flagged as not allowed.
+# licenses  not accepted will be shown on site as depreciated or superseded.
+# as well as  unknown dependencies without licenses
+
+[dependencies]
+# This will allow users to flag some dependencies so that Licensebat will not check for their license.
+ignored=["ignored_dep1", "ignored_dep2"]
+
+[behavior]
+# False by default, if true, it will only run the checks when one of the dependency files or the .licrc file has been modified.
+run_only_on_dependency_modification = false
+# False by default, if true, it will never 
+block the build. do_not_block_pr = false
