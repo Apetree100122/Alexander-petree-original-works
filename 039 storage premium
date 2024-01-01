@@ -2,10 +2,7 @@
     "sku": {"name": "Premium_LRS","tier": "Premium"},
     "kind": "StorageV2", "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/057/providers/Microsoft.Storage/storageAccounts/039","name": "039", "type": "Microsoft.Storage/storageAccounts",
     "location": "germanywestcentral",
-    "tags": {
-        "83968350": "1000",
-        "Alexand petree": "Owner",
-        "951-400-2505": "Phone",
+    "tags": { "83968350": "1000","Alexand petree": "Owner", "951-400-2505": "Phone",
  "alexander@alexander.omnimicrosoft.com": "1000","038811634763": "2",
 "48E2E74D21E4D74F": "1000",
 "1681196997174": "2",
@@ -40,20 +37,12 @@
  "action": "Allow",
 "state": "Succeeded"}
 ],
- "ipRules": [],
- "defaultAction": "Deny"}, "supportsHttpsTrafficOnly": true,
-"encryption": {
-"services": {
-"file": { "keyType": "Account",
-"enabled": true, "lastEnabledTime": "2023-04-10T09:45:01.5301358Z"},
-"blob": {"keyType": "Account",
-"enabled": true,
-"lastEnabledTime": "2023-04-10T09:45:01.5301358Z"}
-},"keySource": "Microsoft.Storage"}, "accessTier": "Hot",
-"provisioningState": "Succeeded",
+ "ipRules": [], "defaultAction": "Deny"}, "supportsHttpsTrafficOnly": true,
+"encryption": {"services": {"file": { "keyType": "Account",
+"enabled": true, "lastEnabledTime": "2023-04-10T09:45:01.5301358Z"},"blob": {"keyType": "Account",
+"enabled": true,"lastEnabledTime": "2023-04-10T09:45:01.5301358Z"}},"keySource": "Microsoft.Storage"}, "accessTier": "Hot","provisioningState": "Succeeded",
 "creationTime": "2023-04-10T09:45:01.4676138Z",
-"primaryEndpoints": {
- "microsoftEndpoints": {"web": "https://039-microsoftrouting.z1.web.core.windows.net/",
+"primaryEndpoints": { "microsoftEndpoints": {"web": "https://039-microsoftrouting.z1.web.core.windows.net/",
 "blob": "https://039-microsoftrouting.blob.core.windows.net/"},
 "web": "https://039.z1.web.core.windows.net/",
 "blob": "https://039.blob.core.windows.net/" },
