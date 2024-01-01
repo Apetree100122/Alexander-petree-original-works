@@ -8,13 +8,9 @@
         "resourceGuid": "b7206de4-fb8a-43af-92fd-b9a9962bcd4f",
         "ipAddress": "20.106.123.135",
         "publicIPAddressVersion": "IPv4",
-        "publicIPAllocationMethod": "Static",
-        "idleTimeoutInMinutes": 4,
+        "publicIPAllocationMethod": "Static",        "idleTimeoutInMinutes": 4,
         "ipTags": [],
-        "ipConfiguration": {
-            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/networkInterfaces/alex707/ipConfigurations/ipconfig1"
-        }
-    },
+        "ipConfiguration": {            "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/Gateway/providers/Microsoft.Network/networkInterfaces/alex707/ipConfigurations/ipconfig1"        }    },
     "type": "Microsoft.Network/publicIPAddresses",
     "sku": {
         "name": "Basic"
