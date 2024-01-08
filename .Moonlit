@@ -1,0 +1,50 @@
+# created by Alexander Petree @apetree100122 
+{"name": "Moonlit",
+    "id": "/subscriptions/e73895c7-e238-484e-8e0e-50775ae9db95
+      /resourceGroups/Solution2/providers/virtualNetworks/Moonlit",
+    "etag": "W
+      / "c37f188f-f17e-4abe-af38-02ad36dd04c
+     "type" : 
+      "virtualNetworks",
+    "location":
+     "west_us",
+     "tags":
+   {"apetree1001@email.phoenix.edu",
+   "alexander@alexander.omnimicrosoft.com":
+    "1001"},"properties": { "provisioningState": "Succeeded",
+  "resourceGuid": "9c16f617-5599-4fef-ad86-215cab894a8d",
+  "addressSpace": 
+{ "addressPrefixes":
+[ "10.0.0.0/16"]
+},"dhcp_Options": 
+{"dnsServers": []
+},"subnets": [
+  {"name": "25392","id": "/subscriptions/e73895c7-e238-484e-8e0e-50775ae9db95
+ /resourceGroups/Solution2/provider/virtualNetworks/Moonlit/subnets
+/25392", "etag": 
+"W/"c37f188f-f17e-4abe-af38-02ad36dd04c6/
+" _ ", "properties": {
+"provisioningState": 
+"Succeeded", "addressPrefix": 
+"10.0.0.0/18"},              
+"type":
+"virtualNetworks/subnets"},          
+{"name": "GatewaySubnet",
+    
+"id": "/subscriptions/e73895c7-e238-484e-8e0e-50775ae9db95/resourceGroups/solution2/providers/Microsoft.Network/virtualNetworks/moonlit/subnets/GatewaySubnet",
+
+"etag": "W/"c37f188f-f17e-4abe-af38-02ad36dd04c6\ 
+{"_"},
+            
+"properties": {
+        
+"provisioningState": "Succeeded",
+            
+"addressPrefix": "10.0.64.0/24"
+                
+},
+               
+"type": "virtualNetworks/subnets"  }
+        ]
+    }
+}
