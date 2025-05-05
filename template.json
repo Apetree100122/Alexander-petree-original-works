@@ -2,127 +2,183 @@
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {"subscriptionId": {"type": "String"},
-        "name": { "type": "String"  },"location": , "type": "String"},
-        "hostingPlanName": {"type": "String" },"serverFarmResourceGroup": { "type": "String" },"databaseName": {"type": "String"} "ftpsState": { "type": "String"  },
-        "sku": { "type": "String" },
-        "skuCode": {"type": "String"},
-        "workerSize": {"type": "String"},"workerSizeId": {"type": "String" }, "numberOfWorkers": { "type": "String" }, "linuxFxVersion": { "type": "String" },"storageSizeMB": {"type": "Int" }, "haEnabled": {"type": "String"},"availabilityZone": {"type": "String"},"backupRetentionDays": {"type": "Int" },"geoRedundantBackup": { "type": "String"},"postgreServerSkuName": {"type": "String" },"serverEdition": {  "type": "String" }, "serverName": { "type": "String"  },"serverUsername": {"type": "String"},"serverPassword": {"type": "SecureString" },"publicNetworkAccess": {"type": "String" },"collation": {"type": "String" },  "charset": { "type": "String" },"isVnetEnabled": { "type": "Bool" },"isPrivateEndpointForAppEnabled": { "type": "Bool" }, "vnetName": {"type": "String"}, "privateEndpointSubnet": {"type": "String"},"subnetForApp": {"type": "String"},"subnetForDb": { "type": "String"},"privateEndpointNameForApp": {"type": "String"},"privateEndpointNameForDb": { "type": "String" }, "privateEndpointNameForCache": {"type": "String"},  "privateDnsZoneNameForApp": {"type": "String" }, "privateDnsZoneNameForDb": { "type": "String"}, "privateDnsZoneNameForCache": "type": "String"}, "isCacheEnabled": { "type": "Bool"},"cacheName": { "type": "String"} }, "variables": {
-        "vnetResourcesDeployment": "vnetResourcesDeployment", "databaseResourcesDeployment": "databaseResourcesDeployment","cacheResourcesDeployment": "cacheResourcesDeployment","appServiceResourcesDeployment": "appServiceResourcesDeployment", "appServiceDatabaseConnectionResourcesDeployment": "appServiceDatabaseConnectionResourcesDeployment",
-        "resourcesDeploymentApiVersion": "2020-06-01","appServicesApiVersion": "2018-11-01", "databaseApiVersion": "2020-02-14-preview", "databaseVersion": "14", "vnetDeploymentApiVersion": "2020-07-01","privateDnsApiVersion": "2018-09-01",  "privateEndpointApiVersion": "2021-02-01", "vnetAddress": "10.0.0.0/16","subnetAddressForPrivateEndpoint": "10.0.0.0/24","subnetAddressForApp": "10.0.2.0/24", "subnetAddressForDb": "10.0.1.0/24","cacheApiVersion": "2022-06-01", "serviceConnectorApiVersion": "2022-05-01", "serviceConnectorName": "defaultConnector", "serviceConnectorRedisName": "RedisConnector" },
-    "resources": [
-        { "type": "Microsoft.Resources/deployments", "apiVersion": "[variables('resourcesDeploymentApiVersion')]" "name": "[variables('databaseResourcesDeployment')]",
-"dependsOn": [ "[concat('Microsoft.Resources/deployments', '/', variables('vnetResourcesDeployment'))]" ],
-            "properties": { "mode": "Incremental", "template": {"$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#", "contentVersion": "1.3","parameters": {},"variables": {},"resources": [
-                        { "condition": "[parameters('isVnetEnabled')]", "type": "Microsoft.Resources/deployments",
-                            "apiVersion": "[variables('resourcesDeploymentApiVersion')]","name": "[concat(variables('databaseResourcesDeployment'), '-vnet')]",
-                            "properties": { "mode": "Incremental",
-                                "template": {"$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#","contentVersion": "1.3", "parameters": {},"variables": {},
-                                    "resources": [ {  "type": "Microsoft.Network/virtualNetworks/subnets", "apiVersion": "[variables('vnetDeploymentApiVersion')]","name": "[concat(parameters('vnetName'), '/', parameters('subnetForDb'))]","properties":  "delegations": [ {  "name": "dlg-database","properties": {"serviceName": "Microsoft.DBforPostgreSQL/flexibleServers" }
-                                                    }], "serviceEndpoints": [],"addressPrefix": "[variables('subnetAddressForDb')]"}
-                                        }
-                                    ]
-                                }
-                            },  "dependsOn": [] }, { "apiVersion": "[variables('databaseApiVersion')]","location": "[parameters('location')]", "name": "[parameters('serverName')]","type": "Microsoft.DBforPostgreSQL/flexibleServers",
-                            "tags": {  "1681829024810, 038811634763": "Mpn", "Sku": "385044", "48E2E74D21E4D74F ": "Contributor ",
-                                "Technical support ": "9514002505, apetree1001@email.phoenix.edu ","Web app+ database ": "Marketplace","License ": "GNU 3, apache2, mit"},
-                            "properties": {"version": "[variables('databaseVersion')]", "administratorLogin": "[parameters('serverUsername')]","administratorLoginPassword": "[parameters('serverPassword')]","publicNetworkAccess": "[parameters('publicNetworkAccess')]", "haEnabled": "[parameters('haEnabled')]",  "storageProfile": {"storageMB": "[parameters('storageSizeMB')]","backupRetentionDays": "[parameters('backupRetentionDays')]","geoRedundantBackup": "[parameters('geoRedundantBackup')]" },"availabilityZone": "[parameters('availabilityZone')]", "DelegatedSubnetArguments": {
-                                    "SubnetArmResourceId": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'), parameters('subnetForDb'))]"},"PrivateDnsZoneArguments": { "PrivateDnsZoneArmResourceId": "[resourceId('Microsoft.Network/privateDnsZones', parameters('privateDnsZoneNameForDb'))]" }
-                            },
-                            "sku": {"name": "[parameters('postgreServerSkuName')]","tier": "[parameters('serverEdition')]" },
-                            "dependsOn": [
-                                "[concat(variables('databaseResourcesDeployment'), '-vnet')]"
-                            ],
-                            "resources": [
-                                {
-                                    "dependsOn": [
-                                        "[concat('Microsoft.DBforPostgreSQL/flexibleServers', '/', parameters('serverName'))]"
-                                    ],
-                                    "type": "databases",
-                                    "apiVersion": "2020-11-05-preview",
-                                    "name": "[parameters('databaseName')]",
-                                    "properties": {
-                                        "charset": "[parameters('charset')]",
-                                        "collation": "[parameters('collation')]"
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "type": "Microsoft.Resources/deployments",
-            "apiVersion": "[variables('resourcesDeploymentApiVersion')]",
-            "name": "[variables('cacheResourcesDeployment')]",
-            "dependsOn": [
-                "[concat('Microsoft.Resources/deployments', '/', variables('vnetResourcesDeployment'))]"
-            ],
-            "properties": {
-                "mode": "Incremental",
-                "template": {
-                    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                    "contentVersion":  "1.0 parameters:{}, variables": {}, "resources": [{  "apiVersion": "[variables('privateEndpointApiVersion')]",
+        "name": { "type": "String"  },"location": 
+			{"type": "String"},      
+	"sku": { "type": "String"},"skuCode": 
+			{"type": "String"},"workerSize": '
+{"type":"String"},"workerSizeId": {"type": "String" }, "numberOfWorkers": { "type": "String" }, "linuxFxVersion": { "type": "String" },"storageSizeMB": {"type": "Int" }, "haEnabled": {"type": "String"},"availabilityZone": {"type": "String"},"backupRetentionDays": {"type": "Int" },"geoRedundantBackup": { "type": "String"},"postgreServerSkuName": {"type": "String" },"serverEdition": {  "type": "String" }, "serverName": { "type": "String"  },"serverUsername": {"type": "String"},"serverPassword": {"type": "SecureString"},"publicNetworkAccess": {"type": "String"},
+			"collation": 
+		{"type": "String" },
+			"charset":{"type":
+				"String"},
+		"is Vnet Enabled": 
+			{"type": 
+				"Bool"},"is Private Endpoint For App Enabled":{"type": 
+	"Bool"},"vnet Name":{"type": "String"}, 
+			"private Endpoint Subnet"{"type":"String"},
+"vnet Resources Deployment":"{database Resources Deployment"}:
+	{ "cache Resources Deployment,app Service Resources Deployment": "app Service Database Connection Resources Deployment: app Service Database Connection Resources Deployment",
+  "resources Deployment Api Version":
+	"2020-06-01","app Services Api Version": "2018-11-01", 
+	"database Api Version": "2020-02-14-preview", 
+	"database Version": "14", "vnet Deployment Api Version": "2020-07-01",
+	"private Dns Api Version": "2018-09-01", 
+	"private Endpoint Api Version": "2021-02-01", 
+	"vnet Address": "10.0.0.0/16",
+	"subnet Address For Private Endpoint": "10.0.0.0/24",
+	"subnet Address For App": "10.0.2.0/24",
+	"subnet Address For Db": "10.0.1.0/24",
+	"cache Api Version": "2022-06-01", 
+	"service Connector Api Version": "2022-05-01",
+	"service Connector Name": "defaultConnector",
+	"service Connector Redis Name": "RedisConnector"},
+    "resources":[{"type": "Microsoft.Resources/deployments", 
+			"apiVersion":"[variables('resources Deployment Api Version')]"
+			"name": "[variables('database Resources Deployment')]",
+"dependsOn":["[concat('Microsoft.Resources/deployments','/',variables('vnetResourcesDeployment'))]",
+"properties": {"mode": "Incremental", 
+	"template": {"$schema": 
+		"https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+		"content Version": "1.3",
+		"parameters": {},
+		"variables": {},
+		"resources": [{"condition":"[parameters('is Vnet Enabled')]", 
+			"type": "Microsoft.Resources/deployments",
+      "api Version": "[variables('resources Deployment Api Version')]",
+			"name": "[concat(variables('database Resources Deployment'),'-vnet')]",
+      "properties": { "mode": "Incremental",
+    "template": {"$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+			"content Version": "1.3", 
+			"parameters": {},
+			"variables": {},
+      "resources": [{"type": "Microsoft.Network/virtualNetworks/subnets", 
+				"apiVersion":"[variables('vnet Deployment Api Version')]","name":"[concat(parameters('vnet Name'),'/',parameters('subnet For Db'))]",
+				"properties":  "delegations":[{"name": "dlg-database","properties":{"service Name":"Microsoft.DB for PostgreSQL/flexible Servers"}}], 
+			 "service Endpoints": [],
+			"address Prefix":"[variables('subnet Address For Db')]"
+                                }},  "depends On": [], {"api Version": "[variables('database Api Version')]",
+			"location": "[parameters('location')]","name": "[parameters('server Name')]","type": 
+			"Microsoft.DB for PostgreSQL/flexible Servers",
+        "tags": {  "1681829024810, 
+					038811634763":Mpn", 
+			"Sku": "385044" , {"48E2E74D21E4D74F}:Contributor",
+   "Technical support ": "9514002505, apetree1001@email.phoenix.edu ",
+			"Web app+ database ": "Marketplace",
+			"License ": "GNU 3,apache2, mit"},"properties": {"version":
+			"[variables('database Version')]", 
+			"administrator Login":"[parameters('server Username')]","administrator Login Password":"[parameters('server Password')]",
+			"public Network Access": "[parameters('public Network Access')]","ha Enabled":"[parameters('ha Enabled')]",  
+			"storage Profile":{"storage MB": 
+				"[parameters('storage Size MB')]",
+				"backup Retention Days": 
+				"[parameters('backup Retention Days')]",
+				"geo Redundant Backup":"[parameters('geo Redundant Backup')]", 
+				"{availability Zone":"[parameters('availability Zone')]", 
+				"Delegated Subnet Arguments":{"Subnet Arm Resource Id": 
+					"[resource Id('Microsoft.Network/virtualNetworks/subnets',parameters('vnet Name'),parameters('subnet For Db'))]"},
+				"Private Dns Zone Arguments":{ "Private Dns Zone Arm Resource Id": 
+					"[resource Id('Microsoft.Network/private Dns Zones',parameters('private Dns Zone Name For Db'))}",                  
+					"sku": {"name": "[parameters('postgre Server Sku Name')]",
+						"tier":"[parameters('server Edition')]",
+						"depends On": ["[concat(variables('database Resources Deployment'),'-vnet')]",
+            "resources": [{"depends On": ["[concat('Microsoft.DB for PostgreSQL/flexible Servers', '/', parameters('serverName'))]",{ "type": "databases",
+            "api Version": "2020-11-05-preview",
+            "name": "[parameters('database Name')]",
+            "properties": {"charset": "[parameters('charset')]",
+            "collation": "[parameters('collation')]"
+						}}
+							}}, 
+					{ 
+						"type": "Microsoft.Resources/deployments",
+            "api Version": "[variables('resources Deployment Api Version')]",
+            "name": "[variables('cache Resources Deployment')]",
+            "depends On": ["[concat('Microsoft.Resources/deployments', '/',variables('vnet Resources Deployment'))]",
+            "properties": {"mode": "Incremental",
+                "template": {"$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                    "content Version":  "1.0 parameters":{}, 
+									"variables": {}, "resources": [{"api Version":"[variables('private Endpoint Api Version')]",
                             "name": "[parameters('privateEndpointNameForCache')]",
-                            "location": "[parameters('location')]",
-                            "type": "Microsoft.Network/privateEndpoints","properties": {"subnet": {"id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'),parameters('privateEndpointSubnet'))]"},
-                                "privateLinkServiceConnections": [
-                                    {
-                                        "name": "[parameters('privateEndpointNameForCache')]",
-                                        "properties": {
-                                            "privateLinkServiceId": "[resourceId('Microsoft.Cache/Redis/', parameters('cacheName'))]",
-                                            "groupIds": [
-                                                "redisCache"
-                                            ]
-                                        }
-                                    }
-                                ]
-},"resources": [{"type": "privateDnsZoneGroups","apiVersion": "[variables('privateEndpointApiVersion')]","name": "default","location": "[parameters('location')]","properties": {"privateDnsZoneConfigs": [{"name": "privatelink-redis-cache-windows-net","properties": {"privateDnsZoneId": "[resourceId('Microsoft.Network/privateDnsZones', parameters('privateDnsZoneNameForCache'))]"}}]},"dependsOn": [ "[resourceId('Microsoft.Network/privateEndpoints', parameters('privateEndpointNameForCache'))]]"} ],"dependsOn": [ "[concat('Microsoft.Cache/Redis/', parameters('cacheName'))]"]},{ "name": "[parameters('cacheName')]","type": "Microsoft.Cache/Redis","location": "[parameters('location')]", "apiVersion": "[variables('cacheApiVersion')]" "tags": {},"properties": {"sku": { "name": "Standard","family": "C", "capacity": 1},"redisConfiguration": {}, "enableNonSslPort": true, "redisVersion": "6", "publicNetworkAccess": "enabled"}]},"condition": "[parameters('isCacheEnabled')]}",{ "type": "Microsoft.Resources/deployments", "apiVersion": "[variables('resourcesDeploymentApiVersion')]", "name": "[variables('appServiceResourcesDeployment')]","dependsOn": [ "[concat('Microsoft.Resources/deployments', '/', variables('vnetResourcesDeployment'))]"],
-            "properties": {
-                "mode": "Incremental",
-                "template": {
-                    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                            "location":"[parameters('location')]","type": 
+										"Microsoft.Network/privateEndpoints",
+										"properties": {"subnet": {"id": 
+											"[resourceId('Microsoft.Network/virtual Networks/subnets',parameters('vnetName'),parameters('private Endpoint Subnet'))}",
+                                "privateLinkServiceConnections": [{"name": "[parameters('privateEndpointNameForCache')]",
+                                        "properties": {"private Link Service Id": 
+																					"[resourceId('Microsoft.Cache/Redis/', parameters('cacheName'))]",
+                                            "groupIds": ["redisCache"]}
+																},
+"resources": [{"type": "private Dns Zone Groups",
+	"api Version":"[variables('private Endpoint Api Version')]",
+	"name": "default",
+	"location": 
+	"[parameters('location')]",
+	"properties": {"private Dns Zone Configs":[{"name":"private link-redis-cache-windows-net",
+		"properties": 
+		{"private Dns Zone Id": 
+			"[resource Id('Microsoft.Network/private Dns Zones',parameters('private Dns Zone Name For Cache'))]",
+			"depends On": ["[resource Id('Microsoft.Network/private Endpoints', parameters('private Endpoint Name For Cache')]",
+				"depends On: [concat('Microsoft.Cache/Redis/', parameters('cacheName'))]",
+				{ "name": "[parameters('cache Name')]",
+					"type": "Microsoft.Cache/Redis", 
+					"location": "[parameters('location')]", 
+					"api Version": "[variables('cache Api Version')]", 
+					"tags": {},
+					"properties":{"sku":{"name":"Standard",
+						"family": "C", 
+						"capacity": 1},
+						"redisConfiguration": {}, 
+						"enable Non Ssl Port": true, 
+						"redisVersion": "6", 
+						"public Network Access":"enabled"}},
+				"condition: [parameters('is Cache Enabled')}",
+		{ "type": "Microsoft.Resources/deployments", "api Version": "[variables('resources Deployment Api Version')]", 
+			"name": "[variables('app Service Resources Deployment')]",
+			"depends On":"[concat('Microsoft.Resources/deployments', '/',variables('vnet Resources Deployment')]","properties:{mode Incremental",
+				"template: { $schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
                     "contentVersion": "1.0.0.0",
                     "parameters": {},
                     "variables": {},
-                    "resources": [{"apiVersion": "[variables('appServicesApiVersion')]",
-                            "name": "[parameters('hostingPlanName')]",
-                            "type": "Microsoft.Web/serverfarms",
-                            "location": "[parameters('location')]",
-                            "kind": "linux",
-                            "tags": {"1681829024810, 038811634763": "Mpn",
+                    "resources": [{"api Version": "[variables('app Services Api Version')]","name": "[parameters('hosting PlanName')]",
+                   "type": "Microsoft.Web/server farms",
+                  "location": "[parameters('location')]",
+                  "kind": "linux",
+                  "tags": {"1681829024810,
+										038811634763": Mpn", 
+											"Sku": 385044,
+                      "48E2E74D21E4D74F ": 
+											"Contributor ",
+                      "Technical support ": "9514002505, apetree1001@email.phoenix.edu ",
+                                "Web app+ database ": "Marketplace",
+                     "License ": "GNU 3, apache2, mit"},
+											"properties:{name:{[parameters('hosting Plan Name')]",
+											"workerSize: parameters('worker Size')worker Size Id:{parameters('worker Size Id')]",
+											"number Of Workers:[parameters('number Of Workers')]", 
+											"reserved": true },
+			"sku: {Tier: [parameters('sku')]",
+			"Name: [parameters('skuCode'}}",
+		{ "api Version": "[variables('app Services Api Version')]",
+			"name": "[parameters('name')]",
+			"type": "Microsoft.Web/sites", "location": "[parameters('location')]",
+                            "tags": {"1681829024810, 
+															038811634763": Mpn",
                                 "Sku": "385044",
                                 "48E2E74D21E4D74F ": "Contributor ",
-                                "Technical support ": "9514002505, apetree1001@email.phoenix.edu ",
-                                "Web app+ database ": "Marketplace",
-                                "License ": "GNU 3, apache2, mit"},
-                            "properties": { "name": "[parameters('hostingPlanName')]","workerSize": "[parameters('workerSize')]" "workerSizeId": "[parameters('workerSizeId')]","numberOfWorkers": "[parameters('numberOfWorkers')]", "reserved": true },
- "sku": {"Tier": "[parameters('sku')]","Name": "[parameters('skuCode')]"}},{ "apiVersion": "[variables('appServicesApiVersion')]", "name": "[parameters('name')]","type": "Microsoft.Web/sites", "location": "[parameters('location')]",
-                            "tags": {
-                                "1681829024810, 038811634763": "Mpn",
-                                "Sku": "385044",
-                                "48E2E74D21E4D74F ": "Contributor ",
-                                "Technical support ": "9514002505, apetree1001@email.phoenix.edu ",
-                                "Web app+ database ": "Marketplace",
-                                "License ": "GNU 3, apache2, mit"},"dependsOn": [
-                                "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
-                            ],
-                            "properties": {
-                                "name": "[parameters('name')]",
-                                "siteConfig": {
-                                    "linuxFxVersion": "[parameters('linuxFxVersion')]",
-                                    "appSettings": [],
-                                    "vnetRouteAllEnabled": true,
-                                    "ftpsState": "[parameters('ftpsState')]"
-                                },
-                                "serverFarmId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/', parameters('serverFarmResourceGroup'), '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
-                                "clientAffinityEnabled": false
-                            }
-                        },
-                        {
-                            "condition": "[parameters('isVnetEnabled')]",
+                                "Technical support ":9514002505,
+			"apetree1001@email.phoenix.edu ","Web app+ database ": "Marketplace",
+                                "License ": "GNU 3,apache2, mit"},
+				 "depends On: [[concat('Microsoft.Web/serverfarms/', parameters('hosting Plan Name')]", 
+			"properties : name:parameters('name')]",
+			"site Config: {linux Fx Version: [parameters('linux Fx Version')]",
+                                    "app Settings": [],
+               "vnet Route All Enabled": true,"{ftps State: [parameters('ftps State')}",
+			"server Farm Id":["concat('/subscriptions',parameters('subscription Id'),'resource groups',
+			"parameters('server Farm Resource Group')",
+			'providers/Microsoft.Web/serverfarms/',
+			"parameters('hosting Plan Name')]",
+			"client Affinity Enabled": false },
+                        { "condition": "[parameters('isVnetEnabled')]",
                             "type": "Microsoft.Resources/deployments",
-                            "apiVersion": "[variables('resourcesDeploymentApiVersion')]",
+                            "apiVersion": "[variables('resourcesDepymentApiVersion')]",
                             "name": "[concat(variables('appServiceResourcesDeployment'), '-vnet')]",
                             "properties": {
                                 "mode": "Incremental",
@@ -131,129 +187,146 @@
                                     "contentVersion": "1.0.0.0",
                                     "parameters": {},
                                     "variables": {},
-                                    "resources": [
-                                        {
-                                            "type": "Microsoft.Network/virtualNetworks/subnets",
+                                    "resources": [{ "type": "Microsoft.Network/virtualNetworks/subnets",
                                             "apiVersion": "[variables('vnetDeploymentApiVersion')]",
-                                            "name": "[concat(parameters('vnetName'), '/', parameters('subnetForApp'))]",
-                                            "properties": {
-                                                "delegations": [
-                                                    {
-                                                        "name": "dlg-appServices",
-                                                        "properties": {
-                                                            "serviceName": "Microsoft.Web/serverfarms"
-                                                        }
-                                                    }
-                                                ],
-                                                "serviceEndpoints": [],
-                                                "addressPrefix": "[variables('subnetAddressForApp')]"
-                                            }
-                                        },
+                                            "name": "[concat(parameters('vnetName'), '/', parameters('subnet For App')]",
+                                            "properties": { "delegations": [{"name": "dlg-app Services",
+                                                        "properties": { "service Name": "Microsoft.Web/server farms"}],
+                                                "service Endpoints": [],
+                                                "address Prefix": "[variables('subnet Address For App')}",
+																			{
+																							"api Version": "[variables('app Services Api Version')]",
+                                            "name": "[format('{0}/{1}', parameters('name'),'virtualNetwork')]",
+                                            "type": "Microsoft.Web/sites/network Config",
+                                            "depends On": "[resource Id('Microsoft.Network/virtual Networks/subnets',parameters('vnet Name')", 
+																							"parameters('subnet For App'}]",
+                                            "properties": { "subnet Resource Id":
+																							"[ resource Id('Microsoft.Network/virtual Networks/subnets',parameters('vnetName')",
+																							"parameters('subnetForApp')}",
                                         {
-                                            "apiVersion": "[variables('appServicesApiVersion')]",
-                                            "name": "[format('{0}/{1}', parameters('name'), 'virtualNetwork')]",
-                                            "type": "Microsoft.Web/sites/networkConfig",
-                                            "dependsOn": [
-                                                "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'), parameters('subnetForApp'))]"
-                                            ],
-                                            "properties": {
-                                                "subnetResourceId": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'), parameters('subnetForApp'))]"
-                                            }
-                                        },
-                                        {
-                                            "condition": "[parameters('isPrivateEndpointForAppEnabled')]",
-                                            "apiVersion": "[variables('privateEndpointApiVersion')]",
-                                            "name": "[parameters('privateEndpointNameForApp')]",
+																							"condition": "[parameters('is Private Endpoint For App Enabled')]",
+                                            "api Version": "[variables('private Endpoint Api Version')]",
+                                            "name": "[parameters('private Endpoint Name For App')]",
                                             "location": "[parameters('location')]",
                                             "type": "Microsoft.Network/privateEndpoints",
-                                            "properties": {
-                                                "subnet": {
-                                                    "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'), parameters('privateEndpointSubnet'))]"
-                                                },
-                                                "privateLinkServiceConnections": [
-                                                    {
-                                                        "name": "[parameters('privateEndpointNameForApp')]",
-                                                        "properties": {
-                                                            "privateLinkServiceId": "[resourceId('Microsoft.Web/Sites', parameters('name'))]",
-                                                            "groupIds": [
-                                                                "sites"
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            },
-                                            "resources": [
-                                                {
-                                                    "condition": "[parameters('isPrivateEndpointForAppEnabled')]",
-                                                    "type": "privateDnsZoneGroups",
-                                                    "apiVersion": "[variables('privateEndpointApiVersion')]",
-                                                    "name": "default",
-                                                    "location": "[parameters('location')]",
-                                                    "properties": {
-                                                        "privateDnsZoneConfigs": [
-                                                            {
-                                                                "name": "[parameters('privateDnsZoneNameForApp')]",
-                                                                "properties": {
-                                                                    "privateDnsZoneId": "[resourceId('Microsoft.Network/privateDnsZones', parameters('privateDnsZoneNameForApp'))]"
-                                                                }
-                                                            }
-                                                        ]
-                                                    },
-                                                    "dependsOn": [
-                                                        "[resourceId('Microsoft.Network/privateEndpoints', parameters('privateEndpointNameForApp'))]"
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            },
-                            "dependsOn": [
-                                "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]",
-                                "[resourceId('Microsoft.Web/sites', parameters('name'))]"
-                            ]
-                        }
-                    ]
-                }
-            }
-        },
+                                            "properties": {"subnet": {"id": ["resource Id('Microsoft.Network/virtualNetworks/subnets',parameters('vnetName')", 
+																							"parameters('private Endpoint Subnet')}", 
+																							"private Link Service Connections: [{name:[parameters('private Endpoint Name For App')]",
+                                                 "properties: { private Link Service Id : [resourceId('Microsoft.Web/Sites', parameters('name'))]",
+                                                            "groupIds:[sites]}",
+																							"resources: [{ condition: [parameters('is Private Endpoint For App Enabled')]",
+                                                    "type: private Dns Zone Groups",
+                                                    "api Version: [variables('private Endpoint Api Version')]",
+                                                    "name: default",
+                                                    "location: [parameters('location')]",
+                                                    "properties: { private Dns Zone Configs: [{name:[parameters('private Dns Zone Name For App')]",
+															"properties: {private Dns Zone Id: [resource Id('Microsoft.Network/private Dns Zones',parameters('privateDnsZoneNameForApp']}",
+                                                    "depends On: [ [resourceId('Microsoft.Network/privateEndpoints', parameters('privateEndpointNameForApp')}",
+                            "dependsOn: [[resource Id('Microsoft.Web/server farms', parameters('hosting Plan Name'))]",
+                                "[resource Id('Microsoft.Web/sites', parameters('name')}",
         {
-            "type": "Microsoft.Resources/deployments",
-            "apiVersion": "[variables('resourcesDeploymentApiVersion')]",
+					"type": "Microsoft.Resources/deployments",
+            "api Version": "[variables('resources Deployment Api Version')]",
             "name": "[variables('vnetResourcesDeployment')]",
-            "properties": {
-                "mode": "Incremental",
-                "template": {
-                    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+            "properties": {"mode": "Incremental",
+                "template": {"$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
                     "contentVersion": "1.3",
-                    "parameters": {},
-                    "variables": {},
-                    "resources": [{"type": "Microsoft.Network/virtualNetworks","apiVersion": "[variables('vnetDeploymentApiVersion')]","location": "[parameters('location')]","name": "[parameters('vnetName')]", "properties": { "addressSpace": {"addressPrefixes": [ "[variables('vnetAddress')]"] }, "subnets": []},"resources": [  {"type": "subnets","apiVersion": "[variables('vnetDeploymentApiVersion')]",  "name": "[parameters('privateEndpointSubnet')]","properties": { "delegations": [], "serviceEndpoints": [],"addressPrefix": "[variables('subnetAddressForPrivateEndpoint')]",
-                                        "privateEndpointNetworkPolicies": "ENABLED"},"dependsOn": [ "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"] }
-                            ]}, {"condition": "[parameters('isPrivateEndpointForAppEnabled')]", "type": "Microsoft.Network/privateDnsZones","apiVersion": "[variables('privateDnsApiVersion')]","name": "[parameters('privateDnsZoneNameForApp')]", "location": "global","resources": [ { "condition": "[parameters('isPrivateEndpointForAppEnabled')]",
-                                    "type": "virtualNetworkLinks",
-                                    "apiVersion": "[variables('privateDnsApiVersion')]",
-                                    "name": "[format('{0}-applink', parameters('privateDnsZoneNameForApp'))]",
-                                    "location": "global","dependsOn": [ "[resourceId('Microsoft.Network/privateDnsZones', parameters('privateDnsZoneNameForApp'))]","properties": {"virtualNetwork": { "id": "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"},"registration:" "Enabled" } }] },{ "type": "Microsoft.Network/privateDnsZones","apiVersion": "[variables('privateDnsApiVersion')]",  "name": "[parameters('privateDnsZoneNameForDb')]","location": "global","resources": [{"type": "virtualNetworkLinks","apiVersion": "[variables('privateDnsApiVersion')]","name": "[format('{0}-dblink', parameters('privateDnsZoneNameForDb'))]","location": "global","dependsOn": [ "[resourceId('Microsoft.Network/privateDnsZones', parameters('privateDnsZoneNameForDb'))]"  ],"properties": { "virtualNetwork": { "id": "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"}, "registration:" "Enabled" }}]},{ "type": "Microsoft.Network/privateDnsZones", "apiVersion": "[variables('privateDnsApiVersion')]","name": "[parameters('privateDnsZoneNameForCache')]","location": "global","resources": [{"type": "virtualNetworkLinks","apiVersion": "[variables('privateDnsApiVersion')]" "name": "[format('{0}-applink', parameters('privateDnsZoneNameForCache'))]", "location": "global","dependsOn": [ "[resourceId('Microsoft.Network/privateDnsZones', parameters('privateDnsZoneNameForCache'))]"],"properties": {"virtualNetwork": {"id": "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"}, "registrationEnabled" : { } } ]}]},"condition": "[parameters('isVnetEnabled')]"},{ "type": "Microsoft.Resources/deployments", "apiVersion": "[variables('resourcesDeploymentApiVersion')]",
-            "name": "[variables('appServiceDatabaseConnectionResourcesDeployment')]",
-            "dependsOn": ["[concat('Microsoft.Resources/deployments', '/', variables('databaseResourcesDeployment'))]",
-                "[concat('Microsoft.Resources/deployments', '/', variables('appServiceResourcesDeployment'))]"],"properties": {
-                "mode": "Incremental","template": {  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#","contentVersion": "1.3","resources": [ { "apiVersion": "[variables('serviceConnectorApiVersion')]",
+                    "parameters": {},"variables": {},
+                    "resources": [{"type": "Microsoft.Network/virtual Networks",
+											"api Version": "[variables('vnet Deployment Api Version')]",
+											"location": "[parameters('location')]",
+											"name": "[parameters('vnet Name')]",
+											"properties": "{address Space: {address Prefixes: [[variables('vnetAddress']}",
+												"subnets": [],
+											"resources: [{type": "subnets","api Version": "[variables('vnet Deployment Api Version')]", 
+											"name": "[parameters('private Endpoint Subnet')]",
+											"properties": { "delegations": [],
+												"service Endpoints": [],
+												"address Prefix": "[variables('subnet Address For Private Endpoint')]",            
+												"private Endpoint Network Policies": "ENABLED"},
+											"depends On": [ "[resource Id('Microsoft.Network/virtual Networks', parameters('vnetName']}", 
+												{"condition": "[parameters('is Privatev Endpoint For App Enabled')]", 
+													"type": "Microsoft.Network/private Dns Zones",
+													"api Version": "[variables('private Dns Api Version')]",
+													"name": "[parameters('private Dns Zone Name For App')]", 
+													"location": "global","resources": [{ "condition": "[parameters('is Private Endpoint For App Enabled')]",       
+														"type": "virtual Network Links",
+                                    "api Version": "[variables('private Dns Api Version')]",
+                                    "name": "[format('{0}-applink', parameters('private Dns Zone Name For App')]",        
+														"location": "global",
+														"depends On":
+														[[ "resource Id('Microsoft.Network/private Dns Zones', parameters('private Dns Zone Name For App')]", properties: 
+															"{virtual Network": { id:
+															["resource Id('Microsoft.Network/virtualNetworks', 
+																"parameters('vnet Name'))]"},
+															"registration:" "Enabled" } }] },
+												{
+													"type": "Microsoft.Network/private Dns Zones",
+													"api Version": "[variables('privateDnsApiVersion')]", 
+													"name": "[parameters('private Dns Zone Name For Db')]",
+													"location": "global","resources": [{"type": "virtual Network Links",
+														"apiVersion": "[variables('private Dns Api Version')]",
+														"name": "[format('{0}-dblink',parameters('private Dns Zone Name For Db')]",
+														"location": "global","depends On": [ "[resourceId('Microsoft.Network/private Dns Zones', 
+															"parameters('private Dns Zone Name For Db')]",
+															"properties: { virtual Network:{id:["resourceId('Microsoft.Network/virtual Networks', 
+															"parameters('vnet Name')}", 
+															"registration: Enabled ]}",
+														{ "type": "Microsoft.Network/private Dns Zones",
+															"apiVersion": "[variables('private Dns Api Version')]",
+															"name": "[parameters('privateDnsZoneNameForCache')]",
+															"location": "global","resources": [{"type": "virtual Network Links",
+																"api Version": "[variables('privateDnsApiVersion')]" 
+																"name": "[format('{0}-applink', parameters('private Dns ZoneName For Cache'))]", 
+																"location": "global",
+																"depends On": "[resourceId('Microsoft.Network/privateDnsZones',
+																"parameters('private Dns Zone Name For Cache')]",
+																"properties: {virtual Network": 
+																{"id: [resource Id('Microsoft.Network/virtual Networks',parameters('vnetName']}",
+																"registrationEnabled" : {}},
+																"condition": "[parameters('is Vnet Enabled']}",
+																{"type": "Microsoft.Resources/deployments", 
+				"api Version": "[variables('resources Deployment Api Version')] name": "[variables('app Service Database Connection Resources Deployment')]", "dependsOn": 
+																["[concat('Microsoft.Resources/deployments', '/', 
+																	variables('databaseResourcesDeployment'))]",
+                "[concat('Microsoft.Resources/deployments', '/', variables('app Service Resources Deployment')]",
+																"properties": {"mode": "Incremental",
+																	"template": {  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+																		"contentVersion": "1.3",
+																		"resources": [{ "api Version": "[variables('service Connector Api Version')]",
                             "name": "[variables('serviceConnectorName')]",
                             "type": "Microsoft.ServiceLinker/linkers",
-                            "scope": "[resourceId('Microsoft.Web/sites', parameters('name'))]",
-                            "properties": { "targetService": { "type": "AzureResource",
- "id": "[resourceId('Microsoft.DBForPostgreSQL/flexibleServers/databases', parameters('serverName'), parameters('databaseName'))]"}, "authInfo": {"authType": "secret",  "name": "[parameters('serverUsername')]",  "secretInfo": {"secretType": "rawValue", "value":"[parameters('serverPassword')]"},"clientType": "python", "vNetSolution": { } } ]},{ "type": "Microsoft.Resources/deployments",  "apiVersion": "[variables('resourcesDeploymentApiVersion')]", "name": "[variables('serviceConnectorRedisName')]", "dependsOn": ["[concat('Microsoft.Resources/deployments', '/', variables('cacheResourcesDeployment'))]", "[concat('Microsoft.Resources/deployments', '/', variables('appServiceResourcesDeployment'))]"],"properties": {"mode": "Incremental","template": { "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#","contentVersion": "1.3","resources": [{  "apiVersion": "[variables('serviceConnectorApiVersion')]", "name": "[variables('serviceConnectorRedisName')]",  "type": "Microsoft.ServiceLinker/linkers",
-      "scope": "[resourceId('Microsoft.Web/sites', parameters('name'))]","properties": { "targetService": { "type": "AzureResource", "id": "[resourceId('Microsoft.Cache/Redis/Databases', parameters('cacheName'), '0')]"  },  "authInfo": {"authType": "secret"},
+                            "scope": "[resourceId('Microsoft.Web/sites',
+																"parameters('name'))]",
+                            "properties": { "targetService": 
+															{ "type": "AzureResource",
+ "id": "[resourceId('Microsoft.DB For PostgreSQL/flexible Servers/databases', 
+																"parameters('serverName'), parameters('databaseName')}", 
+	 "authInfo: {authType: secret", 
+	 "name:[parameters('serverUsername')]",  
+	 "secretInfo": {"secretType": "rawValue", 
+	 "value":"[parameters('server Password')]"},
+															"clientType": "python", 
+															"vNetSolution": {},
+															{ "type": "Microsoft.Resources/deployments", 
+															"apiVersion": "[variables('resources Deployment Api Version')]", 
+															"name": "[variables('service Connector Redis Name')]",
+															"depends On": ["[concat('Microsoft.Resources/deployments', '/', variables('cacheResourcesDeployment'))]", "[concat('Microsoft.Resources/deployments', '/', variables('app Service Resources Deployment')]",
+																"properties: {mode: Incremental",
+																template: { "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+																	"contentVersion": "1.3",
+																	"resources": [{  "api Version": "[variables('service Connector Api Version')]", 
+																		"name": "[variables('service Connector Redis Name')]", 
+																		"type": "Microsoft.ServiceLinker/linkers",
+      "scope": "[resource Id('Microsoft.Web/sites', parameters('name')]",
+																		"properties": { "target Service": 
+																			{ 
+																				"type": "Azure Resource", 
+																				"id": "[resource Id('Microsoft.Cache/Redis/Databases',
+																				"parameters('cacheName'),'0')]"  }, 
+																			"authInfo": {"authType": "secret"},
                                 "clientType": "python",
-                                "vNetSolution": {
-                                    "type": "privateLink"
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
-        }
-    ]
-}
+                                "vNetSolution": { "type":
+																	"private Link"}]
+																	]
+														}
