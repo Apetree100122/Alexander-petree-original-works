@@ -1,242 +1,639 @@
 {
-    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-lighttothedark-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Web/sites/discover22/slots/Bestthingsinglife",
-    "name": "discover22/Bestthingsinglife",
-    "type": "Microsoft.Web/sites/slots",
-    "kind": "app,linux",
-    "location": "East US 2",
-    "tags": {
-        "83968350": "1000",
-        "48E2E74D21E4D74F": "1000",
-        "038811634763": "2",
-        "1681196997174": "2",
-        "1681829024810": "102"
-    },
-    "properties": {
-        "name": "discover22(Bestthingsinglife)",
-        "state": "AdminDisabled",
-        "hostNames": [
-            "discover22-bestthingsinglife.azurewebsites.net"
-        ],
-        "webSpace": "bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247-EastUS2webspace-Linux",
-        "selfLink": "https://waws-prod-bn1-205.api.azurewebsites.windows.net:454/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/webspaces/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247-EastUS2webspace-Linux/sites/discover22",
-        "repositorySiteName": "discover22",
-        "owner": null,
-        "usageState": 0,
-        "enabled": true,
-        "adminEnabled": false,
-        "enabledHostNames": [
-            "discover22-bestthingsinglife.azurewebsites.net",
-            "discover22-bestthingsinglife.scm.azurewebsites.net"
-        ],
-        "siteProperties": {
-            "metadata": null,
-            "properties": [
+    "id": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/
+bonsai-rg-lighttothedark-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Web/sites/
+discover22/slots/
+Bestthingsinglife",
+   
+"name": "discover22/
+           Bestthingsinglife",
+ 
+      "type": "Microsoft.Web/sites
+/slots","kind":"app,linux",
+    
+"location": "East US 2",
+   
+"tags": {
+       
+     "83968350": 
+  "1000",
+     "48E2E74D21E4D74F":
+"1000",
+        "038811634763":
+  "2",
+        "1681196997174":
+"2",
+        "1681829024810":
+  "102"
+},
+  
+"properties":
+{
+       
+   "name": "discover22(Bestthingsinglife
+)",      
+"state":    
+
+     "Admin
+             Disabled",
+      
+"hostNames": [
+
+"discover22-bestthingsinglife.azurewebsites.net"
+
+   ],   "webSpace":
+
+"bonsai-rg-LIGHTTOTHEDARK
+
+  -24d69b3b-d093-41c6-a847-0c0461e88247-EastUS2webspace-Linux",
+
+ "selfLink": "https://waws-prod-bn1-205.api.azurewebsites.windows.net:454
+
+/subscriptions/
+
+33af1e61-072c-48f1-bd41-b60da094e056/
+
+webspaces/
+
+bonsai-rg-LIGHTTOTHEDARK-
+
+24d69b3b-d093-41c6-a847-
+
+0c0461e88247-
+
+EastUS2webspace-
+
+   Linux
+
+/sites/discover22",
+        
+
+"repositorySiteName": 
+
+"discover22",   "owner": 
+null,
+
+"usageState": 0,
+    
+    "enabled": true,  "admin
+
+Enabled": false,
+        
+"enabledHostNames": 
+   [
+           "discover22-bestthingsinglife.azurewebsites.net",
+           
+"discover22-bestthingsinglife.scm.azurewebsites.net"
+     
+],
+        
+"site
+      Properties": {  "metadata "properties": [
                 {
-                    "name": "LinuxFxVersion",
-                    "value": "PYTHON|3.8"
-                },
-                {
-                    "name": "WindowsFxVersion",
-                    "value": null
-                }
-            ],
-            "appSettings": null
-        },
-        "availabilityState": 0,
-        "sslCertificates": null,
-        "csrs": [],
-        "cers": null,
-        "siteMode": null,
-        "hostNameSslStates": [
-            {
-                "name": "discover22-bestthingsinglife.azurewebsites.net",
-                "sslState": 0,
-                "ipBasedSslResult": null,
-                "virtualIP": null,
-                "thumbprint": null,
-                "certificateResourceId": null,
-                "toUpdate": null,
-                "toUpdateIpBasedSsl": null,
-                "ipBasedSslState": 0,
-                "hostType": 0
-            },
-            {
-                "name": "discover22-bestthingsinglife.scm.azurewebsites.net",
-                "sslState": 0,
-                "ipBasedSslResult": null,
-                "virtualIP": null,
-                "thumbprint": null,
-                "certificateResourceId": null,
-                "toUpdate": null,
-                "toUpdateIpBasedSsl": null,
-                "ipBasedSslState": 0,
-                "hostType": 1
-            }
-        ],
-        "computeMode": null,
-        "serverFarm": null,
-        "serverFarmId": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Web/serverfarms/ASP-bonsairgLIGHTTOTHEDARK24d69b3bd-b0b9",
-        "reserved": true,
-        "isXenon": false,
-        "hyperV": false,
-        "lastModifiedTimeUtc": "2023-05-16T10:19:48.5866667",
-        "storageRecoveryDefaultState": "Running",
-        "contentAvailabilityState": 0,
-        "runtimeAvailabilityState": 0,
-        "dnsConfiguration": {},
-        "vnetRouteAllEnabled": true,
-        "containerAllocationSubnet": null,
-        "useContainerLocalhostBindings": null,
-        "vnetImagePullEnabled": false,
-        "vnetContentShareEnabled": false,
-        "siteConfig": {
-            "numberOfWorkers": 1,
-            "defaultDocuments": null,
-            "netFrameworkVersion": null,
-            "phpVersion": null,
-            "pythonVersion": null,
-            "nodeVersion": null,
-            "powerShellVersion": null,
-            "linuxFxVersion": "PYTHON|3.8",
-            "windowsFxVersion": null,
-            "windowsConfiguredStacks": null,
-            "requestTracingEnabled": null,
-            "remoteDebuggingEnabled": null,
-            "remoteDebuggingVersion": null,
-            "httpLoggingEnabled": null,
-            "azureMonitorLogCategories": null,
-            "acrUseManagedIdentityCreds": false,
-            "acrUserManagedIdentityID": null,
-            "logsDirectorySizeLimit": null,
-            "detailedErrorLoggingEnabled": null,
-            "publishingUsername": null,
-            "publishingPassword": null,
-            "appSettings": null,
-            "metadata": null,
-            "connectionStrings": null,
-            "machineKey": null,
-            "handlerMappings": null,
-            "documentRoot": null,
-            "scmType": null,
-            "use32BitWorkerProcess": null,
-            "webSocketsEnabled": null,
-            "alwaysOn": false,
-            "javaVersion": null,
-            "javaContainer": null,
-            "javaContainerVersion": null,
-            "appCommandLine": null,
-            "managedPipelineMode": null,
-            "virtualApplications": null,
-            "winAuthAdminState": null,
-            "winAuthTenantState": null,
-            "customAppPoolIdentityAdminState": null,
-            "customAppPoolIdentityTenantState": null,
-            "runtimeADUser": null,
-            "runtimeADUserPassword": null,
-            "loadBalancing": null,
-            "routingRules": null,
-            "experiments": null,
-            "limits": null,
-            "autoHealEnabled": null,
-            "autoHealRules": null,
-            "tracingOptions": null,
-            "vnetName": null,
-            "vnetRouteAllEnabled": null,
-            "vnetPrivatePortsCount": null,
-            "publicNetworkAccess": null,
-            "cors": null,
-            "push": null,
-            "apiDefinition": null,
-            "apiManagementConfig": null,
-            "autoSwapSlotName": null,
-            "localMySqlEnabled": null,
-            "managedServiceIdentityId": null,
-            "xManagedServiceIdentityId": null,
-            "keyVaultReferenceIdentity": null,
-            "ipSecurityRestrictions": null,
-            "ipSecurityRestrictionsDefaultAction": null,
-            "scmIpSecurityRestrictions": null,
-            "scmIpSecurityRestrictionsDefaultAction": null,
-            "scmIpSecurityRestrictionsUseMain": null,
-            "http20Enabled": false,
-            "minTlsVersion": null,
-            "minTlsCipherSuite": null,
-            "supportedTlsCipherSuites": null,
-            "scmMinTlsVersion": null,
-            "ftpsState": null,
-            "preWarmedInstanceCount": null,
-            "functionAppScaleLimit": 0,
-            "elasticWebAppScaleLimit": null,
-            "healthCheckPath": null,
-            "fileChangeAuditEnabled": null,
-            "functionsRuntimeScaleMonitoringEnabled": null,
-            "websiteTimeZone": null,
-            "minimumElasticInstanceCount": 0,
-            "azureStorageAccounts": null,
-            "http20ProxyFlag": null,
-            "sitePort": null,
-            "antivirusScanEnabled": null,
-            "storageType": null
-        },
-        "deploymentId": "discover22__4842",
-        "slotName": null,
-        "trafficManagerHostNames": null,
-        "sku": "PremiumV2",
-        "scmSiteAlsoStopped": false,
-        "targetSwapSlot": null,
-        "hostingEnvironment": null,
-        "hostingEnvironmentProfile": null,
-        "clientAffinityEnabled": false,
-        "clientCertEnabled": false,
-        "clientCertMode": 0,
-        "clientCertExclusionPaths": null,
-        "hostNamesDisabled": false,
-        "vnetBackupRestoreEnabled": null,
-        "domainVerificationIdentifiers": null,
-        "customDomainVerificationId": "7197B6F6C157632BB79E2C50E42763A7401F8BB8BAB09EDA4E2C3256E1CA0056",
-        "kind": "app,linux",
-        "managedEnvironmentId": null,
-        "inboundIpAddress": "20.119.136.13",
-        "possibleInboundIpAddresses": "20.119.136.13",
-        "ftpUsername": "discover22__Bestthingsinglife\\$discover22__Bestthingsinglife",
-        "ftpsHostName": "ftps://waws-prod-bn1-205.ftp.azurewebsites.windows.net/site/wwwroot",
-        "outboundIpAddresses": "20.96.237.140,20.96.237.143,20.96.237.148,20.96.237.151,20.96.237.158,20.96.237.162,20.119.136.13",
-        "possibleOutboundIpAddresses": "20.96.95.164,20.10.217.143,20.10.217.160,20.10.217.165,20.10.217.183,20.10.217.223,20.96.237.93,20.96.237.111,20.96.237.112,20.96.237.121,20.96.237.124,20.96.237.132,20.96.237.140,20.96.237.143,20.96.237.148,20.96.237.151,20.96.237.158,20.96.237.162,20.96.234.242,20.96.237.171,20.96.237.177,20.96.235.197,20.96.237.184,20.22.78.123,20.96.95.164,20.10.217.143,20.10.217.160,20.10.217.165,20.10.217.183,20.10.217.223,20.22.79.93,20.12.120.168,20.12.123.72,20.22.35.248,20.94.98.17,20.94.100.52,20.119.136.13",
-        "containerSize": 0,
-        "dailyMemoryTimeQuota": 0,
-        "suspendedTill": null,
-        "siteDisabledReason": 0,
-        "functionExecutionUnitsCache": null,
-        "maxNumberOfWorkers": null,
-        "homeStamp": "waws-prod-bn1-205",
-        "cloningInfo": null,
-        "hostingEnvironmentId": null,
-        "tags": {
-            "83968350": "1000",
-            "48E2E74D21E4D74F": "1000",
-            "038811634763": "2",
-            "1681196997174": "2",
-            "1681829024810": "102"
-        },
-        "resourceGroup": "bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247",
-        "defaultHostName": "discover22-bestthingsinglife.azurewebsites.net",
-        "slotSwapStatus": null,
-        "httpsOnly": false,
-        "endToEndEncryptionEnabled": false,
-        "redundancyMode": 0,
-        "inProgressOperationId": null,
-        "geoDistributions": null,
-        "privateEndpointConnections": [],
-        "publicNetworkAccess": null,
-        "buildVersion": null,
-        "targetBuildVersion": null,
-        "migrationState": null,
-        "eligibleLogCategories": "AppServiceAppLogs,AppServiceAuditLogs,AppServiceConsoleLogs,AppServiceHTTPLogs,AppServiceIPSecAuditLogs,AppServicePlatformLogs,ScanLogs,AppServiceFileAuditLogs,AppServiceAntivirusScanAuditLogs",
-        "inFlightFeatures": [],
-        "storageAccountRequired": false,
-        "virtualNetworkSubnetId": "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/resourceGroups/bonsai-rg-LIGHTTOTHEDARK-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Network/virtualNetworks/Discover22Vnet/subnets/Discover22AppSubnet",
-        "keyVaultReferenceIdentity": "SystemAssigned",
-        "defaultHostNameScope": 0,
-        "privateLinkIdentifiers": null
-    }
+                   
+"name": "Linux
+   FxVersion",
+    "value": 
+"PYTHON|3.8"
+              
+},
+                
+  {
+                  
+"name": "Windows
+FxVersion",
+                  
+"value":  [],
+           
+"app
+Settings":
+},  
+    "availability
+State": ,
+        
+"sslCertificates": csrs": [],
+        
+   - "cers" siteMode": 
+    
+         "hostName
+
+SslStates": [
+          
+{
+             
+"name": "discover22-bestthingsinglife.azurewebsites.net",
+            
+"sslState": ,
+"ipBased
+   
+SslResult":"virtualIP":
+     "thumbprint": 
+    
+"certificate
+
+ResourceId": 
+             
+"toUpdate":
+              
+"toUpdateIpBasedSsl": 
+                
+"ipBasedSslState":
+               
+"host
+
+Type":  "name":
+
+"discover22  -bestthingsinglife
+
+ .scm.azurewebsites.net",
+              
+"sslState": 
+    "ipBasedSslResult": "virtual
+
+IP" "thumbprint": "certificateResource
+
+  Id": "toUpdate":
+                
+"toUpdate
+         IpBasedSsl":  "ipBased
+SslState":  
+
+    "host
+Type": 
+           
+}],
+        "compute
+Mode": "serverFarm": 
+    
+"serverFarmId":
+"/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056/
+     
+ resourceGroups/bonsai-rg-LIGHTTOTHEDARK
+
+     -24d69b3b-d093-41c6-a847
+
+    -0c0461e88247/providers/Microsoft.Web
+
+   /serverfarms
+   
+     /ASP-bonsairgLIGHTTOTHEDARK
+
+24d69 b3bd-b0b9",
+      
+"reserved": true,
+    "is Xenon": false,
+      
+"hyperV": false,
+       
+   "lastModified
+
+    TimeUtc": "2023-05-16T10:19:48.5866667",
+      
+  "storageRecovery
+
+    DefaultState": "Running",
+       
+"content AvailabilityState": 
+
+"runtimeAvailabilityState": 
+       
+"dnsConfiguration": {},
+      
+
+"vnetRoute
+
+     AllEnabled": true,
+      
+"container
+
+    AllocationSubnet": 
+       
+"useContainerLocal
+   
+hostBindings":
+       
+"vnetImagePullEnabled": false,
+        
+ "vnetContentShareEnabled": false,
+    
+"siteConfig":
+{
+    "numberOf
+Workers": 1,
+          
+"defaultDocuments": n
+         
+"netFramework
+Version":  "php
+
+    Version": "python
+  
+Version":
+          
+"node
+
+Version": 
+
+"powerShell
+
+Version":
+          
+"linuxFx
+
+Version": "PYTHON|3.8",
+            
+"windowsFx
+
+Version":
+          
+"windows
+
+  ConfiguredStacks": 
+           
+"request
+    
+ TracingEnabled": 
+           
+"remote  
+
+DebuggingEnabled": 
+          
+"remoteDebugging
+
+Version": 
+        
+    "http 
+
+LoggingEnabled":
+          
+"azureMonitorLog
+
+Categories": 
+           
+"acrUseManagedIdentityCreds": 
+
+"acrUserManagedIdentityID":
+
+"logs
+
+Directory
+
+  SizeLimit":
+         
+"detailedErrorLogging
+
+Enabled":
+           
+"publishing
+
+Username": "publishing
+
+Password": 
+    
+"appSettings": 
+          
+
+"metadata": 
+         
+"connectionStrings":
+        
+"machineKey": 
+       
+"handlerMappings": 
+        
+
+"document 
+   Root":"scm
+Type": 
+           
+"use32BitWorker
+
+Process":
+         
+"webSockets
+Enabled":
+          
+"alwaysOn": false,
+          
+"java
+
+Version": "javaContainer": 
+            
+"javaContainer  Version":
+
+"appCommandLine":  "managedPipeline
+
+Mode":    "virtual
+
+Applications": "win Auth
+  AdminState":  "winAuth
+TenantState":"customAppPool
+
+IdentityAdminState":"customApp
+
+    PoolIdentityTenantState":  "runtime
+ADUser":  
+"runtimeADUser
+Password":        
+"loadBalancing":
+     "routingRules": 
+            "experiments": 
+"limits": 
+"autoHealEnabled": 
+           "autoHealRules": 
+   "tracing
+Options": 
+  "vnet
+Name": 
+    vnet 
+RouteAllEnabled":
+   
+"vnetPrivate
+PortsCount": 
+          
+"public
+
+NetworkAccess": "cors"
+          
+"push":  "api
+
+Definition": 
+      "apiManagement
+Config": 
+ "autoSwap
+
+SlotName": 
+     "local
+
+MySql Enabled": "managedService
+
+IdentityId":   "xManaged
+    ServiceIdentityId":  "keyVault
+ReferenceIdentity":    "ipSecurity
+Restrictions": 
+   "ipSecurityRestrictions
+DefaultAction":  "scm
+IpSecurity
+Restrictions": 
+           
+"scm
+IpSecurity
+  Restrictions Default
+
+Action":
+           
+"scm IpSecurity Restrictions 
+UseMain": 
+           
+"http20Enabled": 
+           
+"min 
+
+  TlsVersion": "min Tls
+
+CipherSuite": "supported
+
+TlsCipherSuites":    "scmMinTls
+Version":  "ftps
+State":  "pre Warmed
+Instance Count": 
+         "function App
+ScaleLimit":
+          
+"elastic WebApp
+ScaleLimit":   "healthCheck
+
+Path": "file
+
+ChangeAudit Enabled": "functions
+
+Runtime
+
+ScaleMonitoringEnabled":
+        
+"website
+
+TimeZone":
+     "minimum
+Elastic
+InstanceCount":
+          
+"azure
+StorageAccounts": 
+        "http20
+ProxyFlag": 
+           
+"sitePort": 
+          
+"antivirusScanEnabled": 
+        
+"storageType":
+       
+},
+        
+    "deployment
+    Id": "discover22
+                       
+  4842","slotName":
+    
+"trafficManager
+
+HostNames": 
+      
+"sku": "PremiumV2",
+       
+"scm
+SiteAlsoStopped": "target
+
+SwapSlot": 
+  "hosting
+
+Environment": "hostingEnvironment
+
+Profile": "client
+
+Affinity
+
+Enabled": false, 
+
+"clientCert  Enabled": false,
+      
+"clientCert 
+
+Mode": "clientCert
+
+ExclusionPaths": "hostNames
+
+ Disabled": false,
+      
+"vnet  BackupRestoreEnabled": 
+  "domain
+VerificationIdentifiers": "custom
+DomainVerificationId": 
+
+"7197B6F6C157632BB79E2C50E42763A7401F8BB8BAB09EDA4E2C3256E1CA0056",
+      
+"kind": "app,
+
+linux",  "managed
+
+EnvironmentId":
+   "inbound
+
+
+IpAddress": 
+
+"20.119.136.13",
+      
+"possible
+   InboundIpAddresses": "20.119.136.13",
+       
+"ftpUsername": 
+
+"discover22__Bestthingsinglife\\$discover22__Bestthingsinglife",
+      
+
+"ftpsHostName": 
+
+      "ftps://waws-prod-bn1-205.ftp.azurewebsites.windows.net/site
+/wwwroot",
+        
+"outboundIpAddresses":
+"20.96.237.140,20.96.237.143,20.96.237.148,20.96.237.151,20.96.237.158,20.96.237.162,20.119.136.13",
+       
+"possibleOutboundIpAddresses": 
+
+"20.96.95.164,20.10.217.143,20.10.217.160,20.10.217.165,20.10.217.183,
+
+20.10.217.223,20.96.237.93,20.96.237.111,20.96.237.112,20.96.237.121,20.96.237.124,20.96.237.132,
+
+20.96.237.140,20.96.237.143,20.96.237.148,20.96.237.151,20.96.237.158,20.96.237.162,20.96.234.242,
+
+20.96.237.171,20.96.237.177,20.96.235.197,20.96.237.184,20.22.78.123,20.96.95.164,
+
+20.10.217.143,20.10.217.160,20.10.217.165,20.10.217.183,20.10.217.223,20.22.79.93,20.12.120.168,
+
+20.12.123.72,20.22.35.248,20.94.98.17,20.94.100.52,20.119.136.13",
+      
+
+"container
+Size":   "daily
+
+MemoryTimeQuota":  "suspended
+Till": 
+ "siteDisabled
+
+Reason":  "function  Execution
+
+UnitsCache":  "max
+
+NumberOfWorkers": "home
+
+Stamp": "waws-prod-bn1-205",
+
+"cloningInfo": 
+    
+"hostingEnvironmentId": null,
+      
+"tags": 
+
+{
+        
+"83968350": 
+
+"1000",
+           
+"48E2E74D21E4D74F":
+
+"1000",
+         
+"038811634763":
+
+"2",
+     
+"1681196997174": 
+       "2",
+         
+"1681829024810": 
+      "102"
+      
+},
+      
+"resource
+
+ Group": "bonsai
+
+-rg-LIGHTTOTHEDARK
+
+-24d69b3b-d093-41c6-a847-0c0461e88247",
+      
+"default
+
+   HostName": "discover22-bestthingsinglife.azurewebsites.net",
+     
+ "slotSwapStatus":   
+"httpsOnly": false,  "endToEnd
+
+Encryption
+
+Enabled": false, "redundancy 
+
+Mode": "inProgress
+
+OperationId":  "geo
+
+Distributions": "private
+
+EndpointConnections":
+ 
+  "public NetworkAccess":
+"buildVersion":   "target
+
+BuildVersion":"migration
+State": "eligible
+
+LogCategories": "AppServiceAppLogs,
+AppServiceAuditLogs,
+AppServiceConsoleLogs,
+AppServiceHTTPLogs,
+AppServiceIPSecAuditLogs,
+AppServicePlatformLogs,
+
+ScanLogs,
+
+AppServiceFileAuditLogs,
+
+AppServiceAntivirusScanAuditLogs",
+
+"inFlightFeatures": [],
+
+"storage
+
+Account
+
+Required": false,
+       
+"virtual
+
+NetworkSubnetId": 
+
+    "/subscriptions/33af1e61-072c-48f1-bd41-b60da094e056
+
+/resourceGroups/bonsai-rg-LIGHTTOTHEDARK
+
+-24d69b3b-d093-41c6-a847-0c0461e88247/providers/Microsoft.Network/virtualNetworks
+
+/Discover22Vnet/subnets/Discover22AppSubnet",
+       
+  "keyVaultReferenceIdentity": "SystemAssigned",
+     
+"default 
+Host   
+
+NameScope": 
+  
+"private 
+Link 
+
+Identifiers":
+   }
 }
