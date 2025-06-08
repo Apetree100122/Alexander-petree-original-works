@@ -1,0 +1,29 @@
+#!/bin/bash
+set -e
+
+echo "Listing all files in the repository:"
+find . -type f
+
+echo "Running shellcheck on all .sh files (if available)..."
+if command -v shellcheck >/dev/null 2>&1; then
+  find . -name "*.sh" -exec shellcheck {} +
+else
+  echo "shellcheck not installed, skipping shell script linting."
+fi
+
+# Add more test commands below as needed
+# Example: Ruby test (if you have Ruby code)
+if [ -f Gemfile ]; then
+  echo "Running Ruby tests..."
+  bundle install
+  bundle exec rake test || bundle exec rspec
+fi
+
+# Example: JavaScript test (if you have JS code)
+if [ -f package.json ]; then
+  echo "Running JavaScript tests..."
+  npm install
+  npm test
+fi
+
+echo "All checks completed."
