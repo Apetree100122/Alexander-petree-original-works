@@ -1,12 +1,18 @@
-gem  build Orignal_A1.gemspec$ gem 
-push 
---key github 
-\ --host https: //
-rubygems.pkg.github.com
-/ NAMESPACE \ Original_A1-0.0.1.
-gem  gem.meta
-data = { "github_repo"=> "ssh://github.com/Apetree100122/REPOSITORY " * " } source "https://rubygems.org"
- gem "rails" source "https://rubygems.pkg.github.com/Apetree100122" gem 
-"Original_A1"
-gem 
-install Original_A1--version "0.1.1"
+# Build the gem
+gem build Original_A1.gemspec
+
+# Push the gem to GitHub RubyGems repository
+gem push --key github --host https://rubygems.pkg.github.com/Apetree100122
+
+# Metadata for the gem
+data = { "github_repo" => "ssh://github.com/Apetree100122/REPOSITORY" }
+
+# Source for RubyGems
+source "https://rubygems.org"
+
+# Specify dependencies
+gem "rails", source: "https://rubygems.pkg.github.com/Apetree100122"
+gem "Original_A1"
+
+# Install the gem
+gem install Original_A1 --version "0.1.1"
